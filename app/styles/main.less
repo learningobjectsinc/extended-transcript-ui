@@ -1,3 +1,8 @@
+@color-primary: #2d3e4e;
+@color-secondary: #9e0c0f;
+
+@width-body: 80%;
+
 html, body {
   height: 100%;
   width: 100%;
@@ -12,4 +17,23 @@ html, body {
 .fill{
   width: 100%;
   height: 100%;
+}
+
+.content{
+  width: @width-body;
+  margin: 0 auto;
+}
+
+.header{
+  background-color: @color-secondary;
+  color: #FFF;
+  padding: 1em 0;
+
+  .logo{
+    display: inline-block;
+  }
+
+  .user{
+    float:right;
+  }
 }

@@ -1,8 +1,7 @@
-
 import angular from 'angular';
-import transcript from './transcript';
-var moduleName = 'transcriptModule';
-
+var moduleName = 'transcript';
 export default angular.module(moduleName, []);
+
+import transcript from './transcript';
 
 angular.module(moduleName).directive('transcript', transcript);

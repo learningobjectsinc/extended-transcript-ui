@@ -51,7 +51,7 @@ module.exports = {
         loader: "file"
       },  {
         test: /\.html$/,
-        loader: "ngtemplate?module=campuspack&relativeTo=" + __dirname + "!html"
+        loader: "ngtemplate?relativeTo=" + __dirname + "!html"
       }]
     },
 

@@ -1,4 +1,3 @@
-
 //Third-party deps
 import angular from 'angular';
 import 'angular-ui-router';
