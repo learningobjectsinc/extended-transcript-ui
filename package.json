@@ -1,0 +1,40 @@
+{
+  "name": "campuspack",
+  "version": "1.0.0",
+  "description": "Social Collaboration",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "babel-core": "^5.6.7",
+    "babel-loader": "^5.2.1",
+    "webpack": "1.9.8",
+    "less-loader": "^2.0.0",
+    "css-loader": "~0.9.0",
+    "jshint-loader": "~0.8.0",
+    "jsx-loader": "~0.12.2",
+    "react-hot-loader": "^1.0.7",
+    "style-loader": "~0.8.0",
+    "url-loader": "~0.5.5"
+  },
+  "dependencies": {
+    "angular": "1.4.1",
+    "angular-ui-router": "^0.2.15",
+    "bootstrap": "^3.3.4",
+    "copy-loader": "^0.1.2",
+    "font-awesome": "^4.3.0",
+    "html-loader": "^0.3.0",
+    "moment": "^2.9.0",
+    "ngreact": "^0.1.5",
+    "ngtemplate-loader": "^1.3.0",
+    "react": "0.12.2",
+    "react-bootstrap": "^0.17.0",
+    "react-router": "^0.11.6",
+    "superagent": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "webpack",
+    "dev": "webpack-dev-server --port 9000 --content-base src/main/resources/loi/cp/domain/ --hot"
+  },
+  "author": "",
+  "license": "ISC"
+}

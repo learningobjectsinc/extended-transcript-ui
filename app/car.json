@@ -1,0 +1,12 @@
+{
+    "identifier": "com.learningobjects.etui",
+    "name": "Administration",
+    "version": "1.0.0",
+    "components": [{
+        "identifier": "loi.cp.ExtendedTranscriptDomain",
+        "name": "Extended Transcript UI",
+        "description": "Extended Transcript ui",
+        "implementation": "loi.cp.domain.GenericDomain"
+    }],
+    "dependencies": [ "com.learningobjects.component" ]
+}
