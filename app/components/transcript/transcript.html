@@ -1,0 +1,31 @@
+<div>
+  <div class="content transcript">
+    <div class="transcript-label">
+      <span>Official Transcript</span>
+      <div class="right">
+        <div>This is an official transcript from the All American University Office of the Registrar.</div>
+        <div>Student information is guaranteed unaltered from the source.</div>
+      </div>
+    </div>
+    
+    <div class="transcript-header">
+      <img ng-src="{{domain_logo_secondary}}"/>
+      <div class="right">
+        <div class="user-name">{{transcript.user.givenName}} {{transcript.user.familyName}}</div>
+        <div class="user-id">Student Id: {{transcript.user.sourced_id}}</div>
+      </div>
+    </div>
+    
+    <div class="transcript-body">
+      <div class="program">
+        <div class="level">{{transcript.program.degree_level}}</div>
+        <div class="label">{{transcript.program.label}}</div>
+      </div>
+      <div class="unit-list">
+        <div ng-repeat="unit in transcript.program.courses">
+          {{unit.label}} - {{unit.title}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

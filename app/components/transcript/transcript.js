@@ -2,7 +2,7 @@
 import request from 'superagent';
 
 import template from './transcript.html';
-import domain_logo from '../../images/aau.jpg';
+import domain_logo_secondary from '../../images/aau_blue.jpg';
 
 export default [function(){
   return {
@@ -10,7 +10,7 @@ export default [function(){
     replace:true,
     templateUrl:template,
     link: function(scope, element){
-      scope.domain_logo = domain_logo;
+      scope.domain_logo_secondary = domain_logo_secondary;
       
       scope.transcript = {
           "@context": {
@@ -207,8 +207,8 @@ export default [function(){
                       "title": "MBA-FP 6012 Section 1"
                   }
               ],
-              "degree_level": "MBA",
-              "label": "Master of Business Admin FP"
+              "degree_level": "MBA", //should this be generically "Master's"? as in... Associates, Bachelors, Masters, Phd, etc...
+              "label": "Master of Business Administration FP"
           },
           "tool_consumer_profile": {
               "@id": "http://purl.kinexis.com:8888/lti2_tc/tool_consumer_profiles/",
@@ -221,20 +221,9 @@ export default [function(){
               "email": "tarne@hotmail.com",
               "familyName": "Arne",
               "givenName": "Tom",
-              "sourced_id": 0
+              "sourced_id": '000330'
           }
       };
-
-/*
-      request
-        .get('http://example.com/rop.json')
-        .end(function(err, res){
-          console.log('got:', err, res);
-          scope.transcript = res.body;
-          scope.$apply();
-          // Calling the end function will send the request
-        });
-*/
     }
   };
 }];

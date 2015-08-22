@@ -1,11 +1,14 @@
 @color-primary: #2d3e4e;
 @color-secondary: #9e0c0f;
+@color-light-text: #a6a99e;
+@color-dark-text: #7f7f7f;
 
 @width-body: 80%;
 
 html, body {
   height: 100%;
   width: 100%;
+  font-family: sans-serif;
 }
 
 #content {
@@ -22,9 +25,10 @@ html, body {
 .content{
   width: @width-body;
   margin: 0 auto;
+  display: block;
 }
 
-.header{
+.top-header{
   background-color: @color-secondary;
   color: #FFF;
   padding: 1em 0;
@@ -35,5 +39,68 @@ html, body {
 
   .user{
     float:right;
+  }
+}
+.bottom-header{
+  background-color: lighten(@color-primary, 10%);
+  color: #FFF;
+  padding: 1em 0;
+  
+  div div{
+    display:inline-block;
+  }
+}
+
+.right{
+  float:right;
+}
+
+.transcript{
+  padding-top: 1em;
+  .transcript-label{
+    color:@color-light-text;
+    span{
+      font-size: 1.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    div {
+      font-size: 0.85em;
+      text-align: right;
+    }
+  }
+
+  .transcript-header{
+    background-color: @color-primary;
+    border-top: 3px solid @color-secondary;
+    padding:0.5em;
+    color: #FFF;
+    
+    .right{
+      text-align: right;
+      text-transform: uppercase;
+    }
+    .user-name{
+      font-size:1.75em;
+    }
+    .user-id{
+      font-size: 0.85em;
+    }
+  }
+  
+  .transcript-body{
+    margin-top:1em;
+    color: @color-dark-text;
+    
+    .program{
+      font-size: 1.25em;
+      .level{
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .label{
+        text-transform: capitalize;
+      }
+    }
   }
 }

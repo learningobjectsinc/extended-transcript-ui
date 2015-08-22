@@ -9,10 +9,12 @@ import 'copy!./car.json';
 import './styles/main.less';
 
 //ET components
-import transcriptModule from './components/et/transcriptModule';
+import headerModule from './components/header/headerModule';
+import transcriptModule from './components/transcript/transcriptModule';
 
 export var app = angular.module('et', [
   /*'ui.router',*/
+  headerModule.name,
   transcriptModule.name
 ]);
 
