@@ -42,12 +42,22 @@ html, body {
   }
 }
 .bottom-header{
-  background-color: lighten(@color-primary, 10%);
+  background-image: url(../images/transcript-bg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+
+  //background-color: lighten(@color-primary, 10%);
   color: #FFF;
-  padding: 1em 0;
-  
-  div div{
+
+  .content div{
     display:inline-block;
+  }
+  .overlay{
+    padding: 1em 0;
+    background-color: fadeout(@color-primary, 30%);
+    height:100%;
+    width:100%;
   }
 }
 
@@ -75,7 +85,7 @@ html, body {
     border-top: 3px solid @color-secondary;
     padding:0.5em;
     color: #FFF;
-    
+
     .right{
       text-align: right;
       text-transform: uppercase;
@@ -87,11 +97,11 @@ html, body {
       font-size: 0.85em;
     }
   }
-  
+
   .transcript-body{
     margin-top:1em;
     color: @color-dark-text;
-    
+
     .program{
       font-size: 1.25em;
       .level{
@@ -114,7 +124,7 @@ html, body {
   border: 1px solid @color-primary;
   border-radius: @border-radius-bar;
   color: #FFF;
-  
+
   .prog-bar-inner{
     background-color: @color-primary;
   }

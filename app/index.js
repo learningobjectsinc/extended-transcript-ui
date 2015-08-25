@@ -1,11 +1,13 @@
 //Third-party deps
 import angular from 'angular';
 import 'angular-ui-router';
+//import 'bootstrap';
 import 'font-awesome/css/font-awesome.css';
 
 import 'copy!./car.json';
 
 //Styles
+import 'bootstrap/dist/css/bootstrap.css';
 import './styles/main.less';
 
 //ET components
