@@ -1,6 +1,6 @@
 'use strict';
 import request from 'superagent';
-//import _ from 'lodash';
+import _ from 'lodash';
 
 import template from './unit.html';
 
@@ -13,20 +13,35 @@ export default [function(){
       unit:'='
     },
     link: function(scope, element){
-      console.log('linking unit');
-      //get a roll up of each competency?
-      /*
-      var achievements = {};
-      _.each(scope.unit.competencies, function(comp){
-        achievements[comp.achievement] = true;
+      var levels = [
+        "Basic", "NonProficient", "Proficient", "Distinguished"
+      ];
+      
+      //for each competency, get the percentage... then figure out what's left?
+      var achievements = _(scope.unit.competencies)
+        .map(function(comp){
+          return levels.indexOf(comp.achievement) + 1;
+        }).value();
+        
+      //100% is if you have all competencies finished... so we have to figure out 
+      //   for every competency, add up all that is needed to finish (an integer
+      //   summing all the 'levels' needed) then divide that against the total 
+      //   amount of levels in the course (the sum of all levels in each competency)
+      var toFinish = _.reduce(achievements, function(sum, m){
+        return sum + (levels.length - m);
       });
+
+      var haveFinished = _.reduce(achievements, function(sum, m){
+        return sum + m;
+      });
+
+      //this code assumes that each competency shares a taxonomy of 'levels'
+      var totalPossible = achievements.length * levels.length;
       
-      scope.a = [];
-      for(var a in achievements){
-        scope.a.push(a);
-      }
-      */
+      scope.percentage = (haveFinished / totalPossible) * 100;
       
+      console.log('got: ', achievements, 'which results in: ', haveFinished, '/', totalPossible, '=', scope.percentage);
+
     }
   };
 }];

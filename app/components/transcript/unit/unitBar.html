@@ -1,5 +1,6 @@
 <div class="prog-bar">
-  <div class="prog-bar-inner">
-    {{unit.label}}
+  <div class="prog-bar-inner" ng-style="progBarStyle"></div>
+  <div class="prog-bar-content">
+    {{unit.label}} - {{intervalPercentage}}%
   </div>
 </div>

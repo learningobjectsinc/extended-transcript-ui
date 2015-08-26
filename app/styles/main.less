@@ -54,7 +54,7 @@ html, body {
     display:inline-block;
   }
   .overlay{
-    padding: 1em 0;
+    padding: 1.5em 0;
     background-color: fadeout(@color-primary, 30%);
     height:100%;
     width:100%;
@@ -124,8 +124,28 @@ html, body {
   border: 1px solid @color-primary;
   border-radius: @border-radius-bar;
   color: #FFF;
+  position: relative;
+  height: 35px;
 
   .prog-bar-inner{
+    font-size: 1.25em;
     background-color: @color-primary;
+    border-radius: @border-radius-bar;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transition-timing-function:ease-out;
+    width: 0%;
+    height:100%;
+    &.fill {
+      width: 100%;
+    }  
   }
+  
+  .prog-bar-content{
+    padding: 0.15em 0.25em;
+    position: absolute;
+    top:0;
+    bottom: 0;
+  }
+  
 }
