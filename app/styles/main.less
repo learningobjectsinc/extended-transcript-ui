@@ -1,5 +1,6 @@
 @color-primary: #2d3e4e;
 @color-secondary: #9e0c0f;
+@color-accent: #f5b90b;
 @color-light-text: #a6a99e;
 @color-dark-text: #7f7f7f;
 
@@ -126,6 +127,7 @@ html, body {
   color: #FFF;
   position: relative;
   height: 35px;
+  margin-bottom: 0.15em;
 
   .prog-bar-inner{
     font-size: 1.25em;
@@ -148,4 +150,35 @@ html, body {
     bottom: 0;
   }
   
+  &.accent{
+    border: lighten(@color-accent, 45%);
+    background-color: lighten(@color-accent, 45%);
+    .prog-bar-inner{
+      background-color: @color-accent;
+    }
+  }
+  
+  &.small {
+    height: 15px;
+    border-radius: 8px;
+    
+    .prog-bar-inner{
+      border-radius: 8px;
+    }
+  }
+  
+}
+
+.detailsBtn{
+  display:inline-block;
+  border-radius:2px;
+  background-color: #CCC;
+  color: #FFF;
+  padding: 0.05em 0.75em;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+  &.expanded {
+    background-color: #AAA;  
+  }
 }

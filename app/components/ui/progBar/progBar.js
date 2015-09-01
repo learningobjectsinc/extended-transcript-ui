@@ -2,19 +2,19 @@
 import request from 'superagent';
 //import _ from 'lodash';
 
-import template from './unitBar.html';
+import template from './progBar.html';
 
-var ANIMATION_DUR = 1000; //ms
+var ANIMATION_DUR = 500; //ms
 var FRAMERATE = 25; //one frame per x ms
 
 export default ['$timeout', '$interval', function($timeout, $interval){
   return {
     restrict:'E',
     replace:true,
+    transclude:true,
     templateUrl:template,
     scope:{
-      percentage:'=',
-      unit:'=',
+      value:'=',
       animationLength:'='
     },
     link: function(scope, element){
@@ -28,7 +28,7 @@ export default ['$timeout', '$interval', function($timeout, $interval){
       };
       
       $timeout(function(){
-        scope.progBarStyle.width = scope.percentage + '%';
+        scope.progBarStyle.width = scope.value + '%';
       });
       
       var elapsedTime = 0;
@@ -37,7 +37,7 @@ export default ['$timeout', '$interval', function($timeout, $interval){
         var now = new Date();
         elapsedTime += now - then;
         scope.intervalPercentage = Math.round(
-          scope.percentage * Math.min(elapsedTime/ANIMATION_DUR, 1)
+          scope.value * Math.min(elapsedTime/ANIMATION_DUR, 1)
         );
         if(elapsedTime > ANIMATION_DUR){
           $interval.cancel(interval);

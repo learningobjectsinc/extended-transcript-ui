@@ -13,9 +13,11 @@ export default [function(){
       unit:'='
     },
     link: function(scope, element){
-      var levels = [
+      var levels = scope.levels = [
         "Basic", "NonProficient", "Proficient", "Distinguished"
       ];
+      
+      scope.levelsVisible = false;
       
       //for each competency, get the percentage... then figure out what's left?
       var achievements = _(scope.unit.competencies)

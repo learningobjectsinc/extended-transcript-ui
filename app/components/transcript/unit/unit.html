@@ -1,3 +1,12 @@
 <div class="unit">
-  <unit-bar unit="unit" percentage="percentage"></unit-bar>
+  <prog-bar unit="unit" value="percentage">
+    {{unit.label}} - {{percentage}}%
+  </prog-bar>
+  <div ng-click="levelsVisible = !levelsVisible" 
+       class="detailsBtn"
+       ng-class="{'expanded':levelsVisible}">detail</div>
+  <div ng-if="levelsVisible" class="competency-list">
+      <competency ng-repeat="comp in unit.competencies"
+                  competency="comp" levels="levels"></competency>
+  </div>
 </div>

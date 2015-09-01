@@ -13,11 +13,13 @@ import './styles/main.less';
 //ET components
 import headerModule from './components/header/headerModule';
 import transcriptModule from './components/transcript/transcriptModule';
+import uiModule from './components/ui/uiModule';
 
 export var app = angular.module('et', [
   /*'ui.router',*/
   headerModule.name,
-  transcriptModule.name
+  transcriptModule.name,
+  uiModule.name
 ]);
 
 angular.element(document).ready(function () {
