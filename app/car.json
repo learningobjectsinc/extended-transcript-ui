@@ -1,12 +1,17 @@
 {
     "identifier": "com.learningobjects.etui",
-    "name": "Administration",
+    "name": "Extended Transcript",
     "version": "1.0.0",
     "components": [{
-        "identifier": "loi.cp.ExtendedTranscriptDomain",
+        "identifier": "loi.cp.ExtendedTranscriptUI",
         "name": "Extended Transcript UI",
-        "description": "Extended Transcript ui",
-        "implementation": "loi.cp.domain.GenericDomain"
+        "description": "View standardized transcripts.",
+        "implementation": "loi.cp.generic.GenericServlet",
+        "annotations": {
+          "com.learningobjects.cpxp.component.web.ServletBinding": {
+            "path": "/extended-transcript"
+          }
+        }
     }],
     "dependencies": [ "com.learningobjects.component" ]
 }

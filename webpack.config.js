@@ -6,7 +6,7 @@ var webpack = require('webpack'),
 // PATHS
 var PATHS = {
   app: __dirname + '/app',
-  target: __dirname + '/dist' //this might be able to be changed... have to check maven.
+  target: __dirname + '/dist'
 };
 
 module.exports = {
