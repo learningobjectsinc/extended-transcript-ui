@@ -27,7 +27,8 @@ module.exports = {
     },
     output: {
         path: PATHS.target,
-        filename: 'bundle.js'
+        filename: 'main.js',
+        publicPath: '/assets/'
     },
     module: {
       loaders: [{
