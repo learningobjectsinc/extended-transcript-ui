@@ -35,8 +35,8 @@ module.exports = function (grunt) {
         }],
         options: {
           replacements: [{
-            pattern: new RegExp("\/assets\/main\.js"),
-            replacement: '$$$url/assets/main.js'
+            pattern: new RegExp(/\/assets\//g),
+            replacement: '$$$url/assets/'
           }]
         }
       }
