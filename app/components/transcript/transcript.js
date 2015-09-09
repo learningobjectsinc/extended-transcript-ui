@@ -3,23 +3,45 @@ import request from 'superagent';
 
 import template from './transcript.html';
 import domain_logo_secondary from '../../images/aau_blue.jpg';
+import _ from 'lodash';
+import './transcript.less';
 
-export default [function(){
+export default ['$http', function($http){
   return {
     restrict:'E',
     replace:true,
     templateUrl:template,
     link: function(scope, element){
       scope.domain_logo_secondary = domain_logo_secondary;
-      
+
       //TODO: remove this when scope clears
       window.onkeypress = function(e){
         if(e.keyCode === 113){
           scope.debug = !scope.debug;
+          scope.$apply();
         }
       };
-      
-      scope.transcript = {
+
+      scope.updateTranscript = _.debounce(function(url){
+        if(!url || url.length === 0){
+          console.log('ignoring empty url: ', url);
+          scope.transcript = defaultTranscript;
+          return;
+        }
+        console.log('fetching transcript from:', url);
+        scope.transcriptLoading = true;
+        $http.get(url)
+        .then(function(res){
+          scope.transcriptLoading = false;
+          scope.transcript = res.data;
+          console.log('got response', res);
+        }, function(res){
+          console.error('got error', res);
+          scope.transcriptLoading = false;
+        });
+      }, 1000);
+
+      var defaultTranscript = scope.transcript = {
           "@context": {
               "@vocab": "http://purl.kinexis.com:8888/ctx/cbe/v1/record_of_performance/"
           },
