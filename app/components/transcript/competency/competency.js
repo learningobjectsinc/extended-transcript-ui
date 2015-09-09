@@ -14,13 +14,16 @@ export default [function(){
       levels:'='
     },
     link: function(scope, element){
+      var levels = [
+        "Basic", "NonProficient", "Proficient", "Distinguished"
+      ];
       
       scope.percentage = 
-          (scope.levels.indexOf(scope.competency.achievement) + 1) / 
-          scope.levels.length;
-          
-      console.log(scope.competency.achievement);
+          (levels.indexOf(scope.competency.achievement) + 1) / 
+          levels.length;
 
+      scope.completed = scope.percentage > 0.5;
+      console.log('got: ', scope.completed);
     }
   };
 }];

@@ -1,6 +1,19 @@
 
 .competency{
+  margin-left: 30px;
+  height: 34px;
   .competency-content{
-    margin-left:30px;
+    margin-left: 60px;
+  }
+  .competency-checkmark{
+    float:left;
+    text-align: center;
+    background-image: url('../../../images/unchecked.jpg');
+    height: 34px;
+    width: 34px;
+    
+    &.checked {
+      background-image: url('../../../images/checked.jpg');
+    }
   }
 }
