@@ -12,6 +12,13 @@ export default [function(){
     link: function(scope, element){
       scope.domain_logo_secondary = domain_logo_secondary;
       
+      //TODO: remove this when scope clears
+      window.onkeypress = function(e){
+        if(e.keyCode === 113){
+          scope.debug = !scope.debug;
+        }
+      };
+      
       scope.transcript = {
           "@context": {
               "@vocab": "http://purl.kinexis.com:8888/ctx/cbe/v1/record_of_performance/"
