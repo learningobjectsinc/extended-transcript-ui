@@ -18,8 +18,7 @@ module.exports = {
 
   output: {
       path: PATHS.target + '/assets',
-      filename: 'main.js',
-      publicPath: '/assets/'
+      filename: 'main.js'
   },
 
   debug: false,

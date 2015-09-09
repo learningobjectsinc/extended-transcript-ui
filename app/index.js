@@ -1,3 +1,7 @@
+//This is here because babel hoists imports, and we need the public path set
+// before all the other imports resolve.
+import './init';
+
 //Third-party deps
 import angular from 'angular';
 import 'angular-ui-router';

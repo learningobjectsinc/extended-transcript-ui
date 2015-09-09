@@ -21,6 +21,7 @@
   "white": true,
   "newcap": false,
   "globals": {
-    "React": true
+    "React": true,
+    "__webpack_public_path__": true
   }
 }
