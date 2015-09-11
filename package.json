@@ -18,7 +18,6 @@
     "react-hot-loader": "^1.0.7",
     "style-loader": "~0.8.0",
     "url-loader": "~0.5.5",
-
     "grunt": "~0.4.5",
     "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-compress": "^0.13.0",
@@ -44,7 +43,8 @@
     "react": "0.12.2",
     "react-bootstrap": "^0.17.0",
     "react-router": "^0.11.6",
-    "superagent": "^1.1.0"
+    "superagent": "^1.1.0",
+    "json-loader": "^0.5.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -42,7 +42,7 @@ export default [function(){
       //this code assumes that each competency shares a taxonomy of 'levels'
       var totalPossible = achievements.length * levels.length;
 
-      scope.percentage = (haveFinished / totalPossible) * 100;
+      scope.percentage = Math.round((haveFinished / totalPossible) * 100);
 
     }
   };
