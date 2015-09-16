@@ -16,12 +16,22 @@ export default ['TranscriptService', function(transcriptService){
       transcript:'='
     },
     link: function(scope, element){
-      var levels = scope.levels = [
-        "Basic", "NonProficient", "Proficient", "Distinguished"
-      ];
+
+      function avg(a,m,i,p) {
+          return a + m/p.length;
+      }
 
       scope.unitsVisible = false;
-      scope.percentage = "50";
+      var percentage =
+          _.chain(scope.transcript.program.courses)
+           .pluck("competencies")
+           .flatten()
+           .filter(transcriptService.competencyMatchesOutcome(scope.outcome))
+           .map(transcriptService.competencyIsCompleted)
+           .reduce(avg, 0)
+           .value();
+      console.log('got:', percentage);
+      scope.percentage = Math.round(percentage*100);
       scope.courseMatchesOutcome = transcriptService.courseMatchesOutcome;
     }
   };

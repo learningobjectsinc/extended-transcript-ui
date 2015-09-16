@@ -4,7 +4,7 @@ import './competency.less';
 
 import template from './competency.html';
 
-export default [function(){
+export default ['TranscriptService', function(transcriptService){
   return {
     restrict:'E',
     replace:true,
@@ -17,12 +17,12 @@ export default [function(){
       var levels = [
         "Basic", "NonProficient", "Proficient", "Distinguished"
       ];
-      
-      scope.percentage = 
-          (levels.indexOf(scope.competency.achievement) + 1) / 
+
+      scope.percentage =
+          (levels.indexOf(scope.competency.achievement) + 1) /
           levels.length;
 
-      scope.completed = scope.percentage > 0.5;
+      scope.completed = transcriptService.competencyIsCompleted(scope.competency);
       console.log('got: ', scope.completed);
     }
   };

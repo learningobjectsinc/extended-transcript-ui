@@ -5,6 +5,11 @@ import _ from 'lodash';
 export default ['$http', function($http){
   var TranscriptService = {};
 
+  //the 'levels' of competencies
+  var levels = [
+    "Basic", "NonProficient", "Proficient", "Distinguished"
+  ];
+
   //returns a function which takes a competency and returns true if the
   //  specified outcome matches the outcome for the competency supplied
   //  to the returned function.
@@ -24,6 +29,12 @@ export default ['$http', function($http){
           TranscriptService.competencyMatchesOutcome(outcome)
         );
     };
+  };
+
+  TranscriptService.competencyIsCompleted = function(competency){
+    var percentage = (levels.indexOf(competency.achievement) +1) /
+                     levels.length;
+    return percentage >= 0.5;
   };
 
   return TranscriptService;
