@@ -12,6 +12,7 @@ export default [function(){
     replace:true,
     templateUrl:template,
     scope:{
+      outcome:'=',
       unit:'='
     },
     link: function(scope, element){

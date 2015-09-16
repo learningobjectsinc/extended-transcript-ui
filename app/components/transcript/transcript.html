@@ -29,8 +29,8 @@
         <div class="program-label">{{transcript.program.label}}</div>
       </div>
       <div class="unit-list">
-        <div ng-repeat="course in transcript.program.courses">
-          <unit unit="course"></unit>
+        <div ng-repeat="outcome in outcomes">
+          <outcome outcome="outcome" transcript="transcript"></outcome>
         </div>
       </div>
     </div>

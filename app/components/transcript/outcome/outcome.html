@@ -1,0 +1,11 @@
+<div class="outcome">
+  <prog-bar value="percentage">
+    {{outcome.title}} - {{percentage}}%
+  </prog-bar>
+  <button ng-click="unitsVisible = !unitsVisible"
+       class="secondary"
+       ng-class="{'expanded':unitsVisible}">detail</button>
+  <div ng-if="unitsVisible">
+    <unit ng-repeat="course in transcript.program.courses | filter:courseHasOutcome" unit="course" outcome="outcome"></unit>
+  </div>
+</div>

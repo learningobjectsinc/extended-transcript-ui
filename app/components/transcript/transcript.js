@@ -44,6 +44,14 @@ export default ['$http', function($http){
       }, 1000);
 
       var defaultTranscript = scope.transcript = defaultRop;
+
+      //let's compute the transcript's outcomes
+      scope.outcomes = _.chain(scope.transcript.program.courses)
+        .pluck("competencies")
+        .flatten()
+        .map(function(comp){return comp.outcome;})
+        .uniq(function(outcome){return outcome["@id"];})
+        .value();
     }
   };
 }];

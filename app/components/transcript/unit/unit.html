@@ -1,29 +1,21 @@
 <div class="unit">
-  <prog-bar unit="unit" value="percentage">
-    {{unit.label}} - {{percentage}}%
-  </prog-bar>
-  <button ng-click="coursesVisible = !coursesVisible"
-       class="secondary"
-       ng-class="{'expanded':coursesVisible}">detail</button>
-  <div ng-if="coursesVisible">
-    <div class="course-wrapper"><!--TODO: ng-repeat here when we hav emultiple courses per category -->
-      <button class="secondary dropdown"
-              ng-click="competenciesVisible = !competenciesVisible">
-        <i class='fa' ng-class="{'fa-caret-right':!competenciesVisible, 'fa-caret-down':competenciesVisible}"></i>
-      </button>
-      <div class="course">
-        <div class="right">
-          <button class="secondary">evidence</button>
-          <span class="course-id">course: {{unit.label}}</span>
-        </div>
-        <div class="title">{{unit.title}}</div>
-        <prog-bar value="percentage" class="accent small"></prog-bar>
+  <div class="course-wrapper">
+    <button class="secondary dropdown"
+            ng-click="competenciesVisible = !competenciesVisible">
+      <i class='fa' ng-class="{'fa-caret-right':!competenciesVisible, 'fa-caret-down':competenciesVisible}"></i>
+    </button>
+    <div class="course">
+      <div class="right">
+        <button class="secondary">evidence</button>
+        <span class="course-id">course: {{unit.label}}</span>
       </div>
-      <!--todo: take this out in favor of <ul> -->
-      <div class="competency-list" ng-if="competenciesVisible">
-        <competency ng-repeat="comp in unit.competencies"
-                    competency="comp" levels="levels"></competency>
-      </div>
+      <div class="title">{{unit.title}}</div>
+      <prog-bar value="percentage" class="accent small"></prog-bar>
+    </div>
+    <!--todo: take this out in favor of <ul> -->
+    <div class="competency-list" ng-if="competenciesVisible">
+      <competency ng-repeat="comp in unit.competencies"
+                  competency="comp" levels="levels"></competency>
     </div>
   </div>
 </div>
