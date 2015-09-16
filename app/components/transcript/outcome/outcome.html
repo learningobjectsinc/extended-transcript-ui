@@ -1,7 +1,13 @@
 <div class="outcome">
-  <prog-bar value="percentage">
-    {{outcome.title}} - {{percentage}}%
-  </prog-bar>
+  <div class="outcome-title">
+      {{outcome.title}}
+  </div>
+  <div class="outcome-progress">
+    <prog-bar value="percentage">
+    </prog-bar><div class="percentage">
+      {{percentage}}%
+    </div>
+  </div>
   <button ng-click="unitsVisible = !unitsVisible"
        class="secondary"
        ng-class="{'expanded':unitsVisible}">detail</button>
