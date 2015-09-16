@@ -1,6 +1,6 @@
 <div class="unit">
   <div class="course-wrapper">
-    <button class="secondary dropdown"
+    <button class="secondary dropdown tiny"
             ng-click="competenciesVisible = !competenciesVisible">
       <i class='fa' ng-class="{'fa-caret-right':!competenciesVisible, 'fa-caret-down':competenciesVisible}"></i>
     </button>
@@ -14,7 +14,7 @@
     </div>
     <!--todo: take this out in favor of <ul> -->
     <div class="competency-list" ng-if="competenciesVisible">
-      <competency ng-repeat="comp in unit.competencies"
+      <competency ng-repeat="comp in unit.competencies | filter:competencyMatchesOutcome(outcome)"
                   competency="comp" levels="levels"></competency>
     </div>
   </div>

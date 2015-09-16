@@ -6,7 +6,7 @@ import './unit.less';
 
 import template from './unit.html';
 
-export default [function(){
+export default ['TranscriptService', function(transcriptService){
   return {
     restrict:'E',
     replace:true,
@@ -44,6 +44,8 @@ export default [function(){
       var totalPossible = achievements.length * levels.length;
 
       scope.percentage = Math.round((haveFinished / totalPossible) * 100);
+
+      scope.competencyMatchesOutcome = transcriptService.competencyMatchesOutcome;
 
     }
   };

@@ -6,7 +6,7 @@ import './outcome.less';
 
 import template from './outcome.html';
 
-export default [function(){
+export default ['TranscriptService', function(transcriptService){
   return {
     restrict:'E',
     replace:true,
@@ -21,19 +21,8 @@ export default [function(){
       ];
 
       scope.unitsVisible = false;
-
       scope.percentage = "50";
-
-      //returns true if the supplied course has a competency that maps to
-      //    the scoped outcome
-      scope.courseHasOutcome = function(course){
-          return _.chain(course.competencies)
-            .pluck("outcome")
-            .some(function(out){
-              return out["@id"] === scope.outcome["@id"];
-            })
-            .value();
-      };
+      scope.courseMatchesOutcome = transcriptService.courseMatchesOutcome;
     }
   };
 }];
