@@ -3,6 +3,7 @@ import request from 'superagent';
 
 import template from './transcript.html';
 import domain_logo_secondary from '../../images/aau_blue.jpg';
+import moment from "moment";
 import _ from 'lodash';
 import './transcript.less';
 
@@ -44,6 +45,9 @@ export default ['$http', function($http){
       }, 1000);
 
       var defaultTranscript = scope.transcript = defaultRop;
+
+      defaultTranscript.created_at =
+          moment(defaultTranscript.created_at).format('l');
 
       //let's compute the transcript's outcomes
       scope.outcomes = _.chain(scope.transcript.program.courses)

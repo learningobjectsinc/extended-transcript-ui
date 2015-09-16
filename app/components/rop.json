@@ -12,6 +12,8 @@
     },
     "program": {
         "@id": "http://purl.kinexis.com:8888/programs/7",
+        "degree_level": "Master of Science",
+        "label": "Nursing - Nursing Informatics",
         "courses": [
             {
                 "@id": "http://purl.kinexis.com:8888/course_sections/61",
@@ -282,9 +284,7 @@
                 }
             ]
         }
-        ],
-        "degree_level": "MS",
-        "label": "Master's Specialty in Nursing Informatics"
+        ]
     },
     "tool_consumer_profile": {
         "@id": "http://purl.kinexis.com:8888/lti2_tc/tool_consumer_profiles/",
@@ -298,6 +298,6 @@
         "familyName": "Hafez",
         "givenName": "Olivia",
         "middleName": "R",
-        "sourced_id": 0
+        "sourced_id": 123456
     }
 }
