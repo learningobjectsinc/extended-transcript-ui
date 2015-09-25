@@ -195,3 +195,23 @@ button.secondary{
 .program{
   margin-bottom: 1em;
 }
+
+.thin-scrollbar(@size, @ts-bg-color, @rounded: 0) {
+  &::-webkit-scrollbar{
+    position:absolute;
+    height: @size; /* for vertical scrollbars */
+    width:  @size; /* for horizontal scrollbars */
+  }
+  &::-webkit-scrollbar-track{
+    background: rgba(0,0,0,0);
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: @rounded;
+    background: lighten(@ts-bg-color, 30%);
+  }
+}
+
+body {
+  overflow: scroll;
+  //.thin-scrollbar(6px, darken(red, 30%), 10px);
+}
