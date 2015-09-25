@@ -3,13 +3,13 @@
   margin-left: 30px;
   height: 34px;
   .competency-content{
-    margin-left: 60px;
+    margin-left: 40px;
     padding-top: 0.5em;
-    
+
     * {
       display:inline-block;
     }
-    
+
     .achievement{
       font-weight:700;
     }
@@ -25,4 +25,26 @@
       background-image: url('../../../images/checked.jpg');
     }
   }
+
+  .achievement{
+    border: 1px solid gray;
+    font-family: monospace;
+    color:white;
+    border-radius: 2px;
+    background-color: gray;
+    padding: 0 0.5em;
+
+    &.NonProficient{
+      background-color: #FF0000;
+    }
+    &.Basic, &.Proficient{
+      background-color: #F5B90B;
+    }
+    &.Distinguished{
+      background-color: #00A901;
+    }
+  }
+
+
+
 }

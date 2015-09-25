@@ -7,7 +7,7 @@ export default ['$http', function($http){
 
   //the 'levels' of competencies
   var levels = [
-    "Basic", "NonProficient", "Proficient", "Distinguished"
+    "NonProficient", "Basic", "Proficient", "Distinguished"
   ];
 
   //returns a function which takes a competency and returns true if the
