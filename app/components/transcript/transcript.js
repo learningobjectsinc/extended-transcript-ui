@@ -2,7 +2,7 @@
 import request from 'superagent';
 
 import template from './transcript.html';
-import domain_logo_secondary from '../../images/aau_blue.jpg';
+import domain_logo from '../../images/Atlas.png';
 import moment from "moment";
 import _ from 'lodash';
 import './transcript.less';
@@ -15,7 +15,7 @@ export default ['$http', function($http){
     replace:true,
     templateUrl:template,
     link: function(scope, element){
-      scope.domain_logo_secondary = domain_logo_secondary;
+      scope.domain_logo_secondary = domain_logo;
 
       //TODO: remove this when scope clears
       window.onkeypress = function(e){

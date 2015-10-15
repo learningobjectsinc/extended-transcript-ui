@@ -2,7 +2,7 @@
 import request from 'superagent';
 
 import template from './header.html';
-import domain_logo from '../../images/aau.jpg';
+import domain_logo from '../../images/Atlas.png';
 
 export default [function(){
   return {
