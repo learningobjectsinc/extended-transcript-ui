@@ -23,7 +23,6 @@ export default ['TranscriptService', function(transcriptService){
           levels.length;
 
       scope.completed = transcriptService.competencyIsCompleted(scope.competency);
-      console.log('got: ', scope.completed);
     }
   };
 }];

@@ -6,8 +6,18 @@
     </button>
     <div class="course">
       <div class="right">
-        <button class="secondary">evidence</button>
+        <button
+          class="secondary"
+          ng-class="{'expanded':evidenceVisible}"
+          ng-if="outcomeEvidence.length > 0"
+          ng-click="toggleEvidence()">evidence</button>
         <span class="course-id">course: {{unit.label}}</span>
+        <div class="evidence-list" ng-show="evidenceVisible">
+          <div ng-repeat="ev in outcomeEvidence" class="evidence-item">
+            <i class="fa" ng-class="ev.icon"/>
+            <a ng-href="{{ev['@id']}}">{{ev.title}}</a>
+          </div>
+        </div>
       </div>
       <div class="title">{{unit.title}}</div>
       <prog-bar value="percentage" class="accent small"></prog-bar>

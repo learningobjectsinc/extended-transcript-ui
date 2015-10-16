@@ -7,7 +7,7 @@ import moment from "moment";
 import _ from 'lodash';
 import './transcript.less';
 
-import defaultRop from "json!../rop.json";
+import defaultRop from "../rop.js";
 
 export default ['$http', function($http){
   return {

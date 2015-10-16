@@ -30,7 +30,6 @@ export default ['TranscriptService', function(transcriptService){
            .map(transcriptService.competencyIsCompleted)
            .reduce(avg, 0)
            .value();
-      console.log('got:', percentage);
       scope.percentage = Math.round(percentage*100);
       scope.courseMatchesOutcome = transcriptService.courseMatchesOutcome;
     }

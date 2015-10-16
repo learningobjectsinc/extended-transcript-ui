@@ -1,4 +1,7 @@
-{
+//todo: remove when trascript is dynamic
+import evidence from 'file!../evidence/118/198234.pdf';
+
+export default {
     "@context": {
         "@vocab": "http://purl.kinexis.com:8888/ctx/cbe/v1/record_of_performance/"
     },
@@ -59,7 +62,11 @@
                         "outcome":{
                             "@id":"http://example.com/outcomes/5",
                             "title":"Integrate information technology to align with nursing practice."
-                        }
+                        },
+                        "evidence":[{
+                            "@id":evidence,
+                            "title":"Performance Improvement Using Early Warning"
+                        }]
                     },
                     {
                         "@id": "http://purl.kinexis.com:8888/competencies/119",

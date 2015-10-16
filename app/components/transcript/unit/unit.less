@@ -1,3 +1,5 @@
+@import '../../../styles/main.less';
+
 .course {
   margin-left: 2.5em;
 
@@ -18,4 +20,40 @@
 
 button.dropdown{
   float: left;
+}
+
+.course .right{
+  position:relative;
+}
+
+.evidence-list{
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  top: 0;
+  right: ~"calc(100% + 0px)";
+  border: 1px solid @color-primary;
+  border-radius: 0.25em;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  padding: 0.25em;
+  width: 20em;
+  
+  .evidence-item{
+    * {
+      display: inline-block;
+      vertical-align: top;
+    }
+    
+    .fa{
+      font-size: 1.5em;
+      color: @color-secondary;
+      margin-top: 3px;
+      margin-left: 3px;
+    }
+    a {
+      //the subtracted width needs to be aligned with the width of the icon (.fa)
+      width: ~"calc(100% - 35px)";
+      margin-left: 5px;
+    }
+  }
 }
