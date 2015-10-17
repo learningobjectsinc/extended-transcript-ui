@@ -14,7 +14,7 @@
         <span class="course-id">course: {{unit.label}}</span>
         <div class="evidence-list" ng-show="evidenceVisible">
           <div ng-repeat="ev in outcomeEvidence" class="evidence-item">
-            <i class="fa" ng-class="ev.icon"/>
+            <i class="fa" ng-class="ev.icon"></i>
             <a ng-href="{{ev['@id']}}">{{ev.title}}</a>
           </div>
         </div>
