@@ -1,7 +1,9 @@
 
+@import '../../../styles/main.less';
+
 .competency{
   margin-left: 30px;
-  height: 34px;
+
   .competency-content{
     margin-left: 40px;
     padding-top: 0.5em;
@@ -46,6 +48,23 @@
     }
   }
 
-
+  .completion-date {
+    display: block;
+    margin-top: 0.25em;
+    * {
+      font-weight: 700;
+      display: inline-block;
+    }
+    
+    .date_label{
+      color: @color-dark-text;
+      text-transform: uppercase;
+      margin-right: 1em;
+    }
+    .date{
+      color: @color-secondary;
+      
+    }
+  }
 
 }

@@ -7,7 +7,7 @@ export default {
     },
     "@id": "http://purl.kinexis.com:8888/6675c410-1d03-0133-b54c-406c8f40a599",
     "@type": "RecordOfPerformance",
-    "created_at": "2015-09-10T23:26:00.089Z",
+    "created_at": "2015-05-05T04:00:00.000Z",
     "organization": {
         "@id": "http://purl.kinexis.com:8888/organizations/7",
         "legal_name": "Atlas University",
@@ -29,6 +29,7 @@ export default {
                         "achievement": "Basic",
                         "label": "MSN6414_1",
                         "statement": "Differentiate database standard terminologies used by different health information systems.",
+                        "date_completed":"2015-04-20T04:00:00.000Z",
                         "outcome":{
                             "@id":"http://example.com/outcomes/5",
                             "title":"Integrate information technology to align with nursing practice."
@@ -39,6 +40,7 @@ export default {
                         "achievement": "Distinguished",
                         "label": "MSN6414_2",
                         "statement": "Apply data management techniques to decision making in nursing practice.",
+                        "date_completed":"2015-04-20T04:00:00.000Z",
                         "outcome":{
                             "@id":"http://example.com/outcomes/5",
                             "title":"Integrate information technology to align with nursing practice."
@@ -59,6 +61,7 @@ export default {
                         "achievement": "Basic",
                         "label": "MSN6414_4",
                         "statement": "Articulate strategies for querying and generating reports from health information system databases.",
+                        "date_completed":"2015-04-20T04:00:00.000Z",
                         "outcome":{
                             "@id":"http://example.com/outcomes/5",
                             "title":"Integrate information technology to align with nursing practice."
