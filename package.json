@@ -11,7 +11,8 @@
     "babel-core": "^5.6.7",
     "babel-loader": "^5.2.1",
     "webpack": "1.9.8",
-    "less-loader": "^2.0.0",
+    "grunt-sass": "^1.1.0-beta",
+    "grunt-concurrent": "^2.0.3",
     "css-loader": "~0.9.0",
     "jshint-loader": "~0.8.0",
     "jsx-loader": "~0.12.2",
@@ -23,6 +24,7 @@
     "grunt-contrib-compress": "^0.13.0",
     "grunt-contrib-connect": "~0.8.0",
     "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
     "grunt-karma": "~0.8.3",
     "grunt-open": "~0.2.3",
     "grunt-string-replace": "^1.0.0",
@@ -47,9 +49,7 @@
     "json-loader": "^0.5.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "webpack",
-    "dev": "webpack-dev-server --port 9000 --content-base src/main/resources/loi/cp/domain/ --hot"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"

@@ -1,6 +1,5 @@
-@import '../../../styles/main.less';
 
-@width-percentage: 60px;
+$width-percentage: 60px;
 
 .outcome{
   margin-bottom: 1em;
@@ -12,18 +11,18 @@
       vertical-align:middle;
   }
   .prog-bar{
-    width: @width-body - @width-percentage;
+    width: $width-body - $width-percentage;
   }
   .percentage{
-    color: @color-primary;
+    color: $color-primary;
     font-weight: 700;
     font-size:1.5em;
-    width: @width-percentage;
+    width: $width-percentage;
     text-align: right;
   }
 }
 
 .outcome-title{
   font-size: 1.25em;
-  color: @color-primary;
+  color: $color-primary;
 }

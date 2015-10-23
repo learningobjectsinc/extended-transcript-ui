@@ -37,6 +37,9 @@ module.exports = function (grunt) {
           replacements: [{
             pattern: new RegExp(/\/assets\//g),
             replacement: '$$$url/assets/'
+          },{
+            pattern: new RegExp(/\/styles\/index.css/g),
+            replacement: '/styles/index.sass'
           }]
         }
       }
@@ -48,7 +51,10 @@ module.exports = function (grunt) {
         port: 9000,
         webpack: webpackDevConfig,
         publicPath: '/assets/',
-        contentBase: './<%= pkg.src %>/',
+        contentBase: './<%= pkg.dist %>/',
+        headers: {
+          //"Content-Type":'text/css'
+        }
       },
 
       start: {
@@ -93,30 +99,29 @@ module.exports = function (grunt) {
 
     copy: {
       dist: {
-        files: [
-          // includes files within path
-          // {
-          //   flatten: true,
-          //   expand: true,
-          //   src: ['<%= pkg.src %>/*'],
-          //   dest: '<%= pkg.dist %>/',
-          //   filter: 'isFile'
-          // }, {
-          {
-              src: '<%= pkg.src %>/index.html',
-              dest: '<%= pkg.dist %>/index.html',
-
-          },
-          {
-              src: '<%= pkg.src %>/car.json',
-              dest: '<%= pkg.dist %>/car.json'
-          }
-        ],
+        files: [{
+          src: '<%= pkg.src %>/index.html',
+          dest: '<%= pkg.dist %>/index.html',
+        },{
+          src: '<%= pkg.src %>/car.json',
+          dest: '<%= pkg.dist %>/car.json'
+        },{
+          cwd: '<%= pkg.src %>',
+          expand: true,
+          src: ['**/*.scss', '**/*.sass', '!**/variables.scss'],
+          dest: '<%= pkg.dist %>/assets/'
+        }],
         options: {
           process: function(content, path) {
               return grunt.template.process(content, {data:{'prefix':'$$url'}});
           }
         }
+      },
+      dev:{
+        files:[{
+          src: '<%= pkg.src %>/index.html',
+          dest: '<%= pkg.dist %>/index.html'
+        }]
       }
     },
 
@@ -145,6 +150,36 @@ module.exports = function (grunt) {
           expand:true
         }]
       }
+    },
+
+    sass: {
+      dev:{
+        options: {
+          sourceMap: true
+        },
+        files: {
+          '<%= pkg.dist %>/assets/styles/index.css': '<%= pkg.src %>/styles/index.sass'
+        }
+      }
+    },
+
+    watch: {
+      scripts: {
+        files: ['<%= pkg.src %>/**/*.scss', '<%= pkg.src %>/**/*.sass'],
+        tasks: ['sass:dev'],
+        options: {
+          spawn: true,
+        }
+      },
+    },
+
+    concurrent: {
+      options: {
+        logConcurrentOutput: true
+      },
+      dev: {
+        tasks: ['watch', 'webpack-dev-server']
+      }
     }
   });
 
@@ -154,8 +189,11 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
+      'clean:dist',
       'open:dev',
-      'webpack-dev-server'
+      'copy:dev',
+      'sass:dev',
+      'concurrent:dev'
     ]);
   });
 

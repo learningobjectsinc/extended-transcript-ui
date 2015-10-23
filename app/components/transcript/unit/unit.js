@@ -2,8 +2,6 @@
 import request from 'superagent';
 import _ from 'lodash';
 
-import './unit.less';
-
 import template from './unit.html';
 
 export default ['TranscriptService', function(transcriptService){

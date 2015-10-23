@@ -10,7 +10,6 @@ import 'font-awesome/css/font-awesome.css';
 
 //Styles
 import 'bootstrap/dist/css/bootstrap.css';
-import './styles/main.less';
 
 //ET components
 import headerModule from './components/header/headerModule';

@@ -5,7 +5,6 @@ import template from './transcript.html';
 import domain_logo from '../../images/Atlas.png';
 import moment from "moment";
 import _ from 'lodash';
-import './transcript.less';
 
 import defaultRop from "../rop.js";
 

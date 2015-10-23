@@ -1,4 +1,4 @@
-@import '../../../styles/main.less';
+
 
 .course {
   margin-left: 2.5em;
@@ -32,7 +32,7 @@ button.dropdown{
   background-color: white;
   top: 0;
   right: 100%;// ~"calc(100% + 0px)";
-  border: 1px solid @color-primary;
+  border: 1px solid $color-primary;
   border-radius: 0.25em;
   box-shadow: 0 5px 10px rgba(0,0,0,.2);
   padding: 0.25em;
@@ -46,13 +46,13 @@ button.dropdown{
     
     .fa{
       font-size: 1.5em;
-      color: @color-secondary;
+      color: $color-secondary;
       margin-top: 3px;
       margin-left: 3px;
     }
     a {
       //the subtracted width needs to be aligned with the width of the icon (.fa)
-      width: ~"calc(100% - 35px)";
+      width: unquote("calc(100% - 35px)");
       margin-left: 5px;
     }
   }

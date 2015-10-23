@@ -1,10 +1,10 @@
-@color-primary: #2d3e4e;
-@color-secondary: #9e0c0f;
-@color-accent: #f5b90b;
-@color-light-text: #a6a99e;
-@color-dark-text: #7f7f7f;
+$color-primary: #2d3e4e;
+$color-secondary: #9e0c0f;
+$color-accent: #f5b90b;
+$color-light-text: #a6a99e;
+$color-dark-text: #7f7f7f;
 
-@width-body: 850px;
+$width-body: 850px;
 
 html, body {
   height: 100%;
@@ -24,13 +24,13 @@ html, body {
 }
 
 .content{
-  width: @width-body;
+  width: $width-body;
   margin: 0 auto;
   display: block;
 }
 
 .top-header{
-  background-color: @color-secondary;
+  background-color: $color-secondary;
   color: #FFF;
   padding: 1em 0;
 
@@ -43,12 +43,11 @@ html, body {
   }
 }
 .bottom-header{
-  background-image: url(../images/transcript-bg.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
 
-  //background-color: lighten(@color-primary, 10%);
+  //background-color: lighten($color-primary, 10%);
   color: #FFF;
 
   .content div{
@@ -56,7 +55,7 @@ html, body {
   }
   .overlay{
     padding: 1.5em 0;
-    background-color: fadeout(@color-primary, 30%);
+    background-color: fade-out($color-primary, .3);
     height:100%;
     width:100%;
   }
@@ -69,7 +68,7 @@ html, body {
 .transcript{
   padding-top: 1em;
   .transcript-label{
-    color:@color-light-text;
+    color:$color-light-text;
     span{
       font-size: 1.5em;
       font-weight: bold;
@@ -82,8 +81,8 @@ html, body {
   }
 
   .transcript-header{
-    background-color: @color-primary;
-    border-top: 3px solid @color-secondary;
+    background-color: $color-primary;
+    border-top: 3px solid $color-secondary;
     padding:0.5em;
     color: #FFF;
 
@@ -101,7 +100,7 @@ html, body {
 
   .transcript-body{
     margin-top:1em;
-    color: @color-dark-text;
+    color: $color-dark-text;
 
     .program{
       font-size: 1.25em;
@@ -121,10 +120,12 @@ html, body {
 }
 
 .prog-bar{
+  $border-radius-bar: 2px;
+  
   transform: translate3d(0,0,0);
-  @border-radius-bar: 2px;
-  border: 1px solid @color-primary;
-  border-radius: @border-radius-bar;
+  border-radius: 2px;  
+  border: 1px solid $color-primary;
+  border-radius: $border-radius-bar;
   color: #FFF;
   position: relative;
   height: 35px;
@@ -132,8 +133,8 @@ html, body {
 
   .prog-bar-inner{
     font-size: 1.25em;
-    background-color: @color-primary;
-    border-radius: @border-radius-bar;
+    background-color: $color-primary;
+    border-radius: $border-radius-bar;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     transition-timing-function:ease-out;
@@ -152,10 +153,10 @@ html, body {
   }
 
   &.accent{
-    border: lighten(@color-accent, 45%);
-    background-color: lighten(@color-accent, 45%);
+    border: lighten($color-accent, 45%);
+    background-color: lighten($color-accent, 45%);
     .prog-bar-inner{
-      background-color: @color-accent;
+      background-color: $color-accent;
     }
   }
 
@@ -199,18 +200,18 @@ button.secondary{
   margin-bottom: 1em;
 }
 
-.thin-scrollbar(@size, @ts-bg-color, @rounded: 0) {
+@mixin thin-scrollbar($size, $ts-bg-color, $rounded: 0) {
   &::-webkit-scrollbar{
     position:absolute;
-    height: @size; /* for vertical scrollbars */
-    width:  @size; /* for horizontal scrollbars */
+    height: $size; /* for vertical scrollbars */
+    width:  $size; /* for horizontal scrollbars */
   }
   &::-webkit-scrollbar-track{
     background: rgba(0,0,0,0);
   }
   &::-webkit-scrollbar-thumb{
-    border-radius: @rounded;
-    background: lighten(@ts-bg-color, 30%);
+    border-radius: $rounded;
+    background: lighten($ts-bg-color, 30%);
   }
 }
 
