@@ -17,13 +17,8 @@
   .competency-checkmark{
     float:left;
     text-align: center;
-    background-image: url('../../../images/unchecked.jpg');
     height: 34px;
     width: 34px;
-
-    &.checked {
-      background-image: url('../../../images/checked.jpg');
-    }
   }
 
   .achievement{
