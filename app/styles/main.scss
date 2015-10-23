@@ -46,6 +46,7 @@ html, body {
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
+  height: 7em;
 
   //background-color: lighten($color-primary, 10%);
   color: #FFF;
@@ -54,7 +55,7 @@ html, body {
     display:inline-block;
   }
   .overlay{
-    padding: 1.5em 0;
+    padding: 2em 0;
     background-color: fade-out($color-primary, .3);
     height:100%;
     width:100%;
