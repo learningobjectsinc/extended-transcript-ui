@@ -1,14 +1,15 @@
 <div>
-  <div class="content transcript">
+  <div class="content transcript-input-form">
+    <input type="text"
+         ng-change="updateTranscript(transcriptUrl)"
+         ng-model="transcriptUrl"
+         placeholder="url"></input>
+    Url to transcript
+    <i ng-if="transcriptLoading" class="fa fa-circle-o-notch fa-spin"></i>
+  </div>
+  <div class="content transcript" ng-if="!transcriptLoading">
     <div class="transcript-label">
       <span>Official Transcript</span>
-      <div class="transcript-input-form" ng-if='debug'>
-        <input type="text"
-             ng-change="updateTranscript(transcriptUrl)"
-             ng-model="transcriptUrl"
-             placeholder="Url to transcript"></input>
-        <i ng-if="transcriptLoading" class="fa fa-circle-o-notch fa-spin"></i>
-      </div>
       <div class="right">
         <div>This is an official transcript from the All American University Office of the Registrar.</div>
         <div>Student information is guaranteed unaltered from the source.</div>
@@ -35,8 +36,5 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="debugInfo" ng-if="debug">
-    debug mode on
   </div>
 </div>
