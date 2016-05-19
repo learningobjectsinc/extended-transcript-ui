@@ -6,7 +6,7 @@ import domain_logo from '../../images/Atlas.png';
 import moment from "moment";
 import _ from 'lodash';
 
-export default ['$http', 'TranscriptService', '$stateParams', function($http, transcriptService, $stateParams){
+export default ['$http', 'transcriptService', '$stateParams', function($http, transcriptService, $stateParams){
   return {
     restrict:'E',
     replace:true,
@@ -20,8 +20,8 @@ export default ['$http', 'TranscriptService', '$stateParams', function($http, tr
       transcriptService.getTranscriptForUser($stateParams.userId)
       .then(transcript => {
         scope.transcriptLoading = false;
+        console.log('got:', transcript)
         scope.transcript = transcript;
-        scope.transcript.created_at = moment(scope.transcript.created_at).format('MM/DD/YYYY');
       });
     }
   };

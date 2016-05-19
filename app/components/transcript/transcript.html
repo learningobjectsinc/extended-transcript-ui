@@ -20,10 +20,7 @@
     </div>
 
     <div class="transcript-body">
-      <div class="program">
-        <div class="level">{{transcript.program.degree_level}}</div>
-        <div class="program-label">{{transcript.program.label}}</div>
-      </div>
+      <program ng-repeat="program in transcript.programs" program="program"/>
       <div class="unit-list">
         <div ng-repeat="outcome in outcomes">
           <outcome outcome="outcome" transcript="transcript"></outcome>

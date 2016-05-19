@@ -7,7 +7,7 @@ import template from './competency.html';
 import unchecked from '../../../images/unchecked.jpg';
 import checked from '../../../images/checked.jpg';
 
-export default ['TranscriptService', function(transcriptService){
+export default ['transcriptService', function(transcriptService){
   return {
     restrict:'E',
     replace:true,

@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 import template from './outcome.html';
 
-export default ['TranscriptService', function(transcriptService){
+export default ['transcriptService', function(transcriptService){
   return {
     restrict:'E',
     replace:true,
