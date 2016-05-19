@@ -21,11 +21,14 @@
 
     <div class="transcript-body">
       <program ng-repeat="program in transcript.programs" program="program"/>
+      <progress ng-repeat="progress in transcript.progress" progress="progress"/>
+      <!--
       <div class="unit-list">
         <div ng-repeat="outcome in outcomes">
           <outcome outcome="outcome" transcript="transcript"></outcome>
         </div>
       </div>
+    -->
     </div>
   </div>
 </div>

@@ -28,6 +28,9 @@ export default ['$http', function($http){
   this.convertTranscript = function(extendedTranscript){
     const transcript = {};
     transcript.user = extendedTranscript.user;
+    transcript.progress = extendedTranscript.progress;
+
+    console.log('uh, got: ', transcript.progress);
     transcript.created_at = moment(extendedTranscript.created_at).format('MM/DD/YYYY');
 
     transcript.programs =
