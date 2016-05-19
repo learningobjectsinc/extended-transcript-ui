@@ -12,13 +12,16 @@ export default ['$http', 'TranscriptService', '$stateParams', function($http, tr
     replace:true,
     templateUrl:template,
     link: function(scope, element){
-      console.log('got:', $stateParams);
 
       scope.domain_logo_secondary = domain_logo;
 
       scope.transcriptLoading = true;
 
-      transcriptService.getTranscriptForUser($stateParams.userId);
+      transcriptService.getTranscriptForUser($stateParams.userId)
+      .then(transcript => {
+        scope.transcriptLoading = false;
+        scope.transcript = transcript;
+      });
     }
   };
 }];

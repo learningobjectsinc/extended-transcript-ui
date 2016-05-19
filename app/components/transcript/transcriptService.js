@@ -46,7 +46,7 @@ export default ['$http', function($http){
 
     return $http.get(url)
     .then(function(res){
-      console.log('got response: ', res);
+      return res.data;
       /*
       scope.transcriptLoading = false;
       scope.transcript = res.data;
