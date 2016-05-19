@@ -38,11 +38,12 @@
   },
   "dependencies": {
     "angular": "1.4.1",
-    "angular-ui-router": "^0.2.15",
+    "angular-ui-router": "^0.2.18",
     "bootstrap": "^3.3.5",
     "copy-loader": "^0.1.2",
     "font-awesome": "^4.3.0",
     "html-loader": "^0.3.0",
+    "json-loader": "^0.5.2",
     "lodash": "^3.10.1",
     "moment": "^2.9.0",
     "ngreact": "^0.1.5",
@@ -50,8 +51,7 @@
     "react": "0.12.2",
     "react-bootstrap": "^0.17.0",
     "react-router": "^0.11.6",
-    "superagent": "^1.1.0",
-    "json-loader": "^0.5.2"
+    "superagent": "^1.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
