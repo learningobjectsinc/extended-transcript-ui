@@ -21,6 +21,7 @@ export default ['$http', 'TranscriptService', '$stateParams', function($http, tr
       .then(transcript => {
         scope.transcriptLoading = false;
         scope.transcript = transcript;
+        scope.transcript.created_at = moment(scope.transcript.created_at).format('MM/DD/YYYY');
       });
     }
   };
