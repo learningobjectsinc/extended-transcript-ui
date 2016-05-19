@@ -23,6 +23,12 @@ export var app = angular.module('et', [
   uiModule.name
 ]);
 
+app.config(['$httpProvider', function($httpProvider) {
+  if(window.lo_api_config){
+    $httpProvider.defaults.headers.common['Authorization'] = `Bearer ${window.lo_api_config.apiKey}`;
+  }
+}]);
+
 angular.element(document).ready(function () {
   angular.bootstrap(document, [app.name], {
     //strictDi: true

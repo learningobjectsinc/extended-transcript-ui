@@ -37,5 +37,33 @@ export default ['$http', function($http){
     return percentage >= 0.5;
   };
 
+  TranscriptService.getTranscriptForUser = function(user){
+    //todo: pull this out to siome sort of filter
+    const url = window.lo_api_config ?
+      window.lo_api_config.root + `/api/v2/users/${user}/transcript`:
+      `/api/v2/users/${user}/transcript`;
+
+
+    return $http.get(url)
+    .then(function(res){
+      console.log('got response: ', res);
+      /*
+      scope.transcriptLoading = false;
+      scope.transcript = res.data;
+      scope.transcript.created_at = moment(scope.transcript.created_at).format('l');
+      scope.outcomes = _.chain(scope.transcript.program.courses)
+        .pluck("competencies")
+        .flatten()
+        .map(function(comp){return comp.outcome;})
+        .uniq(function(outcome){return outcome["@id"];})
+        .value();
+      console.log('got response', res);
+    }, function(res){
+      console.error('got error', res);
+      scope.transcriptLoading = false;
+      */
+    });
+  }
+
   return TranscriptService;
 }];
