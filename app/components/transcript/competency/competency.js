@@ -13,25 +13,24 @@ export default ['transcriptService', function(transcriptService){
     replace:true,
     templateUrl:template,
     scope:{
-      competency:'=',
-      levels:'='
+      progress:'='
     },
     link: function(scope, element){
-      var levels = [
-        "Basic", "NonProficient", "Proficient", "Distinguished"
-      ];
 
-      scope.percentage =
-          (levels.indexOf(scope.competency.achievement) + 1) /
-          levels.length;
+      console.log('rendering: ', scope.competency);
 
-      scope.completed = transcriptService.competencyIsCompleted(scope.competency);
+      // todo: what if it's a course achievement?
+      scope.competency = scope.progress.towards;
+
+      const percentage = scope.progress.achievement_percent;
+
+      const completed = percentage > 0;
 
       scope.checkMarkStyle = {
-        "background-image": 'url(' + (scope.completed ? checked : unchecked) + ')'
+        "background-image": 'url(' + (completed ? checked : unchecked) + ')'
       };
-      if(scope.competency.date_completed){
-          scope.completionDate = moment(scope.competency.date_completed).format("M.D.YY");
+      if(scope.progress.date_completed){
+          scope.completionDate = moment(scope.progress.date_completed).format("M.D.YY");
       }
     }
   };

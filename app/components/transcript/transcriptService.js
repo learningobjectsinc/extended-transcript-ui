@@ -7,8 +7,12 @@ export default ['$http', function($http){
 
   //the 'levels' of competencies
   var levels = [
-    "NonProficient", "Basic", "Proficient", "Distinguished"
+    "Incomplete", "Basic", "Proficient", "Mastered"
   ];
+
+  this.getLevels = function(){
+    return levels;
+  };
 
   this.getTranscriptForUser = function(user){
     //todo: pull this out to siome sort of filter
@@ -28,9 +32,14 @@ export default ['$http', function($http){
   this.convertTranscript = function(extendedTranscript){
     const transcript = {};
     transcript.user = extendedTranscript.user;
-    transcript.progress = extendedTranscript.progress;
+    transcript.progress = extendedTranscript.progress
+      .filter(progress => progress.completed)
+      .map(progress => {
+        progress.achievement_percent =
+          (levels.indexOf(progress.achievement_level.level) +1) / levels.length;
+        return progress;
+      });
 
-    console.log('uh, got: ', transcript.progress);
     transcript.created_at = moment(extendedTranscript.created_at).format('MM/DD/YYYY');
 
     transcript.programs =
