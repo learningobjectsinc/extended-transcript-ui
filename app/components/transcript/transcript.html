@@ -3,31 +3,22 @@
     <input type="text"
          ng-change="updateTranscript(transcriptUrl)"
          ng-model="transcriptUrl"
-         placeholder="url"></input>
+         placeholder="url">
     Url to transcript
     <i ng-if="transcriptLoading" class="fa fa-circle-o-notch fa-spin"></i>
   </div>
   <div class="content transcript" ng-if="!transcriptLoading">
-    <div class="transcript-label">
-      <span>Official Transcript</span>
-      <div class="right">
-        <div>This is an official transcript from the All American University Office of the Registrar.</div>
-        <div>Student information is guaranteed unaltered from the source.</div>
-      </div>
-    </div>
-
-    <div class="transcript-header">
-      <img ng-src="{{domain_logo_secondary}}" class="logo"/>
-      <div class="right">
-        <div class="user-name">{{transcript.user.givenName}} {{transcript.user.familyName}}</div>
-        <div class="user-id">Student Id: {{transcript.user.sourced_id}}</div>
-        <div class="rop-time">Status as of: {{transcript.created_at}}</div>
-      </div>
-    </div>
-
     <div class="transcript-body">
       <div class="program">
-        <div class="level">{{transcript.program.degree_level}}</div>
+        <h2 class="level">
+          {{transcript.program.degree_level}}
+          <div class="right">
+            <button class="btn btn-secondary">
+              Share
+              <span>&raquo;</span>
+            </button>
+          </div>
+        </h2>
         <div class="program-label">{{transcript.program.label}}</div>
       </div>
       <div class="unit-list">

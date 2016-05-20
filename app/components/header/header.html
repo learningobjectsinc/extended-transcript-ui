@@ -1,5 +1,5 @@
-<div>
-  <!--
+<div class="header-wrap">
+  <div class="header-bg" ng-style="bottomHeaderStyle"></div>
   <div class="top-header">
     <div class="content">
       <div class="logo">
@@ -7,19 +7,23 @@
       </div>
       <div class="user">
         <h1>{{transcript.user.givenName}} {{transcript.user.familyName}}</h1>
+        <div class="user-id">Student Id: {{transcript.user.sourced_id}}</div>
+        <div class="rop-time">Status as of: {{transcript.created_at}}</div>
+        <div class="btn-dash">
+          <button class="btn btn-white btn-outline">
+            <span>&laquo;</span>
+            Dashboard
+          </button>
+        </div>
       </div>
     </div>
   </div>
--->
-  <div class="bottom-header" ng-style="bottomHeaderStyle">
-    <div class="overlay">
-      <div class="content">
-        <div class="">
-          <button class="btn btn-default">Dashboard</button>
-        </div>
-        <div class="right">
-          <button class="btn btn-default">Send</button>
-        </div>
+  <div class="middle-header">
+    <div class="transcript-label content">
+      <span>Official Transcript</span>
+      <div class="right">
+        <div>This is an official transcript from the All American University Office of the Registrar.</div>
+        <div>Student information is guaranteed unaltered from the source.</div>
       </div>
     </div>
   </div>
