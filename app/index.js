@@ -36,12 +36,12 @@ app.config(['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlRouterP
   // Now set up the states
   $stateProvider
     .state('userTranscript', {
-      url: "/transcript/:userId",
+      url: "/:userId",
       template: '<transcript></transcript>'
     })
     .state('transcripts', {
-      url: "/transcripts",
-      template: '<div>what what</div>'
+      url: "/",
+      template: '<div>Base</div>'
     });
 }]);
 
