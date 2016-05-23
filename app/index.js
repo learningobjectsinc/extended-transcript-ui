@@ -25,7 +25,7 @@ export var app = angular.module('et', [
 ]);
 
 app.config(['$httpProvider', function($httpProvider) {
-  if(window.lo_api_config){
+  if(window.lo_api_config && window.lo_api_config.apiKey){
     $httpProvider.defaults.headers.common['Authorization'] = `Bearer ${window.lo_api_config.apiKey}`;
   }
 }]);
