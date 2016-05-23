@@ -12,12 +12,10 @@ export default ['transcriptService', function(transcriptService){
     restrict:'E',
     replace:true,
     templateUrl:template,
-    scope:{
+    scope: {
       progress:'='
     },
     link: function(scope, element){
-
-      console.log('rendering: ', scope.progress);
 
       // todo: what if it's a course achievement?
       scope.competency = scope.progress.towards;
