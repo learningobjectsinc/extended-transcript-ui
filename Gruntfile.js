@@ -40,6 +40,12 @@ module.exports = function (grunt) {
           },{
             pattern: new RegExp(/\/styles\/index.css/g),
             replacement: '/styles/index.sass'
+          },{
+            pattern: new RegExp(/\$ROOT_URL\$/g),
+            replacement: '\'/\''
+          },{
+            pattern: new RegExp(/\$API_KEY\$/g),
+            replacement: 'undefined'
           }]
         }
       },
@@ -53,10 +59,10 @@ module.exports = function (grunt) {
         options: {
           replacements: [{
             pattern: new RegExp(/\$ROOT_URL\$/g),
-            replacement: grunt.option('host') || 'http://localhost:8080'
+            replacement: grunt.option('host') ? "\'" + grunt.option('host') + "\'" : '\'http://localhost:8080\''
           },{
             pattern: new RegExp(/\$API_KEY\$/g),
-            replacement: grunt.option('apiKey') || 'secret'
+            replacement: grunt.option('apiKey') ? "\'" + grunt.option('apiKey') + "\'" : '\'secret\''
           }]
         }
       }

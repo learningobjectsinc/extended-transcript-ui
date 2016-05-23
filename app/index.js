@@ -31,7 +31,7 @@ app.config(['$httpProvider', function($httpProvider) {
 }]);
 
 app.config(['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlRouterProvider) => {
-  $urlRouterProvider.otherwise("/transcript");
+  $urlRouterProvider.otherwise("/");
   //
   // Now set up the states
   $stateProvider
