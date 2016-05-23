@@ -9,7 +9,7 @@
         "implementation": "loi.cp.generic.GenericServlet",
         "annotations": {
           "com.learningobjects.cpxp.component.web.ServletBinding": {
-            "path": "/extended-transcript"
+            "path": "/transcript"
           }
         }
     }],
