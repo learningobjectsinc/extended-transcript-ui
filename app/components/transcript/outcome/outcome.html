@@ -1,6 +1,6 @@
 <div class="outcome">
   <div class="outcome-title">
-      {{outcome.title}}
+      {{outcome.towards.statement}}
   </div>
   <div class="outcome-progress">
     <prog-bar value="percentage">
@@ -12,7 +12,6 @@
        class="secondary"
        ng-class="{'expanded':unitsVisible}">detail</button>
   <div ng-if="unitsVisible">
-    <unit ng-repeat="course in transcript.program.courses | filter:courseMatchesOutcome(outcome)"
-          unit="course" outcome="outcome"></unit>
+    <competency ng-repeat="competency in outcome.competencies" competency="competency"></competency>
   </div>
 </div>

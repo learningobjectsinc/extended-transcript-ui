@@ -14,13 +14,13 @@ export default ['transcriptService', function(transcriptService){
       transcript:'='
     },
     link: function(scope, element){
-
       function avg(a,m,i,p) {
           return a + m/p.length;
       }
 
       scope.unitsVisible = false;
-      var percentage =
+      var percentage = scope.outcome.achievement_percent;
+      /*
           _.chain(scope.transcript.program.courses)
            .pluck("competencies")
            .flatten()
@@ -28,6 +28,7 @@ export default ['transcriptService', function(transcriptService){
            .map(transcriptService.competencyIsCompleted)
            .reduce(avg, 0)
            .value();
+           */
       scope.percentage = Math.round(percentage*100);
       scope.courseMatchesOutcome = transcriptService.courseMatchesOutcome;
     }

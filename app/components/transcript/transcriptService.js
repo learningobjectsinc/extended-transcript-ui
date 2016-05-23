@@ -64,7 +64,6 @@ export default ['$http', '$q', function($http, $q){
         .filter(target => target['@type'] === 'Program');
 
     transcript.hierarchy = this.buildHierarchy(transcript.progress);
-
     return transcript;
   };
 
@@ -75,10 +74,11 @@ export default ['$http', '$q', function($http, $q){
 
     console.log('found Top Level Competencies: ', topLevelCompetencies);
 
-    return topLevelCompetencies.map(tl =>
+    return topLevelCompetencies.map(tl => {
       tl.competencies = progress
         .filter(p => p.towards.parent)
-        .find(p => p.towards.parent['@id'] === tl.towards['@id'])
-    );
+        .filter(p => p.towards.parent['@id'] === tl.towards['@id'])
+      return tl;
+    });
   };
 }];
