@@ -17,7 +17,7 @@ export default ['transcriptService', function(transcriptService){
     },
     link: function(scope, element){
 
-      console.log('rendering: ', scope.competency);
+      console.log('rendering: ', scope.progress);
 
       // todo: what if it's a course achievement?
       scope.competency = scope.progress.towards;

@@ -47,6 +47,8 @@ export default ['$http', function($http){
         .map(progress => progress.towards)
         .filter(target => target['@type'] === 'Program');
 
+    console.log('computed:', transcript);
+
     return transcript;
   };
 }];
