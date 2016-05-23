@@ -42,7 +42,7 @@ module.exports = function (grunt) {
             replacement: '/styles/index.sass'
           },{
             pattern: new RegExp(/\$ROOT_URL\$/g),
-            replacement: '\'/\''
+            replacement: '\'\''
           },{
             pattern: new RegExp(/\$API_KEY\$/g),
             replacement: 'undefined'
