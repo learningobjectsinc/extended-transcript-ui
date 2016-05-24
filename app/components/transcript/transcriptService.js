@@ -2,7 +2,7 @@
 
 import _ from 'lodash';
 import moment from 'moment';
-import mockTranscript from './mockTranscript';
+//import mockTranscript from './mockTranscript';
 
 export default ['$http', '$q', function($http, $q){
 
@@ -16,15 +16,15 @@ export default ['$http', '$q', function($http, $q){
   };
 
   this.getTranscriptForUser = function(user){
-    // //todo: pull this out to siome sort of filter
-    // const url = window.lo_api_config ?
-    //   window.lo_api_config.root + `/api/v2/users/${user}/transcript`:
-    //   `/api/v2/users/${user}/transcript`;
-    //
-    // return $http.get(url)
-    // .then(res => {
-    //   return this.convertTranscript(res.data);
-    // });
+    //todo: pull this out to siome sort of filter
+    const url = window.lo_api_config ?
+      window.lo_api_config.root + `/api/v2/users/${user}/transcript`:
+      `/api/v2/users/${user}/transcript`;
+
+    return $http.get(url)
+    .then(res => {
+      return this.convertTranscript(res.data);
+    });
     return $q.when(mockTranscript).then(this.convertTranscript.bind(this));
   }
 

@@ -12,6 +12,6 @@
        class="secondary"
        ng-class="{'expanded':unitsVisible}">detail</button>
   <div ng-if="unitsVisible">
-    <competency ng-repeat="competency in outcome.competencies" competency="competency"></competency>
+    <competency ng-repeat="competency in outcome.competencies" progress="competency"></competency>
   </div>
 </div>

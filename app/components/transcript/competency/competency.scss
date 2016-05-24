@@ -30,13 +30,13 @@
     padding: 0 0.5em;
     margin-right: 0.5em;
 
-    &.NonProficient{
+    &.Incomplete{
       background-color: #FF0000;
     }
     &.Basic, &.Proficient{
       background-color: #F5B90B;
     }
-    &.Distinguished{
+    &.Mastered{
       background-color: #00A901;
     }
   }
