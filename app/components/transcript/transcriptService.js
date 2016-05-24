@@ -75,9 +75,10 @@ export default ['$http', '$q', function($http, $q){
     console.log('found Top Level Competencies: ', topLevelCompetencies);
 
     return topLevelCompetencies.map(tl => {
-      tl.competencies = progress
+      tl.competencies = _.sortBy(progress
         .filter(p => p.towards.parent)
-        .filter(p => p.towards.parent['@id'] === tl.towards['@id'])
+        .filter(p => p.towards.parent['@id'] === tl.towards['@id']),
+          p => p.towards.statement)
       return tl;
     });
   };
