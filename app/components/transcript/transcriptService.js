@@ -9,6 +9,7 @@ import moment from 'moment';
 import atlas from "file?name=[path][name].[ext]!../samples/atlas.json";
 import capella from "file?name=[path][name].[ext]!../samples/capella.json";
 import lfcc from "file?name=[path][name].[ext]!../samples/lfcc.json";
+import lipscomb from "file?name=[path][name].[ext]!../samples/lipscomb.json";
 
 export default ['$http', '$q', function($http, $q){
 
@@ -34,6 +35,7 @@ export default ['$http', '$q', function($http, $q){
           case 'atlas': return atlas;
           case 'capella': return capella;
           case 'lfcc': return lfcc;
+          case 'lipscomb': return lipscomb;
       }
 
       return window.lo_api_config ?
