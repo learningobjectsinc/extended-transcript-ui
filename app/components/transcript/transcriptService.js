@@ -4,8 +4,9 @@ import _ from 'lodash';
 import moment from 'moment';
 //import mockTranscript from './mockTranscript';
 
-import atlas from "file?name=[path][name].[ext]!../samples/atlas.json";
-import capella from "file?name=[path][name].[ext]!../samples/capella.json";
+const samplesDir = "file?name=[path][name].[ext]!../samples"
+import atlas from samplesDir+"/atlas.json";
+import capella from samplesDir+"/capella.json";
 
 export default ['$http', '$q', function($http, $q){
 
