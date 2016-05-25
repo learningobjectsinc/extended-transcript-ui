@@ -33,7 +33,7 @@ export default ['$http', 'transcriptService', '$stateParams', function($http, tr
           scope.domain_logo_secondary = transcript.organization.logo;
       }
 
-      transcriptService.getTranscriptForUser($stateParams.userId)
+      transcriptService.getTranscriptForUser($stateParams.userId, $stateParams.sample)
       .then(transcript => {
 
         scope.domain_logo_secondary = logo(transcript, transcript.organization.logo);
