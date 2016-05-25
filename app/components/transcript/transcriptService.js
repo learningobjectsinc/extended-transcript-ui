@@ -4,6 +4,8 @@ import _ from 'lodash';
 import moment from 'moment';
 //import mockTranscript from './mockTranscript';
 
+import atlas from "file?name=[path][name].[ext]!../samples/atlas.json";
+
 export default ['$http', '$q', function($http, $q){
 
   //the 'levels' of competencies
@@ -15,11 +17,33 @@ export default ['$http', '$q', function($http, $q){
     return levels;
   };
 
+  this.getTranscriptUrl = function(user) {
+      //
+      // Extract sample query param, and match against whitelist of samples.
+      //    If match, return sample json.
+      //    Else, use transcript api.
+      //
+      const matches = window.location.href.match(/sample=([^&]*)/);
+      const sample = !!matches && matches.length === 2 ? matches[1] : null;
+      
+      switch (sample) {
+          case 'atlas': return atlas;
+      }
+
+      return window.lo_api_config ?
+        window.lo_api_config.root + `/api/v2/users/${user}/transcript`:
+        `/api/v2/users/${user}/transcript`;
+  };
+
   this.getTranscriptForUser = function(user){
+
     //todo: pull this out to siome sort of filter
-    const url = window.lo_api_config ?
-      window.lo_api_config.root + `/api/v2/users/${user}/transcript`:
-      `/api/v2/users/${user}/transcript`;
+    const url = this.getTranscriptUrl(user);
+
+    // DEBUG:
+
+    console.dir("Fetching: "+url);
+    console.dir(window.location);
 
     return $http.get(url)
     .then(res => {

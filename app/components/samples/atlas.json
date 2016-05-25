@@ -1,0 +1,198 @@
+{
+    "@context": {
+        "@vocab": "http://purl.kinexis.com:8888/ctx/cbe/v1/record_of_performance/"
+    },
+    "@id": "http://purl.kinexis.com:8888/6675c410-1d03-0133-b54c-406c8f40a599",
+    "@type": "RecordOfPerformance",
+    "created_at": "2015-05-05T04:00:00.000Z",
+    "organization": {
+        "@id": "http://purl.kinexis.com:8888/organizations/7",
+        "@type": "Organization",
+        "legal_name": "Atlas University",
+        "website": "ili.imsglobal.org"
+    },
+    "progress": [
+        {
+            "@id": "http://purl.kinexis.com:8888/5ce4503a-c426-4deb-80e9-b374680a238a",
+            "@type": "Progress",
+            "completed": false,
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/programs/7",
+                "@type": "Program",
+                "degree_level": "Master of Science",
+                "title": "Nursing - Nursing Informatics"
+            }
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/8a5dbb9c-0e1c-47a8-95b9-7ad6edb2eb0f",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Completed?version=1",
+                "@type": "AchievementLevel",
+                "level": "Completed"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/course_sections/61",
+                "@type": "CourseSection",
+                "code": "MSN6414",
+                "title": "Data Management and Health Care Technology",
+                "description": "Learners in this course analyze the use of data and databases as key drivers in nursing informatics. Throughout the course, learners demonstrate competence in managing and interpreting data in such a way that enhances their roles and decision-making capabilities in today’s health care technology environments."
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/programs/7",
+                    "@type": "Program"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id":"http://example.com/competencies/5",
+                "@type": "Competency",
+                "code": "MSN6414",
+                "statement": "Integrate information technology to align with nursing practice.",
+                "children": [
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/115",
+                        "@type": "Competency",
+                        "code": "MSN6414_1",
+                        "statement": "Differentiate database standard terminologies used by different health information systems."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/115",
+                        "@type": "Competency",
+                        "code": "MSN6414_2",
+                        "statement": "Apply data management techniques to decision making in nursing practice."
+                    }
+                ]
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/61",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/115",
+                "@type": "Competency",
+                "code": "MSN6414_1",
+                "statement": "Differentiate database standard terminologies used by different health information systems.",
+                "parent": {
+                    "@id":"http://example.com/competencies/5",
+                    "@type": "Competency",
+                    "code": "MSN6414",
+                    "statement": "Integrate information technology to align with nursing practice."
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/61",
+                    "@type": "CourseSection"
+                }
+            ]
+        },{
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Proficient?version=2",
+                "@type": "AchievementLevel",
+                "level": "Proficient"
+            },
+            "date_completed": "",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/115",
+                "@type": "Competency",
+                "code": "MSN6414_2",
+                "statement": "Apply data management techniques to decision making in nursing practice.",
+                "parent": {
+                    "@id":"http://example.com/competencies/5",
+                    "@type": "Competency",
+                    "code": "MSN6414",
+                    "statement": "Integrate information technology to align with nursing practice."
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/61",
+                    "@type": "CourseSection"
+                }
+            ]
+        },{
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Completed?version=1",
+                "@type": "AchievementLevel",
+                "level": "Completed"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/course_sections/63",
+                "@type": "CourseSection",
+                "code": "MSN6416",
+                "title": "Managing the Nursing Informatics Life Cycle."
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/programs/7",
+                    "@type": "Program"
+                }
+            ]
+        },{
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Completed?version=1",
+                "@type": "AchievementLevel",
+                "level": "Completed"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/course_sections/64",
+                "@type": "CourseSection",
+                "code": "MSN6412",
+                "title": "Health Informatics Systems Planning, Analysis, Design, and Build for Nursing."
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/programs/7",
+                    "@type": "Program"
+                }
+            ]
+        }
+    ],
+    "user": {
+        "@id": "http://purl.kinexis.com:8888/users/14",
+        "@type": "Person",
+        "email": "tarne@hotmail.com",
+        "familyName": "Hafez",
+        "givenName": "Olivia",
+        "middleName": "R",
+        "sourced_id": 123456
+    }
+}
