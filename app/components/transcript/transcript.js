@@ -25,7 +25,7 @@ export default ['$http', 'transcriptService', '$stateParams', function($http, tr
               return isAtlas ? atlas_logo : null;
           } else if (!url.startsWith("http")) {
               const host = window.lo_api_config && window.lo_api_config.root
-              return host ? host + url : null;
+              return host ? host + url : url;
           } else {
               return url;
           }
