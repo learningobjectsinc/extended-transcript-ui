@@ -8,7 +8,9 @@
       {{percentage}}%
     </div>
   </div>
-  <button ng-click="unitsVisible = !unitsVisible"
+  <button
+       ng-show="showDetails"
+       ng-click="unitsVisible = !unitsVisible"
        class="secondary"
        ng-class="{'expanded':unitsVisible}">detail</button>
   <div ng-if="unitsVisible">

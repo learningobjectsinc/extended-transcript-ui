@@ -31,6 +31,7 @@ export default ['transcriptService', function(transcriptService){
            */
       scope.percentage = Math.round(percentage*100);
       scope.courseMatchesOutcome = transcriptService.courseMatchesOutcome;
+      scope.showDetails = scope.outcome.competencies.length > 0;
     }
   };
 }];

@@ -1,0 +1,654 @@
+{
+	"@context": {
+		"@vocab": "http://purl.kinexis.com:8888/ctx/cbe/v1/record_of_performance/"
+	},
+	"@id": "http://purl.kinexis.com:8888/1f7c2fb2-550e-4577-ae96-8b21a74e4ec7",
+	"@type": "RecordOfPerformance",
+	"created_at": "2014-03-03T00:00:00.000Z",
+	"instructional_text": "This transcript is official when downloaded directly from the Parchment Exchange website.To verify the validity of the transcript, go to exchange.parchment.com/d/, select the Tracking link in the header, and search for DID# T0QHL4G.",
+	"signatures": [{
+		"label": "Deborah Bushway, CAO",
+		"data": "VGlmZiBjb250YWluaW5nICJEZWJvcmFoIEJ1c2h3YXksIFBoRCI=",
+		"type": "image/tiff"
+	}],
+	"organization": {
+		"@id": "http://purl.kinexis.com:8888/organizations/9",
+		"@type": "Organization",
+		"legal_name": "Capella University",
+		"website": "http://www.capella.edu/",
+		"logo": "http://www.capella.edu/content/dam/capella/Logos/logo_capellaheader_237x37_030915.png/jcr:content/renditions/cq5dam.web.1280.1280.png"
+	},
+	"user": {
+		"@id": "http://purl.kinexis.com:8888/users/16",
+		"@type": "Person",
+		"email": "skenta@capella.edu",
+		"familyName": "Fish",
+		"givenName": "Gold",
+		"sourcedId": 78302397,
+		"role": "student",
+		"ext_address": "",
+		"ext_parchment_id": "11195885"
+	},
+	"issued_to": {
+		"@id": "http://purl.kinexis.com:8888/organizations/932",
+		"legal_name": "Capella University Test 2",
+		"address": "225 South 6th Street 9th Floor\nMinneapolis, MN 55402",
+		"phone": "8882273552",
+		"collegeId": "caap"
+	},
+	"ext_total_program_points": {
+		"pp_att": 10.5,
+		"ppe": 4.5
+	},
+	"progress": [
+		{
+			"@id": "http://purl.kinexis.com:8888/d8dc562e-b54e-47f6-bb9e-32d66f7c6890",
+			"@type": "Progress",
+			"completed": false,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/programs/9",
+				"@type": "Program",
+				"degree_level": "Master of Business Admin",
+				"title": "Master of Business Admin FP",
+				"plans": [{
+					"@id": "http://purl.kinexis.com:8888/plans/17",
+					"@type": "Plan",
+					"label": "General Business Admin FP"
+				}]
+			}
+		},{
+			"@id": "http://purl.kinexis.com:8888/a153b038-a572-446f-a497-acbe3b8b6c74",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/course_sections/81",
+				"@type": "CourseSection",
+				"label": "MBA-FP 6004",
+				"title": "Foundational Skills for Business Leaders"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/programs/9",
+				"@type": "Program"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/plans/17",
+				"@type": "Plan"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/fcb73738-f60a-4991-b540-359151cea359",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/course_sections/82",
+				"@type": "CourseSection",
+				"label": "MBA-FP 6006",
+				"title": "Leading Innovation in the Global Organization"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/programs/9",
+				"@type": "Program"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/plans/17",
+				"@type": "Plan"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/72517c86-f45a-49ef-a996-b2dde5dc7e3c",
+			"@type": "Progress",
+			"status": "Withdrawn",
+			"completed": false,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/course_sections/84",
+				"@type": "CourseSection",
+				"label": "MBA-FP 6012",
+				"title": "Integrated Global Marketing"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/programs/9",
+				"@type": "Program"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/plans/17",
+				"@type": "Plan"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/cc3a1b2c-6434-43a7-8b56-70ac5ce78e89",
+			"@type": "Progress",
+			"status": "Repeated: Repeat - Included in Program",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/course_sections/83",
+				"@type": "CourseSection",
+				"label": "MBA-FP 6008",
+				"title": "Global Economic Environment"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/programs/9",
+				"@type": "Program"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/plans/17",
+				"@type": "Plan"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/913",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/eec56fd9-f63c-4a6c-a26f-c8efd3d742b4",
+			"@type": "Progress",
+			"status": "Repeated: Repeat - Included in Program",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/course_sections/85",
+				"@type": "CourseSection",
+				"label": "MBA-FP 6012",
+				"title": "Integrated Global Marketing"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/programs/9",
+				"@type": "Program"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/plans/17",
+				"@type": "Plan"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/913",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/56cdc914-bb98-4d51-a203-2b8079cec0ca",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/82",
+				"@type": "Competency",
+                "code": "FP-6004-1",
+				"statement": "Examine the use of critical, strategic, and ethical thinking in decision-making."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Mastered?version=1",
+				"@type": "AchievementLevel",
+				"level": "Mastered"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/81",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/deed274d-a0d5-4366-9896-05c9bf3d29a7",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/83",
+				"@type": "Competency",
+                "code": "FP-6004-2",
+				"statement": "Integrate the Internet, collaboration, and virtual environment strategies into general business management planning and decision-making."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Mastered?version=1",
+				"@type": "AchievementLevel",
+				"level": "Mastered"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/81",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/e2c5ad53-5574-4271-a2eb-1d2a0957e3ac",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/84",
+				"@type": "Competency",
+                "code": "FP-6004-3",
+				"statement": "Integrate business strategies into general business management planning and decision-making."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Mastered?version=1",
+				"@type": "AchievementLevel",
+				"level": "Mastered"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/81",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/f189216e-61b3-44bd-b08a-db902888b24e",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/85",
+				"@type": "Competency",
+                "code": "FP-6004-4",
+				"statement": "Analyze relevant global business concerns for the future."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Proficient?version=1",
+				"@type": "AchievementLevel",
+				"level": "Proficient"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/81",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/35d7b7b0-27d2-40ee-93f6-c40939abf959",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/86",
+				"@type": "Competency",
+                "code": "FP-6004-5",
+				"statement": "Communicate in a manner that is professional and consistent with expectations for members of the business professions."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Mastered?version=1",
+				"@type": "AchievementLevel",
+				"level": "Mastered"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/81",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/4eb0f1dd-97d1-41ee-b88a-02fda17b408d",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/87",
+				"@type": "Competency",
+                "code": "FP-6006-1",
+				"statement": "Analyze contemporary leadership models and practices from the perspective of innovation in a global environment."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Proficient?version=1",
+				"@type": "AchievementLevel",
+				"level": "Proficient"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/82",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/0e712068-8193-421f-8bf0-d7c65a48adf2",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/88",
+				"@type": "Competency",
+                "code": "FP-6006-2",
+				"statement": "Assess the behaviors that drive innovation and how leaders can use those behaviors to create innovative organizations."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Proficient?version=1",
+				"@type": "AchievementLevel",
+				"level": "Proficient"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/82",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/7f8f8c27-2bd0-4496-a8bb-f47d738bd51d",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/89",
+				"@type": "Competency",
+                "code": "FP-6006-3",
+				"statement": "Assess what leaders of innovation do to shape organizational culture and processes."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Mastered?version=1",
+				"@type": "AchievementLevel",
+				"level": "Mastered"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/82",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/e822c94b-6905-4ce7-a94a-7c6c5d1a6c80",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/90",
+				"@type": "Competency",
+                "code": "FP-6006-4",
+				"statement": "Communicate in a manner that is professional and consistent with expectations for members of the business professions."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Proficient?version=1",
+				"@type": "AchievementLevel",
+				"level": "Proficient"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/82",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Fall Quarter 2013",
+				"date_start": "2013-09-01T00:00:00.000Z",
+				"date_end": "2013-12-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/d708e36a-a5bd-4124-bde5-0dfad31b3dd1",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/96",
+				"@type": "Competency",
+                "code": "FP-6008-1",
+				"statement": "Apply the theories, models, and practices of economic theory to create value for the firm."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Mastered?version=1",
+				"@type": "AchievementLevel",
+				"level": "Mastered"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/83",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/f1dd7014-1e84-4f50-9731-a99a255e8037",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/97",
+				"@type": "Competency",
+                "code": "FP-6008-2",
+				"statement": "Assess the impact of ethical and regulatory considerations on economic decisions"
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Proficient?version=1",
+				"@type": "AchievementLevel",
+				"level": "Proficient"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/83",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/9f75b2ad-d786-4191-ab35-a2a91fa9896b",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/98",
+				"@type": "Competency",
+                "code": "FP-6008-3",
+				"statement": "Analyze the macroeconomic environment of corporate operations"
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Proficient?version=1",
+				"@type": "AchievementLevel",
+				"level": "Proficient"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/83",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/f7b69e13-1b26-4175-a07c-f15d44ef0d0b",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/99",
+				"@type": "Competency",
+                "code": "FP-6008-4",
+				"statement": "Analyze the microeconomic environment of corporate operations"
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Mastered?version=1",
+				"@type": "AchievementLevel",
+				"level": "Mastered"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/83",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/a71de38a-8579-4f45-8057-b7d66d4fb7c7",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/100",
+				"@type": "Competency",
+                "code": "FP-6008-5",
+				"statement": "Communicate in a manner that is professional and consistent with expectations for members of the business professions.ply collaborative techniques to the virtual environment."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Mastered?version=1",
+				"@type": "AchievementLevel",
+				"level": "Mastered"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/83",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/47e6a0aa-cfc9-4873-a015-cd6700ccfbd1",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/101",
+				"@type": "Competency",
+                "code": "FP-6012-1",
+				"statement": "Apply theories, models, and practices of marketing"
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Incomplete?version=1",
+				"@type": "AchievementLevel",
+				"level": "Incomplete"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/85",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/72c75a95-6de8-43ef-8b6e-00bbd2a0e842",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/102",
+				"@type": "Competency",
+                "code": "FP-6012-2",
+				"statement": "Integrate fundamental principles and applications of marketing to address business problems."
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Incomplete?version=1",
+				"@type": "AchievementLevel",
+				"level": "Incomplete"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/85",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/2fa6a2be-3237-45a2-8d16-9f181b70fad7",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/103",
+				"@type": "Competency",
+                "code": "FP-6012-3",
+				"statement": "Develop innovative and sustainable solutions to strategic marketing challenges"
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Incomplete?version=1",
+				"@type": "AchievementLevel",
+				"level": "Incomplete"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/85",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/84b78bbf-84f0-4095-8fa8-0ea91726c752",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/104",
+				"@type": "Competency",
+                "code": "FP-6012-4",
+				"statement": "Integrate marketing analyses into general business management planning and decision making"
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Incomplete?version=1",
+				"@type": "AchievementLevel",
+				"level": "Incomplete"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/85",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/43f66913-c9e6-4f6a-8054-f8ad21f45b97",
+			"@type": "Progress",
+			"completed": true,
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/105",
+				"@type": "Competency",
+                "code": "FP-6012-5",
+				"statement": "Communicate in a manner that is professional and consistent with expectations for members of the business professions"
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Incomplete?version=1",
+				"@type": "AchievementLevel",
+				"level": "Incomplete"
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/course_section/85",
+				"@type": "CourseSection"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/semesters/912",
+				"@type": "Semester",
+				"label": "Winter Quarter 2014",
+				"date_start": "2013-01-01T00:00:00.000Z",
+				"date_end": "2013-05-31T00:00:00.000Z"
+			}]
+		}
+	]
+}
