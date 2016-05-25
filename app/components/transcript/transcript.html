@@ -12,7 +12,9 @@
     </div>
 
     <div class="transcript-header">
-      <img ng-src="{{domain_logo_secondary}}" class="logo"/>
+      <img ng-src="{{domain_logo_secondary}}"
+           class="logo"
+           ng-if="!!domain_logo_secondary" />
       <div class="right">
         <div class="user-name">{{transcript.user.givenName}} {{transcript.user.familyName}}</div>
         <div class="rop-time">Status as of: {{transcript.created_at}}</div>
