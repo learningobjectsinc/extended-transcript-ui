@@ -8,7 +8,8 @@
 	"organization": {
 		"@id": "http://purl.kinexis.com:8888/organizations/10",
 		"legal_name": "Lipscomb University",
-		"website": "https://secure.lipscomb.edu/"
+		"website": "https://secure.lipscomb.edu/",
+		"logo": "https://secure.lipscomb.edu/images/logo.png"
 	},
 	"user": {
 		"@id": "http://purl.kinexis.com:8888/users/17",
@@ -51,13 +52,16 @@
 		"title": "Initiative",
 		"statement": "Effective performers seek challenges beyond their job or assignment descriptions, encourage initiative in others, act without prompting, initiate action and reward and encourage others’ initiative."
 	}],
-	"programs": [{
-		"@id": "http://purl.kinexis.com:8888/programs/10",
-		"@type": "Program",
-		"degree_level": "Bachelor of Professional Studies",
-		"title": "Organizational Leadership"
-	}],
-	"progress": [{
+	"progress": [
+    {
+        "towards": {
+            "@id": "http://purl.kinexis.com:8888/programs/10",
+    		"@type": "Program",
+    		"degree_level": "Bachelor of Professional Studies",
+    		"title": "Organizational Leadership"
+        }
+    },
+    {
 		"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422bfc30a",
 		"@type": "Progress", "completed": true,
         "achievement_level": {

@@ -15,7 +15,8 @@
 		"@id": "http://purl.kinexis.com:8888/organizations/9",
 		"@type": "Organization",
 		"legal_name": "Capella University",
-		"website": "http://www.capella.edu/"
+		"website": "http://www.capella.edu/",
+		"logo": "http://www.capella.edu/content/dam/capella/Logos/logo_capellaheader_237x37_030915.png/jcr:content/renditions/cq5dam.web.1280.1280.png"
 	},
 	"user": {
 		"@id": "http://purl.kinexis.com:8888/users/16",

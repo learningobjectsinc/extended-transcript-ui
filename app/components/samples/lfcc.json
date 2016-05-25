@@ -8,7 +8,8 @@
 	"organization": {
 		"@id": "http://purl.kinexis.com:8888/organizations/11",
 		"legal_name": "Lord Fairfax Community College",
-		"website": "http://www.lfcc.edu/"
+		"website": "http://www.lfcc.edu/",
+		"logo": "http://www.lfcc.edu/wp-content/themes/lfcc/media/images/lord-fairfax-community-college.png"
 	},
 	"user": {
 		"@id": "http://purl.kinexis.com:8888/users/17",
@@ -18,15 +19,18 @@
 		"sourcedId": 1234567,
 		"role": "student"
 	},
-	"programs": [{
-		"@id": "http://purl.kinexis.com:8888/programs/11",
-		"@type": "Program",
-		"code": "OSA.CERT",
-		"degree_level": "Certificate of Completion",
-		"title": "Certificate in Office Systems Assistant",
-		"ext_catalog": "15-16"
-	}],
-	"progress": [{
+	"progress": [
+		{
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/programs/11",
+				"@type": "Program",
+				"code": "OSA.CERT",
+				"degree_level": "Certificate of Completion",
+				"title": "Certificate in Office Systems Assistant",
+				"ext_catalog": "15-16"
+			}
+		},
+		{
 		"@id": "http://purl.kinexis.com:8888/587816a5-c81f-4c6b-bb26-65216f90430f",
 		"@type": "Achievement",
 		"status": "New Educational Activity Completed",

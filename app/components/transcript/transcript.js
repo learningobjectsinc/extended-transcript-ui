@@ -13,8 +13,6 @@ export default ['$http', 'transcriptService', '$stateParams', function($http, tr
     templateUrl:template,
     link: function(scope, element){
 
-
-
       scope.domain_logo_secondary = domain_logo;
 
       scope.transcriptLoading = true;
@@ -25,7 +23,7 @@ export default ['$http', 'transcriptService', '$stateParams', function($http, tr
         // TODO: parameterize the logo
         const isAtlas = transcript.user.givenName === 'Olivia';
 
-        scope.domain_logo_secondary = isAtlas ? domain_logo : null;
+        scope.domain_logo_secondary = isAtlas ? domain_logo : transcript.organization.logo;
 
         scope.transcriptLoading = false;
         console.log('got:', transcript)

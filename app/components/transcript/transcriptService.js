@@ -96,6 +96,9 @@ export default ['$http', '$q', function($http, $q){
         .filter(target => target['@type'] === 'Program');
 
     transcript.hierarchy = this.buildHierarchy(transcript.progress);
+
+    transcript.organization = extendedTranscript.organization;
+
     return transcript;
   };
 
