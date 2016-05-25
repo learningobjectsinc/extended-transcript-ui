@@ -4,9 +4,11 @@ import _ from 'lodash';
 import moment from 'moment';
 //import mockTranscript from './mockTranscript';
 
-const samplesDir = "file?name=[path][name].[ext]!../samples"
-import atlas from samplesDir+"/atlas.json";
-import capella from samplesDir+"/capella.json";
+// const samplesDir = "file?name=[path][name].[ext]!../samples";
+
+import atlas from "file?name=[path][name].[ext]!../samples/atlas.json";
+import capella from "file?name=[path][name].[ext]!../samples/capella.json";
+import lfcc from "file?name=[path][name].[ext]!../samples/lfcc.json";
 
 export default ['$http', '$q', function($http, $q){
 
@@ -31,6 +33,7 @@ export default ['$http', '$q', function($http, $q){
       switch (sample) {
           case 'atlas': return atlas;
           case 'capella': return capella;
+          case 'lfcc': return lfcc;
       }
 
       return window.lo_api_config ?
