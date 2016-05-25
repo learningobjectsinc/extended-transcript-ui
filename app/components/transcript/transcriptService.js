@@ -5,6 +5,7 @@ import moment from 'moment';
 //import mockTranscript from './mockTranscript';
 
 import atlas from "file?name=[path][name].[ext]!../samples/atlas.json";
+import capella from "file?name=[path][name].[ext]!../samples/capella.json";
 
 export default ['$http', '$q', function($http, $q){
 
@@ -25,9 +26,10 @@ export default ['$http', '$q', function($http, $q){
       //
       const matches = window.location.href.match(/sample=([^&]*)/);
       const sample = !!matches && matches.length === 2 ? matches[1] : null;
-      
+
       switch (sample) {
           case 'atlas': return atlas;
+          case 'capella': return capella;
       }
 
       return window.lo_api_config ?
