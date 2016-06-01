@@ -22,15 +22,8 @@ export default ['$http', '$q', function($http, $q){
     return levels;
   };
 
-  this.getTranscriptUrl = function(user) {
-      //
-      // Extract sample query param, and match against whitelist of samples.
-      //    If match, return sample json.
-      //    Else, use transcript api.
-      //
-      const matches = window.location.href.match(/sample=([^&]*)/);
-      const sample = !!matches && matches.length === 2 ? matches[1] : null;
-
+  this.getTranscriptUrl = function(user, sample) {
+      
       switch (sample) {
           case 'atlas': return atlas;
           case 'capella': return capella;
@@ -43,12 +36,10 @@ export default ['$http', '$q', function($http, $q){
         `/api/v2/users/${user}/transcript`;
   };
 
-  this.getTranscriptForUser = function(user){
+  this.getTranscriptForUser = function(user, sample){
 
     //todo: pull this out to siome sort of filter
-    const url = this.getTranscriptUrl(user);
-
-    // DEBUG:
+    const url = this.getTranscriptUrl(user, sample);
 
     console.dir("Fetching: "+url);
     console.dir(window.location);

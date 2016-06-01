@@ -35,6 +35,10 @@ app.config(['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlRouterP
   //
   // Now set up the states
   $stateProvider
+    .state('samples', {
+        url: "/samples/:sample",
+        template: '<transcript></transcript>'
+    })
     .state('userTranscript', {
       url: "/:userId",
       template: '<transcript></transcript>'
