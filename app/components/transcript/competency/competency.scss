@@ -1,8 +1,8 @@
 
-.competency{
+.competency {
   margin-left: 30px;
 
-  .competency-content{
+  .competency-content {
     margin-left: 40px;
     margin-bottom: 0.25em;
     padding-top: 0.5em;
@@ -31,13 +31,13 @@
     padding: 0 0.5em;
     margin-right: 0.5em;
 
-    &.NonProficient{
+    &.Incomplete{
       background-color: #FF0000;
     }
     &.Basic, &.Proficient{
       background-color: #F5B90B;
     }
-    &.Distinguished{
+    &.Mastered{
       background-color: #00A901;
     }
   }
@@ -49,7 +49,7 @@
       font-weight: 700;
       display: inline-block;
     }
-    
+
     .date_label{
       color: $color-dark-text;
       text-transform: uppercase;

@@ -6,7 +6,7 @@ var webpack = require('webpack'),
 // PATHS
 var PATHS = {
   app: __dirname + '/app',
-  target: __dirname + '/dist'
+  target: __dirname + '/test'
 };
 
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
 
     cache: true,
     debug: true,
-    devtool: false,
+    devtool: "#inline-source-map",
 
     entry: {
         app: [PATHS.app + '/index.js']

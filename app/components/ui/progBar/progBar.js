@@ -7,7 +7,7 @@ import template from './progBar.html';
 var ANIMATION_DUR = 500; //ms
 var FRAMERATE = 25; //one frame per x ms
 
-export default ['$timeout', '$interval', function($timeout, $interval){
+export default ['$timeout', '$interval', function($timeout, $interval) {
   return {
     restrict:'E',
     replace:true,
@@ -20,17 +20,17 @@ export default ['$timeout', '$interval', function($timeout, $interval){
     link: function(scope, element){
       //scope.width
       var dur = (scope.animationLength || ANIMATION_DUR) / 1000;
-      
+
       scope.intervalPercentage = 0;
-      
+
       scope.progBarStyle = {
         transition: 'width ' + dur + 's ease-out',
       };
-      
+
       $timeout(function(){
         scope.progBarStyle.width = scope.value + '%';
       });
-      
+
       var elapsedTime = 0;
       var then = new Date();
       var interval = $interval(function(){
@@ -44,7 +44,7 @@ export default ['$timeout', '$interval', function($timeout, $interval){
         }
         then = now;
       }, FRAMERATE);
-      
+
     }
   };
 }];

@@ -1,0 +1,642 @@
+{
+	"@context": {
+		"@vocab": "http://purl.kinexis.com:8888/ctx/cbe/v1/record_of_performance/"
+	},
+	"@id": "http://purl.kinexis.com:8888/6c82271e-fa68-403e-bc58-dd6a10bbf626",
+	"@type": "RecordOfPerformance",
+	"created_at": "2016-01-01T00:00:00.000Z",
+	"organization": {
+		"@id": "http://purl.kinexis.com:8888/organizations/10",
+		"legal_name": "Lipscomb University",
+		"website": "https://secure.lipscomb.edu/",
+		"logo": "https://secure.lipscomb.edu/images/logo.png"
+	},
+	"user": {
+		"@id": "http://purl.kinexis.com:8888/users/17",
+		"email": "jparticipant@lipscomb.edu",
+		"familyName": "Participant",
+		"middleName": "A.",
+		"givenName": "Jordan",
+		"sourcedId": 82383481,
+		"role": "student"
+	},
+	"ext_key_strengths": [{
+		"@id": "http://purl.kinexis.com:8888/competencies/203",
+		"@type": "Competency",
+		"title": "Communicativeness",
+		"statement": "Effective performers create formal and informal venues for the team to share information, regularly solicit information from peers and external sources, actively include others in projects and decisions, use a variety of forums for sharing information for frequent and timely communication."
+	}, {
+		"@id": "http://purl.kinexis.com:8888/competencies/214",
+		"@type": "Competency",
+		"title": "Influence",
+		"statement": "Effective performers are visible and steady team leaders, present positive presence, are respected for technical expertise, communicate decisions and rationale in a respectful way and effectively adjust style to fit team needs."
+	}, {
+		"@id": "http://purl.kinexis.com:8888/competencies/219",
+		"@type": "Competency",
+		"title": "Drive/Energy",
+		"statement": "Effective performers demonstrate an understand of the importance of continuously modeling motivation, initiate important programs with passion and enthusiasm, maintain a high level of energy for sustained periods, look for high energy and enthusiasm in others and maintain a team environment that rewards high energy and enthusiasm."
+	}],
+	"ext_development_opportunities": [{
+		"@id": "http://purl.kinexis.com:8888/competencies/204",
+		"@type": "Competency",
+		"title": "Presentation Skills",
+		"statement": "Effective performers deliver small group talks effectively in familiar settings, prepare in advance for presentations, organize presentations effectively, present talks with minimal difficulty, exhibit adequate presentation skills and use visuals and multi­media adequately."
+	}, {
+		"@id": "http://purl.kinexis.com:8888/competencies/211",
+		"@type": "Competency",
+		"title": "Team Player",
+		"statement": "Effective performers are able to articulate team goals and standards, readily collaborate with others, are always willing to listen to others' points of view, are committed participants on the team and are willing to compromise or delay own goals for the achievement of team goals."
+	}, {
+		"@id": "http://purl.kinexis.com:8888/competencies/220",
+		"@type": "Competency",
+		"title": "Initiative",
+		"statement": "Effective performers seek challenges beyond their job or assignment descriptions, encourage initiative in others, act without prompting, initiate action and reward and encourage others’ initiative."
+	}],
+	"progress": [
+    {
+        "towards": {
+            "@id": "http://purl.kinexis.com:8888/programs/10",
+    		"@type": "Program",
+    		"degree_level": "Bachelor of Professional Studies",
+    		"title": "Organizational Leadership"
+        }
+    },
+    {
+		"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422bfc30a",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/201",
+			"@type": "Competency",
+            "code": "",
+			"statement": "Communications",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/202",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/203",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/204",
+				"@type": "Competency"
+			}]
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/f755ee79-1f74-428c-b58b-75e2175694b3",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/202",
+			"@type": "Competency",
+			"statement": "Active Listening",
+			"ext_description": "Effective performers encourage speakers with appropriate responses, actively set aside distractors and summarize to ensure understanding.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/201",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": []
+	}, {
+		"@id": "http://purl.kinexis.com:8888/183b0a16-77bc-4dbe-a0f7-53e70967c040",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/203",
+			"@type": "Competency",
+			"statement": "Communicativeness",
+			"ext_description": "Effective performers create formal and informal venues for the team to share information, regularly solicit information from peers and external sources, actively include others in projects and decisions, use a variety of forums for sharing information for frequent and timely communication.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/201",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.25
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "Bw4MAAoGDwYGDAcJBAMDBw",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/203-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/Bw4MAAoGDwYGDAcJBAMDBw.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2cf-659c32cdd39b",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/204",
+			"@type": "Competency",
+			"statement": "Presentation Skills",
+			"ext_description": "Effective performers deliver small group talks effectively in familiar settings, prepare in advance for presentations, organize presentations effectively, present talks with minimal difficulty, exhibit adequate presentation skills and use visuals and multi­media adequately.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/201",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+			"@type": "AchievementLevel",
+			"level": "Basic",
+            "ext_continuum_increment": 0.75
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "AwIABgIFDQUKAgQPBA4JDg",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/4ef0c27a-6314-41b3-930d-74a2d0c144ab",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/205",
+			"@type": "Competency",
+			"statement": "Conceptual",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/206",
+				"@type": "Competency"
+			}]
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/3612312b-ad12-47ed-9896-62c3cd1f9cfe",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/206",
+			"@type": "Competency",
+			"statement": "Problem Solving & Decision Making",
+			"ext_description": "Effective performers analyze and anticipate unintended consequences to make decisions, form and lead informal problem­solving teams, actively solicit opinions and input from others, coach team in creative problem­-solving, step back from an issue to see the big picture and surface and solve problems in a timely manner.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/205",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "CQgOAw8GAgMKAgkLBAsICQ",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/206-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/CQgOAw8GAgMKAgkLBAsICQ.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/e9f1a4c3-e04a-4576-993b-37101484be2a",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+			"@type": "AchievementLevel",
+			"level": "Basic"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/207",
+			"@type": "Competency",
+			"statement": "Interpersonal",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/208",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/209",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/210",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/211",
+				"@type": "Competency"
+			}]
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/a230ab95-216b-4ae3-a11c-485ca58e8cc8",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/208",
+			"@type": "Competency",
+			"statement": "Assertiveness",
+			"ext_description": "Effective performers demonstrate the confidence to direct others, maintain own convictions in actions and decisions, are willing to take an unpopular stand or question group consensus, can express forceful opinions without alienating others, encourages others to express their opinions and ideas and help build confidence among team members.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/207",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "AAMODAIKCwwICgsFBAAJDg",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/208-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/AAMODAIKCwwICgsFBAAJDg.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/94ac92c6-0898-4f03-b83e-0cccd67f4452",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/209",
+			"@type": "Competency",
+			"statement": "Conflict Management",
+			"ext_description": "Effective performers exhibit a collaborative approach, offer opposing ideas in a negotiable manner, listen to both sides, are comfortable working with others with conflicting opinions, successfully mediate conflict, promote healthy conflict and provide opportunities for differing opinions to be heard and debated.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/207",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DAAFCA8DBA4KCw0PBAUBDQ",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/209-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DAAFCA8DBA4KCw0PBAUBDQ.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/8b47a5ff-28c0-4633-843a-e01089041a72",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/210",
+			"@type": "Competency",
+			"statement": "Relationship Building",
+			"ext_description": "Effective performers value relationship and work to maintain them, work effectively across organizations, truly value people, expand network beyond immediate area and recognize opportunities in the network to achieve objectives.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/207",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "BgYHCwQCBg8HDAIKBAQIBw",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/210-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/BgYHCwQCBg8HDAIKBAQIBw.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/1ecda2a5-6958-4599-af33-4f9a1b58a11e",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/211",
+			"@type": "Competency",
+			"statement": "Team Player",
+			"ext_description": "Effective performers are able to articulate team goals and standards, readily collaborate with others, are always willing to listen to others' points of view, are committed participants on the team and are willing to compromise or delay own goals for the achievement of team goals.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/207",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+			"@type": "AchievementLevel",
+			"level": "Basic",
+            "ext_continuum_increment": 0.75
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DggGAQcHBQkHCwELBAgKBA",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/211-elementary.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DggGAQcHBQkHCwELBAgKBA.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/b11cace2-30d3-422f-b738-1c4e289d2338",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/212",
+			"@type": "Competency",
+			"statement": "Leadership",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/213",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/214",
+				"@type": "Competency"
+			}]
+		}
+	}, {
+		"@id": "http://purl.kinexis.com:8888/1cec55a7-1909-4a42-9745-77a3886dfad9",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/213",
+			"@type": "Competency",
+			"statement": "Change Mastery",
+			"ext_description": "Effective performers are seen by the team as change agents, understand the leadership responsibility in publicly supporting needed change, skillfully manage the human side of functional change and employ basic change techniques.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/212",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DggMCA8JAAINCwYLBAwDCA",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/213-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DggMCA8JAAINCwYLBAwDCA.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/d3a7b6e2-2445-4e36-a2d8-2eea60c1865d",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/214",
+			"@type": "Competency",
+			"statement": "Influence",
+			"ext_description": "Effective performers are visible and steady team leaders, present positive presence, are respected for technical expertise, communicate decisions and rationale in a respectful way and effectively adjust style to fit team needs.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/212",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.25
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "AQUJBQYPAAUKBQ8IBAwDCg",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/214-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/AQUJBQYPAAUKBQ8IBAwDCg.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/b6172f66-9441-439d-a32e-6595bbac00c8",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/215",
+			"@type": "Competency",
+			"statement": "Management",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/216",
+				"@type": "Competency"
+			}]
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/c91eec6b-64ad-4c0f-af58-37bc5b21d173",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/216",
+			"@type": "Competency",
+			"statement": "Organizing and Planning",
+			"ext_description": "Effective performers establish and communicate team priorities, train and develop others, constantly reassess the situation to ensure correct priorities, maximize time, hold efficient meetings, monitor and prioritize assignments and communicate changing goals or priorities to the team.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/215",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DQYEDAsCCQAOAAQLBAwNAQ",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/216-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DQYEDAsCCQAOAAQLBAwNAQ.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/70dd86ac-6f39-425b-93bd-9dd92de6b356",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/217",
+			"@type": "Competency",
+			"statement": "Personal",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/218",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/219",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/220",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/221",
+				"@type": "Competency"
+			}]
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/4160603b-e923-4db2-a278-27a235a1f735",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/218",
+			"@type": "Competency",
+			"statement": "Composure",
+			"ext_description": "Effective performers understand the need to demonstrate appropriate emotions in positions of responsibility, are reliable calm, cool and collected, demonstrate ability and comfort in adapting to change and do not appear distressed when challenged.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/217",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": []
+	}, {
+		"@id": "http://purl.kinexis.com:8888/2152dd0c-3b20-47c9-b9ff-21f1754ca800",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/219",
+			"@type": "Competency",
+			"statement": "Drive/Energy",
+			"ext_description": "Effective performers demonstrate an understand of the importance of continuously modeling motivation, initiate important programs with passion and enthusiasm, maintain a high level of energy for sustained periods, look for high energy and enthusiasm in others and maintain a team environment that rewards high energy and enthusiasm.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/217",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.25
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DwEIBA4BDAMICwABBAEPDQ",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/219-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DwEIBA4BDAMICwABBAEPDQ.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/695edb02-6e30-4ae0-a179-3fdaf4a72196",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/220",
+			"@type": "Competency",
+			"statement": "Initiative",
+			"ext_description": "Effective performers seek challenges beyond their job or assignment descriptions, encourage initiative in others, act without prompting, initiate action and reward and encourage others’ initiative.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/217",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "BwsECQ8KDgkNAgwGBAABBw",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/220-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/BwsECQ8KDgkNAgwGBAABBw.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/55b443ee-76b6-4a11-820c-bdfc7dc72e1d",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/221",
+			"@type": "Competency",
+			"statement": "Results Orientation",
+			"ext_description": "Effective performers set an aggressive schedule for delivery of action items, apply an appropriate sense of urgency and priority, tenaciously stick with a project until the goal is reached, enjoy healthy competition, translate an organization’s goals into team goals, provide frequent feedback to team members, delegate, communicate a sense of urgency to the team, accepts responsibility and listens and delivers on commitments.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/217",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DgkCBQsECAgFCwMEBAsDAg",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/221-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DgkCBQsECAgFCwMEBAsDAg.png"
+		}]
+	}]
+}

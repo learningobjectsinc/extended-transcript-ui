@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 import template from './unit.html';
 
-export default ['TranscriptService', function(transcriptService){
+export default ['transcriptService', function(transcriptService){
   return {
     restrict:'E',
     replace:true,
@@ -28,7 +28,7 @@ export default ['TranscriptService', function(transcriptService){
       scope.percentage = Math.round(percentage*100);
       scope.competencyMatchesOutcome = transcriptService.competencyMatchesOutcome;
       console.log('course: ', scope.unit, ' is ', scope.percentage, '% complete');
-      
+
       scope.outcomeEvidence = _.chain(scope.unit.competencies)
         .filter(transcriptService.competencyMatchesOutcome(scope.outcome))
         .pluck('evidence')

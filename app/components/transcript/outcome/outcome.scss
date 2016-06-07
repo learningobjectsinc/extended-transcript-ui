@@ -1,28 +1,33 @@
 
 $width-percentage: 60px;
 
-.outcome{
+.outcome {
   margin-bottom: 1em;
 }
+
 .outcome-progress {
 
   > * {
       display:inline-block;
       vertical-align:middle;
   }
-  .prog-bar{
+  .prog-bar {
     width: $width-body - $width-percentage;
   }
-  .percentage{
+  .percentage {
     color: $color-primary;
     font-weight: 700;
     font-size:1.5em;
     width: $width-percentage;
     text-align: right;
   }
+
+  + button {
+    margin-bottom: 1em;
+  }
 }
 
-.outcome-title{
+.outcome-title {
   font-size: 1.25em;
   color: $color-primary;
 }

@@ -7,31 +7,28 @@ import template from './competency.html';
 import unchecked from '../../../images/unchecked.jpg';
 import checked from '../../../images/checked.jpg';
 
-export default ['TranscriptService', function(transcriptService){
+export default ['transcriptService', function(transcriptService){
   return {
     restrict:'E',
     replace:true,
     templateUrl:template,
-    scope:{
-      competency:'=',
-      levels:'='
+    scope: {
+      progress:'='
     },
     link: function(scope, element){
-      var levels = [
-        "Basic", "NonProficient", "Proficient", "Distinguished"
-      ];
 
-      scope.percentage =
-          (levels.indexOf(scope.competency.achievement) + 1) /
-          levels.length;
+      // todo: what if it's a course achievement?
+      scope.competency = scope.progress.towards;
 
-      scope.completed = transcriptService.competencyIsCompleted(scope.competency);
+      const percentage = scope.progress.achievement_percent;
+
+      const completed = percentage > 0;
 
       scope.checkMarkStyle = {
-        "background-image": 'url(' + (scope.completed ? checked : unchecked) + ')'
+        "background-image": 'url(' + (completed ? checked : unchecked) + ')'
       };
-      if(scope.competency.date_completed){
-          scope.completionDate = moment(scope.competency.date_completed).format("M.D.YY");
+      if(scope.progress.date_completed){
+          scope.completionDate = moment(scope.progress.date_completed).format("M.D.YY");
       }
     }
   };

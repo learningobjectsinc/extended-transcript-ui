@@ -4,7 +4,7 @@ import './init';
 
 //Third-party deps
 import angular from 'angular';
-import 'angular-ui-router';
+import angular_ui_router from 'angular-ui-router';
 //import 'bootstrap';
 import 'font-awesome/css/font-awesome.css';
 
@@ -20,8 +20,34 @@ export var app = angular.module('et', [
   /*'ui.router',*/
   headerModule.name,
   transcriptModule.name,
-  uiModule.name
+  uiModule.name,
+  angular_ui_router
 ]);
+
+app.config(['$httpProvider', function($httpProvider) {
+  if(window.lo_api_config && window.lo_api_config.apiKey){
+    $httpProvider.defaults.headers.common['Authorization'] = `Bearer ${window.lo_api_config.apiKey}`;
+  }
+}]);
+
+app.config(['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlRouterProvider) => {
+  $urlRouterProvider.otherwise("/self");
+  //
+  // Now set up the states
+  $stateProvider
+    .state('samples', {
+        url: "/samples/:sample",
+        template: '<transcript></transcript>'
+    })
+    .state('userTranscript', {
+      url: "/:userId",
+      template: '<transcript></transcript>'
+    })
+    .state('transcripts', {
+      url: "/",
+      template: '<div>Base</div>'
+    });
+}]);
 
 angular.element(document).ready(function () {
   angular.bootstrap(document, [app.name], {

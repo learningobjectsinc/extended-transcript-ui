@@ -40,6 +40,29 @@ module.exports = function (grunt) {
           },{
             pattern: new RegExp(/\/styles\/index.css/g),
             replacement: '/styles/index.sass'
+          },{
+            pattern: new RegExp(/\$ROOT_URL\$/g),
+            replacement: '\'\''
+          },{
+            pattern: new RegExp(/\$API_KEY\$/g),
+            replacement: 'undefined'
+          }]
+        }
+      },
+      dev: {
+        files: [{
+          expand: true,
+          cwd: 'app/',
+          src: 'index.html',
+          dest: '<%= pkg.dist %>'
+        }],
+        options: {
+          replacements: [{
+            pattern: new RegExp(/\$ROOT_URL\$/g),
+            replacement: grunt.option('host') ? "\'" + grunt.option('host') + "\'" : '\'http://localhost:8080\''
+          },{
+            pattern: new RegExp(/\$API_KEY\$/g),
+            replacement: grunt.option('apiKey') ? "\'" + grunt.option('apiKey') + "\'" : '\'secret\''
           }]
         }
       }
@@ -116,17 +139,19 @@ module.exports = function (grunt) {
               return grunt.template.process(content, {data:{'prefix':'$$url'}});
           }
         }
-      },
-      dev:{
-        files:[{
-          src: '<%= pkg.src %>/index.html',
-          dest: '<%= pkg.dist %>/index.html'
-        }]
       }
     },
 
     clean: {
       dist: {
+        files: [{
+          dot: true,
+          src: [
+            '<%= pkg.dist %>'
+          ]
+        }]
+      },
+      dev: {
         files: [{
           dot: true,
           src: [
@@ -189,8 +214,8 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
-      'clean:dist',
-      'copy:dev',
+      'clean:dev',
+      'string-replace:dev',
       'sass:dev',
       'concurrent:dev'
     ]);
@@ -198,7 +223,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', ['karma']);
 
-  grunt.registerTask('build', ['clean', 'webpack', 'copy', 'string-replace', 'compress']);
+  grunt.registerTask('build', ['clean', 'webpack', 'copy', 'string-replace:dist', 'compress']);
 
   grunt.registerTask('default', []);
 };
