@@ -10,6 +10,7 @@ import atlas from "file?name=[path][name].[ext]!../samples/atlas.json";
 import capella from "file?name=[path][name].[ext]!../samples/capella.json";
 import lfcc from "file?name=[path][name].[ext]!../samples/lfcc.json";
 import lipscomb from "file?name=[path][name].[ext]!../samples/lipscomb.json";
+import umuc from "file?name=[path][name].[ext]!../samples/umuc.json";
 
 export default ['$http', '$q', function($http, $q){
 
@@ -23,12 +24,13 @@ export default ['$http', '$q', function($http, $q){
   };
 
   this.getTranscriptUrl = function(user, sample) {
-      
+
       switch (sample) {
           case 'atlas': return atlas;
           case 'capella': return capella;
           case 'lfcc': return lfcc;
           case 'lipscomb': return lipscomb;
+          case 'umuc': return umuc;
       }
 
       return window.lo_api_config ?

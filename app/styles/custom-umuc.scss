@@ -1,0 +1,12 @@
+.bottom-header {
+  .overlay{
+    background-color: fade-out($color-standard, .3);
+  }
+}
+.evidence-list{
+  .evidence-item{
+    .fa{
+      color: $color-standard;
+    }
+  }
+}
