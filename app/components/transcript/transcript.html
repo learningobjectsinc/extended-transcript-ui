@@ -20,6 +20,9 @@
           </div>
         </h2>
         <div class="program-label">{{transcript.program.label}}</div>
+        <program ng-repeat="program in transcript.programs" program="program"> </program>
+        <outcome ng-repeat="outcome in transcript.hierarchy" outcome="outcome"></outcome>
+
       </div>
       <div class="unit-list">
         <div ng-repeat="outcome in outcomes">
