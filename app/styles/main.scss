@@ -1,9 +1,3 @@
-$color-primary: #2d3e4e;
-$color-secondary: #9e0c0f;
-$color-accent: #f5b90b;
-$color-light-text: #a6a99e;
-$color-dark-text: #7f7f7f;
-
 $width-body: 850px;
 
 html, body {
@@ -94,6 +88,7 @@ html, body {
     }
     .user-name{
       font-size:1.75em;
+      text-transform: uppercase;
     }
     .user-id{
       font-size: 0.85em;

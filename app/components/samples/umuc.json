@@ -1,0 +1,2248 @@
+{
+	"@context": {
+		"@vocab": "http://purl.kinexis.com:8888/ctx/cbe/v1/record_of_performance/"
+	},
+	"@id": "http://purl.kinexis.com:8888/6c82271e-fa68-403e-bc58-dd6a10bbf626",
+	"@type": "RecordOfPerformance",
+	"created_at": "2016-07-01T00:00:00.000Z",
+	"organization": {
+		"@id": "http://purl.kinexis.com:8888/organizations/10",
+		"legal_name": "UMUC",
+		"website": "https://secure.lipscomb.edu/",
+		"logo": "https://www.umuc.edu/webpolicy/logos/images/UMUC-logo-preferred-white.png"
+	},
+	"user": {
+		"@id": "http://purl.kinexis.com:8888/users/17",
+		"email": "pandrews@umuc.edu",
+		"familyName": "Andrews",
+		"middleName": "A.",
+		"givenName": "Peyton",
+		"sourcedId": 94194633,
+		"role": "student"
+		},
+	"ext_key_strengths": [{
+		"@id": "http://purl.kinexis.com:8888/competencies/203",
+		"@type": "Competency",
+		"title": "Transistions",
+		"statement": "Effective performers create formal and informal venues for the team to share information, regularly solicit information from peers and external sources, actively include others in projects and decisions, use a variety of forums for sharing information for frequent and timely communication."
+	}, {
+		"@id": "http://purl.kinexis.com:8888/competencies/214",
+		"@type": "Competency",
+		"title": "Influence",
+		"statement": "Effective performers are visible and steady team leaders, present positive presence, are respected for technical expertise, communicate decisions and rationale in a respectful way and effectively adjust style to fit team needs."
+	}, {
+		"@id": "http://purl.kinexis.com:8888/competencies/219",
+		"@type": "Competency",
+		"title": "Drive/Energy",
+		"statement": "Effective performers demonstrate an understand of the importance of continuously modeling motivation, initiate important programs with passion and enthusiasm, maintain a high level of energy for sustained periods, look for high energy and enthusiasm in others and maintain a team environment that rewards high energy and enthusiasm."
+	}],
+	"ext_development_opportunities": [{
+		"@id": "http://purl.kinexis.com:8888/competencies/204",
+		"@type": "Competency",
+		"title": "Presentation Skills",
+		"statement": "Effective performers deliver small group talks effectively in familiar settings, prepare in advance for presentations, organize presentations effectively, present talks with minimal difficulty, exhibit adequate presentation skills and use visuals and multi­media adequately."
+	}, {
+		"@id": "http://purl.kinexis.com:8888/competencies/211",
+		"@type": "Competency",
+		"title": "Team Player",
+		"statement": "Effective performers are able to articulate team goals and standards, readily collaborate with others, are always willing to listen to others' points of view, are committed participants on the team and are willing to compromise or delay own goals for the achievement of team goals."
+	}, {
+		"@id": "http://purl.kinexis.com:8888/competencies/220",
+		"@type": "Competency",
+		"title": "Initiative",
+		"statement": "Effective performers seek challenges beyond their job or assignment descriptions, encourage initiative in others, act without prompting, initiate action and reward and encourage others’ initiative."
+	}],
+	"progress": [
+    {
+        "towards": {
+        "@id": "http://purl.kinexis.com:8888/programs/10",
+    		"@type": "Program",
+    		"degree_level": "Master of Business Administration",
+    		"title": "Organizational Leadership"
+        }
+    },
+    {
+		"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422bfc30a",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/201",
+			"@type": "Competency",
+      "code": "",
+			"statement": "Organize document or presentation clearly in a manner that promotes understanding",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/202",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/203",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/204",
+				"@type": "Competency"
+			},{
+				"@id": "http://purl.kinexis.com:8888/competencies/222",
+				"@type": "Competency"
+			},{
+				"@id": "http://purl.kinexis.com:8888/competencies/300",
+				"@type": "Competency"
+			}]
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/f755ee79-1f74-428c-b58b-75e2175694b3",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-06-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/202",
+			"@type": "Competency",
+			"statement": " Present material in clear and/or logical order appropriate to task",
+			"ext_description": " Present material in clear and/or logical order appropriate to task.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/201",
+				"@type": "Competency"
+			}
+
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": []
+	}, {
+		"@id": "http://purl.kinexis.com:8888/183b0a16-77bc-4dbe-a0f7-53e70967c040",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-06-23T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/203",
+			"@type": "Competency",
+			"statement": "Support thesis and purpose fully",
+			"ext_description": "Support thesis and purpose fully.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/201",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.25
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "Bw4MAAoGDwYGDAcJBAMDBw",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/203-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/Bw4MAAoGDwYGDAcJBAMDBw.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2cf-659c32cdd39b",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-06-22T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/204",
+			"@type": "Competency",
+			"statement": "Articulate thesis and purpose clearly",
+			"ext_description": "Effective performers deliver small group talks effectively in familiar settings, prepare in advance for presentations, organize presentations effectively, present talks with minimal difficulty, exhibit adequate presentation skills and use visuals and multi­media adequately.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/201",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.75
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "Bw4MAAoGDwYGDAcJBAMDBw",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/203-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/Bw4MAAoGDwYGDAcJBAMDBw.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2cf-659c32cdd39boco",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-05-15T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/300",
+			"@type": "Competency",
+			"statement": "Distinguish clearly between main points and supporting details",
+			"ext_description": "Distinguish clearly between main points and supporting details.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/201",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.75
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "Bw4MAAoGDwYGDAcJBAMDBw",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/203-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/Bw4MAAoGDwYGDAcJBAMDBw.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2cf-659c32cdd39boco",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-05-17T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/222",
+			"@type": "Competency",
+			"statement": "Create coherent progress from introduction through conclusion",
+			"ext_description": "Create coherent progress from introduction through conclusion.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/201",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.75
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "AwIABgIFDQUKAgQPBA4JDg",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/4ef0c27a-6314-41b3-930d-74a2d0c144ab",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/205",
+			"@type": "Competency",
+			"statement": "Create and employ multimedia supports, visual aids and/or documents appropriate to the needs of the project, the message and the audience",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/206",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/301",
+				"@type": "Competency"
+				},{
+				"@id": "http://purl.kinexis.com:8888/competencies/302",
+				"@type": "Competency"
+				},{
+				"@id": "http://purl.kinexis.com:8888/competencies/303",
+				"@type": "Competency"
+				}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/304",
+				"@type": "Competency"
+				}]
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/3612312b-ad12-47ed-9896-62c3cd1f9cfe",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-06-13T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/206",
+			"@type": "Competency",
+			"statement": "Create neat, clear, and professional document and/or multimedia aids",
+			"ext_description": "Create neat, clear, and professional document and/or multimedia aids.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/205",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "CQgOAw8GAgMKAgkLBAsICQ",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/206-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/CQgOAw8GAgMKAgkLBAsICQ.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/e9f1a4c3-e04a-4576-993b-37101484be2a",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/207",
+			"@type": "Competency",
+			"statement": "Articulate and frame the issue",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/208",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/209",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/210",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/211",
+				"@type": "Competency"
+			}]
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2f-659c32c9boco",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-05-19T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/302",
+			"@type": "Competency",
+			"statement": "Provide accurate graphics that fairly depict the information, when appropriate",
+			"ext_description": "Provide accurate graphics that fairly depict the information, when appropriate.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/205",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.75
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "AwIABgIFDQUKAgQPBA4JDg",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+		}]
+		}, {
+			"@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-af-659c32cdd39bo",
+			"@type": "Progress", "completed": true,
+			"date_completed": "2016-05-30T00:00:00.000Z",
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/305",
+				"@type": "Competency",
+				"statement": "Create coherent progress from introduction through conclusion",
+				"ext_description": "Create coherent progress from introduction through conclusion.",
+	            "parent": {
+					"@id": "http://purl.kinexis.com:8888/competencies/205",
+					"@type": "Competency"
+				}
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+				"@type": "AchievementLevel",
+				"level": "Mastered",
+	            "ext_continuum_increment": 0.75
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/programs/10",
+				"@type": "Program"
+			}],
+			"assertions": [{
+				"uid": "AwIABgIFDQUKAgQPBA4JDg",
+				"badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+				"image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+			}]
+		},{
+			"@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2cf-659c32cdd39boco",
+			"@type": "Progress", "completed": true,
+			"date_completed": "2016-06-03T00:00:00.000Z",
+			"towards": {
+				"@id": "http://purl.kinexis.com:8888/competencies/304",
+				"@type": "Competency",
+				"statement": "Format document and citations properly",
+				"ext_description": "Format document and citations properly.",
+	            "parent": {
+					"@id": "http://purl.kinexis.com:8888/competencies/205",
+					"@type": "Competency"
+				}
+			},
+			"achievement_level": {
+				"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+				"@type": "AchievementLevel",
+				"level": "Mastered",
+	            "ext_continuum_increment": 0.75
+			},
+			"contexts": [{
+				"@id": "http://purl.kinexis.com:8888/programs/10",
+				"@type": "Program"
+			}],
+			"assertions": [{
+				"uid": "AwIABgIFDQUKAgQPBA4JDg",
+				"badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+				"image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+			}]
+		}, {
+		"@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2cf-659c32c9boco",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-05-19T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/301",
+			"@type": "Competency",
+			"statement": "Demonstrate clear, relevant connection between visual/multimedia aids and speech, when appropriate",
+			"ext_description": "Demonstrate clear, relevant connection between visual/multimedia aids and speech, when appropriate.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/205",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.75
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "AwIABgIFDQUKAgQPBA4JDg",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+		}]
+		}, {
+		"@id": "http://purl.kinexis.com:8888/a230ab95-216b-4ae3-a11c-485ca58e8cc8",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/208",
+			"@type": "Competency",
+			"statement": "Identify issue (or research question, problem, etc.)",
+			"ext_description": "Identify issue (or research question, problem, etc.).",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/207",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "AAMODAIKCwwICgsFBAAJDg",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/208-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/AAMODAIKCwwICgsFBAAJDg.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/94ac92c6-0898-4f03-b83e-0cccd67f4452",
+		"@type": "Progress", "completed": false,
+		"date_completed": "2016-05-28T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/209",
+			"@type": "Competency",
+			"statement": "Characterize issue according to its size, scope, incidence, effects, perceptions of it and influences on it",
+			"ext_description": "Characterize issue according to its size, scope, incidence, effects, perceptions of it and influences on it.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/207",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Basic",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DAAFCA8DBA4KCw0PBAUBDQ",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/209-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DAAFCA8DBA4KCw0PBAUBDQ.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/94ac92c6-0898-4f03-b83e-0cccd67f4452oc",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/222",
+			"@type": "Competency",
+			"statement": "Transition smoothly and develop connections from point to point",
+			"ext_description": "Transition smoothly and develop connections from point to point.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/201",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DAAFCA8DBA4KCw0PBAUBDQ",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/209-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DAAFCA8DBA4KCw0PBAUBDQ.png"
+		}]
+	},{
+		"@id": "http://purl.kinexis.com:8888/8b47a5ff-28c0-4633-843a-e01089041a72",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-05-28T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/210",
+			"@type": "Competency",
+			"statement": "Identify the underlying causes or conditions of each element contributing to issue",
+			"ext_description": "Identify the underlying causes or conditions of each element contributing to issue.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/207",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Proficient",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "BgYHCwQCBg8HDAIKBAQIBw",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/210-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/BgYHCwQCBg8HDAIKBAQIBw.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/1ecda2a5-6958-4599-af33-4f9a1b58a11e",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/211",
+			"@type": "Competency",
+			"statement": "Identify required information needed to critically analyze issue",
+			"ext_description": "Identify required information needed to critically analyze issue.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/207",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.75
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DggGAQcHBQkHCwELBAgKBA",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/211-elementary.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DggGAQcHBQkHCwELBAgKBA.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/b11cace2-30d3-422f-b738-1c4e289d2338",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/212",
+			"@type": "Competency",
+			"statement": "Evaluate the underlying causes or conditions of elements contributing to issue",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/213",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/214",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/306",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/307",
+				"@type": "Competency"
+			}]
+		}
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2cf-659c32cdd39boco",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-05-17T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/306",
+	    "@type": "Competency",
+	    "statement": "Interpret complex and conflicting data, identifying patterns and ambiguities",
+	    "ext_description": "Interpret complex and conflicting data, identifying patterns and ambiguities.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/212",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	},{
+		"@id": "http://purl.kinexis.com:8888/1cec55a7-1909-4a42-9745-77a3886dfad9",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-05-29T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/213",
+			"@type": "Competency",
+			"statement": "Specify metrics by which efficacy of chosen alternative will be measured",
+			"ext_description": "Specify metrics by which efficacy of chosen alternative will be measured.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/212",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DggMCA8JAAINCwYLBAwDCA",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/213-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DggMCA8JAAINCwYLBAwDCA.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/d3a7b6e2-2445-4e36-a2d8-2eea60c1865d",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-05-28T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/214",
+			"@type": "Competency",
+			"statement": "pecify alternative solutions and rationale for selection of each",
+			"ext_description": "pecify alternative solutions and rationale for selection of each.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/212",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.25
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "AQUJBQYPAAUKBQ8IBAwDCg",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/214-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/AQUJBQYPAAUKBQ8IBAwDCg.png"
+		}]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2cf-659c32c9boco",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-05-17T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/307",
+	    "@type": "Competency",
+	    "statement": "Create coherent progress from introduction through conclusion",
+	    "ext_description": "Create coherent progress from introduction through conclusion.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/212",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/b6172f66-9441-439d-a32e-6595bbac00c8",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/215",
+			"@type": "Competency",
+			"statement": "Apply ethical principles when determining actions",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/216",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/308",
+				"@type": "Competency"
+				}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/309",
+				"@type": "Competency"
+					}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/310",
+				"@type": "Competency"
+						}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/311",
+				"@type": "Competency"
+				}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/312",
+				"@type": "Competency"
+					}]
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/c91eec6b-64ad-4c0f-af58-37bc5b21d173",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-05-27T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/216",
+			"@type": "Competency",
+			"statement": "Analyze a situation to identify ethical issue, if one exists",
+			"ext_description": "Analyze a situation to identify ethical issue, if one exists.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/215",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DQYEDAsCCQAOAAQLBAwNAQ",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/216-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DQYEDAsCCQAOAAQLBAwNAQ.png"
+		}]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c2269-65b2-47ce-a2cf-659c33sdfkd",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-02T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/311",
+	    "@type": "Competency",
+	    "statement": "Select the most appropriate model to apply to the situation",
+	    "ext_description": "Select the most appropriate model to apply to the situation.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/215",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-01T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/312",
+	    "@type": "Competency",
+	    "statement": "Create coherent progress from introduction through conclusion",
+	    "ext_description": "Create coherent progress from introduction through conclusion.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/215",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2cf-659c32cdkdf",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-04T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/310",
+	    "@type": "Competency",
+	    "statement": "Apply generally accepted ethical models to the facts",
+	    "ext_description": "Apply generally accepted ethical models to the facts.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/215",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2cf-659c32cdd39bo",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-05-27T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/308",
+	    "@type": "Competency",
+	    "statement": "Identify cognitive and behavioral biases that may interfere with rationality or good judgment",
+	    "ext_description": "Identify cognitive and behavioral biases that may interfere with rationality or good judgment.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/215",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-47ce-a2cf-659c32cdd39boco",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-05-25T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/309",
+	    "@type": "Competency",
+	    "statement": "Incorporate ethical reasoning when determining an appropriate action",
+	    "ext_description": "Incorporate ethical reasoning when determining an appropriate action.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/215",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/70dd86ac-6f39-425b-93bd-9dd92de6b356",
+		"@type": "Progress", "completed": true,
+        "achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered"
+		},
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/217",
+			"@type": "Competency",
+			"statement": "Develop constructive resolutions for ethical dilemmas based on application of ethical theories, principles and models",
+            "children": [{
+				"@id": "http://purl.kinexis.com:8888/competencies/218",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/219",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/220",
+				"@type": "Competency"
+			}, {
+				"@id": "http://purl.kinexis.com:8888/competencies/221",
+				"@type": "Competency"
+			}]
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/4160603b-e923-4db2-a278-27a235a1f735",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-06-10T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/218",
+			"@type": "Competency",
+			"statement": "Identify and explain why a situation presents an ethical dilemma in contexts that are familiar or new, simple or complex, personal or organizational",
+			"ext_description": "Identify and explain why a situation presents an ethical dilemma in contexts that are familiar or new, simple or complex, personal or organizational.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/217",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": []
+	}, {
+		"@id": "http://purl.kinexis.com:8888/2152dd0c-3b20-47c9-b9ff-21f1754ca800",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-06-10T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/219",
+			"@type": "Competency",
+			"statement": "Introduce and analyze best available alternatives to ethical dilemmas using a set of well supported criteria",
+			"ext_description": "Introduce and analyze best available alternatives to ethical dilemmas using a set of well supported criteria.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/217",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.25
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DwEIBA4BDAMICwABBAEPDQ",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/219-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DwEIBA4BDAMICwABBAEPDQ.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/695edb02-6e30-4ae0-a179-3fdaf4a72196",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2015-05-20T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/220",
+			"@type": "Competency",
+			"statement": "Propose and defend the best possible resolution to the ethical dilemmas, including specific recommended actions, expected outcomes, and a contingency plan",
+			"ext_description": "Propose and defend the best possible resolution to the ethical dilemmas, including specific recommended actions, expected outcomes, and a contingency plan.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/217",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "BwsECQ8KDgkNAgwGBAABBw",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/220-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/BwsECQ8KDgkNAgwGBAABBw.png"
+		}]
+	}, {
+		"@id": "http://purl.kinexis.com:8888/55b443ee-76b6-4a11-820c-bdfc7dc72e1d",
+		"@type": "Progress", "completed": true,
+		"date_completed": "2016-06-10T00:00:00.000Z",
+		"towards": {
+			"@id": "http://purl.kinexis.com:8888/competencies/221",
+			"@type": "Competency",
+			"statement": "Identify and evaluate the risks to the organization and its key stakeholders associated with failing to take actions to resolve an ethical dilemma",
+			"ext_description": "Identify and evaluate the risks to the organization and its key stakeholders associated with failing to take actions to resolve an ethical dilemma.",
+            "parent": {
+				"@id": "http://purl.kinexis.com:8888/competencies/217",
+				"@type": "Competency"
+			}
+		},
+		"achievement_level": {
+			"@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+			"@type": "AchievementLevel",
+			"level": "Mastered",
+            "ext_continuum_increment": 0.0
+		},
+		"contexts": [{
+			"@id": "http://purl.kinexis.com:8888/programs/10",
+			"@type": "Program"
+		}],
+		"assertions": [{
+			"uid": "DgkCBQsECAgFCwMEBAsDAg",
+			"badge": "http://purl.kinexis.com:8888/badge/badge-class/221-applied.json",
+			"image": "http://purl.kinexis.com:8888/badge/badge-image/DgkCBQsECAgFCwMEBAsDAg.png"
+		}]
+	}, {
+	"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422b0a",
+	"@type": "Progress", "completed": true,
+	    "achievement_level": {
+	  "@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+	  "@type": "AchievementLevel",
+	  "level": "Mastered"
+	},
+	"towards": {
+	  "@id": "http://purl.kinexis.com:8888/competencies/100",
+	  "@type": "Competency",
+	  "code": "",
+	  "statement":"Assess the implications of legal, ethical and cultural (national) standards on an organization's operations in global markets and make recommendations for appropriate actions",
+	        "children": [{
+	    "@id": "http://purl.kinexis.com:8888/competencies/313",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/314",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/315",
+	    "@type": "Competency"
+	  }]
+	},
+	"contexts": [{
+	  "@id": "http://purl.kinexis.com:8888/programs/10",
+	  "@type": "Program"
+	}]
+	},  {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-01T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/313",
+	    "@type": "Competency",
+	    "statement": "Investigate the legal standards and best sources of information relevant to an organization in a non-domestic market",
+	    "ext_description": "Investigate the legal standards and best sources of information relevant to an organization in a non-domestic market.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/100",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/314",
+	    "@type": "Competency",
+	    "statement": " Identify and analyze common ethical issues facing organizations operating in global markets and apply relevant best practices",
+	    "ext_description": " Identify and analyze common ethical issues facing organizations operating in global markets and apply relevant best practices.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/100",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/315",
+	    "@type": "Competency",
+	    "statement": "Analyze the implications of cultural (national) differences for an organization operating in global markets and recommend appropriate actions",
+	    "ext_description": "Analyze the implications of cultural (national) differences for an organization operating in global markets and recommend appropriate actions.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/100",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422bfc30a",
+	"@type": "Progress", "completed": true,
+	    "achievement_level": {
+	  "@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+	  "@type": "AchievementLevel",
+	  "level": "Mastered"
+	},
+	"towards": {
+	  "@id": "http://purl.kinexis.com:8888/competencies/101",
+	  "@type": "Competency",
+	  "code": "",
+	  "statement": "Evaluate major business/organizational systems and processes and make recommendations for improvement",
+	        "children": [{
+	    "@id": "http://purl.kinexis.com:8888/competencies/316",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/317",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/318",
+	    "@type": "Competency"
+	  },{
+	    "@id": "http://purl.kinexis.com:8888/competencies/319",
+	    "@type": "Competency"
+	  }]
+	},
+	"contexts": [{
+	  "@id": "http://purl.kinexis.com:8888/programs/10",
+	  "@type": "Program"
+	}]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-02T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/316",
+	    "@type": "Competency",
+	    "statement": "Analyze existing organizational processes and identify those that could benefit from improvement",
+	    "ext_description": "Analyze existing organizational processes and identify those that could benefit from improvement.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/101",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-02T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/317",
+	    "@type": "Competency",
+	    "statement": "Create, recommend, and defend a plan to improve processes, identifying obstacles and benefits",
+	    "ext_description": "Create, recommend, and defend a plan to improve processes, identifying obstacles and benefits.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/101",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-02T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/318",
+	    "@type": "Competency",
+	    "statement": "Identify and evaluate options for out/near/off-shoring",
+	    "ext_description": "Identify and evaluate options for out/near/off-shoring.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/101",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-02T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/319",
+	    "@type": "Competency",
+	    "statement": "Evaluate an organization's operational capabilities and present conclusions about the implications for current and potential performance",
+	    "ext_description": "Evaluate an organization's operational capabilities and present conclusions about the implications for current and potential performance.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/101",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422bfc30a",
+	"@type": "Progress", "completed": true,
+	    "achievement_level": {
+	  "@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+	  "@type": "AchievementLevel",
+	  "level": "Mastered"
+	},
+	"towards": {
+	  "@id": "http://purl.kinexis.com:8888/competencies/102",
+	  "@type": "Competency",
+	  "code": "",
+	  "statement": "Identify and distinguish among organizational structural types and their respective implications for performance",
+	        "children": [{
+	    "@id": "http://purl.kinexis.com:8888/competencies/321",
+	    "@type": "Competency"
+	  },{
+	    "@id": "http://purl.kinexis.com:8888/competencies/320",
+	    "@type": "Competency"
+	  }]
+	},
+	"contexts": [{
+	  "@id": "http://purl.kinexis.com:8888/programs/10",
+	  "@type": "Program"
+	}]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-02T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/320",
+	    "@type": "Competency",
+	    "statement": "Identify and describe the structural type that best describes your current workplace",
+	    "ext_description": "Identify and describe the structural type that best describes your current workplace.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/102",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-02T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/321",
+	    "@type": "Competency",
+	    "statement": "Analyze the current structure of your organization and evaluate the extent to which it aligns with and supports the current and/or potential enterprise-wide strategy",
+	    "ext_description": "Analyze the current structure of your organization and evaluate the extent to which it aligns with and supports the current and/or potential enterprise-wide strategy.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/102",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422bfc30a",
+	"@type": "Progress", "completed": true,
+	    "achievement_level": {
+	  "@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+	  "@type": "AchievementLevel",
+	  "level": "Mastered"
+	},
+	"towards": {
+	  "@id": "http://purl.kinexis.com:8888/competencies/103",
+	  "@type": "Competency",
+	  "code": "",
+	  "statement": "Apply relevant microeconomics principles to support strategic decisions for the organization",
+	        "children": [{
+	    "@id": "http://purl.kinexis.com:8888/competencies/322",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/323",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/324",
+	    "@type": "Competency"
+	  }]
+	},
+	"contexts": [{
+	  "@id": "http://purl.kinexis.com:8888/programs/10",
+	  "@type": "Program"
+	}]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-02T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/322",
+	    "@type": "Competency",
+	    "statement": "Analyze costs and revenues for varying levels of production",
+	    "ext_description": "Analyze costs and revenues for varying levels of production.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/103",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-02T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/323",
+	    "@type": "Competency",
+	    "statement": "Determine optimal level of production by equating marginal costs to marginal revenues",
+	    "ext_description": "Determine optimal level of production by equating marginal costs to marginal revenues.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/103",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-02T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/324",
+	    "@type": "Competency",
+	    "statement": "Distinguish between three different industry structures: competitive, oligopoly and monopoly - to enable financial decisions",
+	    "ext_description": "Distinguish between three different industry structures: competitive, oligopoly and monopoly - to enable financial decisions.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/103",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	    "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422bfc30a",
+	"@type": "Progress", "completed": true,
+	    "achievement_level": {
+	  "@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+	  "@type": "AchievementLevel",
+	  "level": "Mastered"
+	},
+	"towards": {
+	  "@id": "http://purl.kinexis.com:8888/competencies/104",
+	  "@type": "Competency",
+	  "code": "",
+	  "statement": "Analyze financial statements to evaluate and optimize organizational performance",
+	        "children": [{
+	    "@id": "http://purl.kinexis.com:8888/competencies/325",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/326",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/327",
+	    "@type": "Competency"
+	  },{
+	    "@id": "http://purl.kinexis.com:8888/competencies/328",
+	    "@type": "Competency"
+	  }]
+	},
+	"contexts": [{
+	  "@id": "http://purl.kinexis.com:8888/programs/10",
+	  "@type": "Program"
+	}]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-02T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/325",
+	    "@type": "Competency",
+	    "statement": "Determine the impact of transactions carried out by an organization on the Income Statement, Balance Sheet and Statement of Cashflows",
+	    "ext_description": "Determine the impact of transactions carried out by an organization on the Income Statement, Balance Sheet and Statement of Cashflows.",
+	    "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/104",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	    "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/326",
+	    "@type": "Competency",
+	    "statement": "Evaluate organizational performance, prospects and financial risk by analysis of financial statements using tools such as financial ratios",
+	    "ext_description": "Evaluate organizational performance, prospects and financial risk by analysis of financial statements using tools such as financial ratios.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/104",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-659c32gndd459o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/327",
+	    "@type": "Competency",
+	    "statement": "Make recommendations to improve organizational performance based on the analysis of the financial statements",
+	    "ext_description": "Make recommendations to improve organizational performance based on the analysis of the financial statements.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/104",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c226b9-65b2-423e-a2cf-7437hfjdfn",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/328",
+	    "@type": "Competency",
+	    "statement": "Evaluate financial reports and practices for compliance with ethical principles and regulatory requirements",
+	    "ext_description": "Evaluate financial reports and practices for compliance with ethical principles and regulatory requirements.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/104",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422bfc30a",
+	"@type": "Progress", "completed": true,
+	    "achievement_level": {
+	  "@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+	  "@type": "AchievementLevel",
+	  "level": "Mastered"
+	},
+	"towards": {
+	  "@id": "http://purl.kinexis.com:8888/competencies/105",
+	  "@type": "Competency",
+	  "code": "",
+	  "statement": "Develop operating forecasts and budgets and apply managerial accounting techniques to support strategic decisions",
+	        "children": [{
+	    "@id": "http://purl.kinexis.com:8888/competencies/329",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/330",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/331",
+	    "@type": "Competency"
+	  },{
+	    "@id": "http://purl.kinexis.com:8888/competencies/332",
+	    "@type": "Competency"
+	  }]
+	},
+	"contexts": [{
+	  "@id": "http://purl.kinexis.com:8888/programs/10",
+	  "@type": "Program"
+	}]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/329",
+	    "@type": "Competency",
+	    "statement": "Develop budget and forecasts for strategic initiatives (market entry, production, operations, org. design)",
+	    "ext_description": "Develop budget and forecasts for strategic initiatives (market entry, production, operations, org. design).",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/105",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/330",
+	    "@type": "Competency",
+	    "statement": "Develop market revenue forecasts for strategic initiatives (incl. total market, target market and market share), justifying market forecast assumptions",
+	    "ext_description": "Develop market revenue forecasts for strategic initiatives (incl. total market, target market and market share), justifying market forecast assumptions.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/105",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/331",
+	    "@type": "Competency",
+	    "statement": "Apply cost-volume-profit analysis",
+	    "ext_description": "Apply cost-volume-profit analysis.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/105",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/332",
+	    "@type": "Competency",
+	    "statement": "Allocate costs of shared resources to different products and implement activity based pricing",
+	    "ext_description": "Allocate costs of shared resources to different products and implement activity based pricing.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/105",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422bfc30a",
+	"@type": "Progress", "completed": true,
+	    "achievement_level": {
+	  "@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+	  "@type": "AchievementLevel",
+	  "level": "Mastered"
+	},
+	"towards": {
+	  "@id": "http://purl.kinexis.com:8888/competencies/106",
+	  "@type": "Competency",
+	  "code": "",
+	  "statement": "Identify and analyze new opportunities",
+	        "children": [{
+	    "@id": "http://purl.kinexis.com:8888/competencies/333",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/334",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/335",
+	    "@type": "Competency"
+	  }]
+	},
+	"contexts": [{
+	  "@id": "http://purl.kinexis.com:8888/programs/10",
+	  "@type": "Program"
+	}]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/333",
+	    "@type": "Competency",
+	    "statement": "Evaluate the external and internal environment of an organization and identify new opportunities for the organization",
+	    "ext_description": "Evaluate the external and internal environment of an organization and identify new opportunities for the organization.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/106",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/334",
+	    "@type": "Competency",
+	    "statement": "Evaluate an organization’s readiness for change",
+	    "ext_description": "Evaluate an organization’s readiness for change.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/107",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/334",
+	    "@type": "Competency",
+	    "statement": "Articulate opportunities and analyze their impact on organizational operations",
+	    "ext_description": "Articulate opportunities and analyze their impact on organizational operations.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/106",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/335",
+	    "@type": "Competency",
+	    "statement": "Evaluate an organization’s readiness for change",
+	    "ext_description": "Evaluate an organization’s readiness for change.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/106",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422bfc30a",
+	"@type": "Progress", "completed": true,
+	    "achievement_level": {
+	  "@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+	  "@type": "AchievementLevel",
+	  "level": "Mastered"
+	},
+	"towards": {
+	  "@id": "http://purl.kinexis.com:8888/competencies/107",
+	  "@type": "Competency",
+	  "code": "",
+	  "statement": "Create and implement new initiative or enterprise",
+	        "children": [{
+	    "@id": "http://purl.kinexis.com:8888/competencies/336",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/337",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/338",
+	    "@type": "Competency"
+	  }]
+	},
+	"contexts": [{
+	  "@id": "http://purl.kinexis.com:8888/programs/10",
+	  "@type": "Program"
+	}]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/336",
+	    "@type": "Competency",
+	    "statement": "Establish parameters for development of new ideas in the organization",
+	    "ext_description": "Establish parameters for development of new ideas in the organization.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/107",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/337",
+	    "@type": "Competency",
+	    "statement": "Design and communicate implementation plan for the new initiative or enterprise",
+	    "ext_description": "Design and communicate implementation plan for the new initiative or enterprise.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/107",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/338",
+	    "@type": "Competency",
+	    "statement": "Create a change plan including key milestones, contingencies, metrics, and a budget for a specific organization and change",
+	    "ext_description": "Create a change plan including key milestones, contingencies, metrics, and a budget for a specific organization and change.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/107",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	"@id": "http://purl.kinexis.com:8888/4ea02d5c-a2d7-4c26-a109-ae2422bfc30a",
+	"@type": "Progress", "completed": true,
+	    "achievement_level": {
+	  "@id": "http://purl.kinexis.com:8888/achievementLevels/Applied?version=1",
+	  "@type": "AchievementLevel",
+	  "level": "Mastered"
+	},
+	"towards": {
+	  "@id": "http://purl.kinexis.com:8888/competencies/108",
+	  "@type": "Competency",
+	  "code": "",
+	  "statement": "Create and manage new enterprise",
+	        "children": [{
+	    "@id": "http://purl.kinexis.com:8888/competencies/339",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/340",
+	    "@type": "Competency"
+	  }, {
+	    "@id": "http://purl.kinexis.com:8888/competencies/341",
+	    "@type": "Competency"
+	  },{
+	    "@id": "http://purl.kinexis.com:8888/competencies/342",
+	    "@type": "Competency"
+	  }]
+	},
+	"contexts": [{
+	  "@id": "http://purl.kinexis.com:8888/programs/10",
+	  "@type": "Program"
+	}]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/339",
+	    "@type": "Competency",
+	    "statement": "Prepare business plan for innovative idea/product/service",
+	    "ext_description": "Prepare business plan for innovative idea/product/service.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/108",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/340",
+	    "@type": "Competency",
+	    "statement": "Evaluate and recommend options for financing the idea",
+	    "ext_description": "Evaluate and recommend options for financing the idea.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/108",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/341",
+	    "@type": "Competency",
+	    "statement": "Evaluate and recommend options for legal forms of business",
+	    "ext_description": "Evaluate and recommend options for legal forms of business.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/108",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}, {
+	  "@id": "http://purl.kinexis.com:8888/07c22vmv9-65b2-423e-a2cf-618msrq49o",
+	  "@type": "Progress", "completed": true,
+	  "date_completed": "2016-06-03T00:00:00.000Z",
+	  "towards": {
+	    "@id": "http://purl.kinexis.com:8888/competencies/342",
+	    "@type": "Competency",
+	    "statement": "Communicate the value proposition to potential investors",
+	    "ext_description": "Communicate the value proposition to potential investors.",
+	          "parent": {
+	      "@id": "http://purl.kinexis.com:8888/competencies/108",
+	      "@type": "Competency"
+	    }
+	  },
+	  "achievement_level": {
+	    "@id": "http://purl.kinexis.com:8888/achievementLevels/Elementary?version=1",
+	    "@type": "AchievementLevel",
+	    "level": "Mastered",
+	          "ext_continuum_increment": 0.75
+	  },
+	  "contexts": [{
+	    "@id": "http://purl.kinexis.com:8888/programs/10",
+	    "@type": "Program"
+	  }],
+	  "assertions": [{
+	    "uid": "AwIABgIFDQUKAgQPBA4JDg",
+	    "badge": "http://purl.kinexis.com:8888/badge/badge-class/204-elementary.json",
+	    "image": "http://purl.kinexis.com:8888/badge/badge-image/AwIABgIFDQUKAgQPBA4JDg.png"
+	  }]
+	}]
+}
