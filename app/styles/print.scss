@@ -1,0 +1,36 @@
+@media print {
+  * {
+    color: #111;
+    max-width: 100%;
+    color: #fff;
+    -webkit-print-color-adjust: exact;
+  }
+  html, body {
+    font-size: 12px !important;
+  }
+  .logo > img {
+    display: none;
+  }
+  .logo-text {
+    display: block;
+  }
+  .header-wrap {
+    background: #000;
+    color: #000;
+    display: block;
+    width: 100%;
+  }
+  .middle-header,
+  .outcome-progress + button,
+  #content .btn.btn-white.btn-outline, 
+  .transcript-body .program .level .btn {
+    display: none;
+  }
+  .prog-bar .prog-bar-inner {
+    border: 0.925em solid #999;
+  }
+  .outcome-progress-detail {
+    max-height: 250em;
+    margin-bottom: 1.5em;
+  }
+}

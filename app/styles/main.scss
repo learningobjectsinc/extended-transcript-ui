@@ -4,11 +4,7 @@ $color-accent: #f5b90b;
 $color-light-text: #a6a99e;
 $color-dark-text: #7f7f7f;
 
-$width-body: 850px;
-
 html, body {
-  height: 100%;
-  width: 100%;
   font-family: sans-serif;
   background: #f9f9f9;
 }
@@ -20,8 +16,6 @@ body {
 
 #content {
   background: #f9f9f9;
-  height: 100%;
-  width: 100%;
 
   .btn {
     border-radius: 1.25em;
@@ -77,7 +71,8 @@ body {
 }
 
 .content{
-  width: $width-body;
+  width: 100%;
+  max-width: 60em;
   margin: 0 auto;
   display: block;
 }
@@ -96,8 +91,8 @@ body {
   width: 100%;
   background-size: cover;
   z-index: 0;
-  opacity: 0.33;
-  filter: grayscale(0.25);
+  opacity: 0.175;
+  filter: grayscale(0.33);
 }
 
 .top-header, .middle-header, .bottom-header {
@@ -115,9 +110,20 @@ body {
   }
 }
 
+.logo-text {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-right: 1em;
+  display: none;
+  line-height: 1;
+}
+
 .top-header{
   color: #FFF;
   padding: 1em 0;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0.5em;
 
   .user {
     float: right;
@@ -126,10 +132,10 @@ body {
     h1 {
       margin-top: 0.25em;
       margin-bottom: 0.15em;
-      font-size: 2.15em;
+      font-size: 2em;
     }
 
-    .user-id, .rob-time {
+    .user-id, .rop-time {
       font-size: 0.925em;
     }
 
@@ -144,7 +150,6 @@ body {
 .middle-header {
   display: inline-block;
   width: 100%;
-  margin-top: 1.25em;
   background: fade-out($color-secondary, 0.25);
   padding: 1em 0;
 
@@ -181,6 +186,10 @@ body {
   float:right;
 }
 
+.transcript-input-form {
+  display: none;
+}
+
 .transcript{
   padding-top: 1.5em;
 
@@ -210,19 +219,26 @@ body {
   .program{
     font-size: 1.25em;
     padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
     border-bottom: 1px dashed fade-out($color-primary, 0.5);
 
     .level {
       color: $color-secondary;
       margin-bottom: 0.15em;
       text-transform: uppercase;
+      font-size: 0.75em;
+      font-weight: 600;
 
       .btn {
-        font-size: 0.5em;
+        font-size: 1.25em;
+        position: relative;
+        top: 1em;
       }
     }
     .program-label{
       text-transform: capitalize;
+      color: $color-primary;
+      font-size: 1.25em;
     }
   }
 }

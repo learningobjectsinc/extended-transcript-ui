@@ -4,10 +4,11 @@
     <div class="content">
       <div class="logo">
         <img ng-src="{{domain_logo}}"/>
+        <p class="logo-text">{{transcript.organization.legal_name}}</p>
       </div>
       <div class="user">
         <h1>{{transcript.user.givenName}} {{transcript.user.familyName}}</h1>
-        <div class="user-id">Student Id: {{transcript.user.sourced_id}}</div>
+        <div class="user-id">Student Id: {{transcript.user.sourcedId}}</div>
         <div class="rop-time">Status as of: {{transcript.created_at}}</div>
         <div class="btn-dash">
           <button class="btn btn-white btn-outline">
