@@ -1,10 +1,6 @@
 
 $width-percentage: 60px;
 
-.outcome {
-  margin-bottom: 1em;
-}
-
 .outcome-progress {
 
   > * {
@@ -12,22 +8,42 @@ $width-percentage: 60px;
       vertical-align:middle;
   }
   .prog-bar {
-    width: $width-body - $width-percentage;
+    width: calc(100% - #{$width-percentage} - 0.5em);
+    margin-right: 0.5em;
   }
   .percentage {
     color: $color-primary;
     font-weight: 700;
-    font-size:1.5em;
+    font-size: 1.5em;
     width: $width-percentage;
     text-align: right;
   }
 
   + button {
     margin-bottom: 1em;
+    font-size: 0.85em;
+
+    > span {
+      position: relative;
+      top: -0.075em;
+      margin-right: 0.25em;
+    }
   }
 }
 
 .outcome-title {
   font-size: 1.25em;
   color: $color-primary;
+}
+
+.outcome-progress-detail {
+  max-height: 0;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+
+  &.expanded {
+    max-height: 250em;
+    margin-bottom: 1.5em;
+  }
 }
