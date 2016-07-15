@@ -217,11 +217,14 @@ body {
   //.thin-scrollbar(6px, darken(red, 30%), 10px);
 }
 
-.logo{
-  height: auto;
-  max-height: 5em;
+.logo {
+  float: left;
+  img {
+    height: auto;
+    max-height: 5em;
 
-  *{
-    height: 100%;
+    *{
+      height: 100%;
+    }
   }
 }

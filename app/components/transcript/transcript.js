@@ -37,8 +37,12 @@ export default ['$http', 'transcriptService', '$stateParams', function($http, tr
       .then(transcript => {
 
         scope.domain_logo_secondary = logo(transcript, transcript.organization.logo);
+        scope.organization_link=transcript.organization.website;
 
-        console.log("Logo: "+scope.domain_logo_secondary);
+
+
+        console.log("domain_logo_secondary: "+scope.domain_logo_secondary);
+        console.log("organization_link: "+scope.organization_link);
 
         scope.transcriptLoading = false;
         console.log('got:', transcript)
