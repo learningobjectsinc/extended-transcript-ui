@@ -11,6 +11,7 @@ import capella from "file?name=[path][name].[ext]!../samples/capella.json";
 import lfcc from "file?name=[path][name].[ext]!../samples/lfcc.json";
 import lipscomb from "file?name=[path][name].[ext]!../samples/lipscomb.json";
 import umuc from "file?name=[path][name].[ext]!../samples/umuc.json";
+import uwc from "file?name=[path][name].[ext]!../samples/uwc.json";
 
 export default ['$http', '$q', function($http, $q){
 
@@ -31,6 +32,7 @@ export default ['$http', '$q', function($http, $q){
           case 'lfcc': return lfcc;
           case 'lipscomb': return lipscomb;
           case 'umuc': return umuc;
+          case 'uwc': return uwc;
       }
 
       return window.lo_api_config ?
