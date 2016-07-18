@@ -1,15 +1,15 @@
 {
-    "identifier": "com.learningobjects.etui",
-    "name": "Extended Transcript",
+    "identifier": "com.learningobjects.etui.uwc",
+    "name": "Extended Transcript - UWC",
     "version": "1.0.0",
     "components": [{
-        "identifier": "loi.cp.ExtendedTranscriptUI",
-        "name": "Extended Transcript UI",
+        "identifier": "loi.cp.ExtendedTranscriptUI.UWC",
+        "name": "Extended Transcript UI - UWC",
         "description": "View standardized transcripts.",
         "implementation": "loi.cp.generic.GenericServlet",
         "annotations": {
           "com.learningobjects.cpxp.component.web.ServletBinding": {
-            "path": "/extended-transcript"
+            "path": "/extended-transcript/uwc"
           }
         }
     }],

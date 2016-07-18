@@ -2,7 +2,7 @@
 import request from 'superagent';
 
 import template from './transcript.html';
-import domain_logo from '../../images/Atlas.png';
+import domain_logo from '../../images/uwc.png';
 import moment from "moment";
 import _ from 'lodash';
 
@@ -34,6 +34,7 @@ export default ['$http', function($http){
         .then(function(res){
           scope.transcriptLoading = false;
           scope.transcript = res.data;
+          scope.domain_website = scope.transcript.organization.website;
           scope.transcript.created_at = moment(scope.transcript.created_at).format('l');
           scope.outcomes = _.chain(scope.transcript.program.courses)
             .pluck("competencies")
