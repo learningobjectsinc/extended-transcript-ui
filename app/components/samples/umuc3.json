@@ -54,7 +54,7 @@
         },
         "contexts": [
           {
-          "@id": "http://purl.kinexis.com:8888/competencies/61",
+          "@id": "http://purl.kinexis.com:8888/competencies/001",
           "@type": "Competency"
         }
       ]
@@ -338,7 +338,7 @@
         },
         "contexts": [
             {
-                "@id": "http://purl.kinexis.com:8888/competencies/201",
+                "@id": "http://purl.kinexis.com:8888/competencies/202",
                 "@type": "Competency"
             }
         ]
@@ -409,7 +409,7 @@
         },
         "date_completed": "2015-04-20T04:00:00.000Z",
         "towards": {
-          "@id": "http://purl.kinexis.com:8888/programs/001",
+          "@id": "http://purl.kinexis.com:8888/programs/002",
           "@type": "Competency",
           "code": "MBA2022",
           "statement": "Learners demonstrate ability to apply logical, step-by-step decision-making processes to formulate clear, defensible ideas and to draw ethical conclusions",
@@ -426,7 +426,7 @@
         },
         "contexts": [
           {
-          "@id": "http://purl.kinexis.com:8888/competencies/001",
+          "@id": "http://purl.kinexis.com:8888/competencies/002",
           "@type": "Competency"
         }
       ]
@@ -1003,7 +1003,7 @@
         },
         "contexts": [
           {
-          "@id": "http://purl.kinexis.com:8888/competencies/51",
+          "@id": "http://purl.kinexis.com:8888/competencies/004",
           "@type": "Competency"
         }
       ]
@@ -1051,7 +1051,7 @@
           },
         "contexts": [
           {
-          "@id": "http://purl.kinexis.com:8888/competencies/004",
+          "@id": "http://purl.kinexis.com:8888/competencies/401",
           "@type": "Competency"
         }
 
@@ -1206,7 +1206,7 @@
           },
           "contexts": [
             {
-            "@id": "http://purl.kinexis.com:8888/competencies/001",
+            "@id": "http://purl.kinexis.com:8888/competencies/402",
             "@type": "Competency"
           }
         ]
@@ -1319,7 +1319,7 @@
             },
             "contexts": [
               {
-              "@id": "http://purl.kinexis.com:8888/competencies/81",
+              "@id": "http://purl.kinexis.com:8888/competencies/005",
               "@type": "Competency"
             }
           ]
@@ -1367,7 +1367,7 @@
               },
             "contexts": [
               {
-              "@id": "http://purl.kinexis.com:8888/competencies/005",
+              "@id": "http://purl.kinexis.com:8888/competencies/501",
               "@type": "Competency"
             }
 
@@ -1442,7 +1442,7 @@
                   "@id": "http://purl.kinexis.com:8888/competencies/501_3",
                   "@type": "Competency",
                   "code": "MBA2814_3",
-                  "statement": "dentify and evaluate options for out/near/off-shoring.",
+                  "statement": "Identify and evaluate options for out/near/off-shoring.",
                   "parent": {
                       "@id":"http://example.com/competencies/501",
                       "@type": "Competency",
@@ -1516,7 +1516,7 @@
                 },
               "contexts": [
                 {
-                "@id": "http://purl.kinexis.com:8888/competencies/005",
+                "@id": "http://purl.kinexis.com:8888/competencies/502",
                 "@type": "Competency"
 
               }
@@ -1605,7 +1605,7 @@
           },
           "contexts": [
             {
-            "@id": "http://purl.kinexis.com:8888/competencies/10",
+            "@id": "http://purl.kinexis.com:8888/competencies/006",
             "@type": "Competency"
           }
         ]
@@ -1647,7 +1647,7 @@
             },
             "contexts": [
             {
-            "@id": "http://purl.kinexis.com:8888/competencies/006",
+            "@id": "http://purl.kinexis.com:8888/competencies/601",
             "@type": "Competency"
           }
         ]
@@ -1779,7 +1779,7 @@
               },
               "contexts": [
               {
-              "@id": "http://purl.kinexis.com:8888/competencies/006",
+              "@id": "http://purl.kinexis.com:8888/competencies/602",
               "@type": "Competency"
             }
           ]
@@ -1939,7 +1939,7 @@
         },
         "contexts": [
         {
-        "@id": "http://purl.kinexis.com:8888/competencies/006",
+        "@id": "http://purl.kinexis.com:8888/competencies/603",
         "@type": "Competency"
       }
     ]
@@ -2083,7 +2083,7 @@
       },
       "contexts": [
         {
-        "@id": "http://purl.kinexis.com:8888/competencies/13",
+        "@id": "http://purl.kinexis.com:8888/competencies/007",
         "@type": "Competency"
       }
     ]
@@ -2125,7 +2125,7 @@
         },
         "contexts": [
         {
-        "@id": "http://purl.kinexis.com:8888/competencies/007",
+        "@id": "http://purl.kinexis.com:8888/competencies/701",
         "@type": "Competency"
       }
     ]
@@ -2251,7 +2251,7 @@
         },
         "contexts": [
         {
-        "@id": "http://purl.kinexis.com:8888/competencies/007",
+        "@id": "http://purl.kinexis.com:8888/competencies/701",
         "@type": "Competency"
       }
     ]
@@ -2350,7 +2350,7 @@
       },
       "date_completed": "2015-04-20T04:00:00.000Z",
       "towards": {
-          "@id":"http://example.com/competencies/701",
+          "@id":"http://example.com/competencies/703",
           "@type": "Competency",
           "code": "MBA1332",
           "statement": "Identify and analyze new opportunities.",
@@ -2383,7 +2383,7 @@
         },
         "contexts": [
         {
-        "@id": "http://purl.kinexis.com:8888/competencies/007",
+        "@id": "http://purl.kinexis.com:8888/competencies/703",
         "@type": "Competency"
       }
     ]
