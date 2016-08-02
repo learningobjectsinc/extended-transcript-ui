@@ -10,7 +10,8 @@ import atlas from "file?name=[path][name].[ext]!../samples/atlas.json";
 import capella from "file?name=[path][name].[ext]!../samples/capella.json";
 import lfcc from "file?name=[path][name].[ext]!../samples/lfcc.json";
 import lipscomb from "file?name=[path][name].[ext]!../samples/lipscomb.json";
-import umuc from "file?name=[path][name].[ext]!../samples/umuc.json";
+import umuc2 from "file?name=[path][name].[ext]!../samples/umuc2.json";
+import umuc3 from "file?name=[path][name].[ext]!../samples/umuc3.json";
 import uwc from "file?name=[path][name].[ext]!../samples/uwc.json";
 
 export default ['$http', '$q', function($http, $q){
@@ -31,7 +32,8 @@ export default ['$http', '$q', function($http, $q){
           case 'capella': return capella;
           case 'lfcc': return lfcc;
           case 'lipscomb': return lipscomb;
-          case 'umuc': return umuc;
+          case 'umuc2': return umuc2;
+          case 'umuc3': return umuc3;
           case 'uwc': return uwc;
       }
 
