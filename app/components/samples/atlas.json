@@ -8,8 +8,7 @@
     "organization": {
         "@id": "http://purl.kinexis.com:8888/organizations/7",
         "@type": "Organization",
-        "legal_name": "Atlas University",
-        "website": "ili.imsglobal.org"
+        "legal_name": "Atlas University"
     },
     "progress": [
         {
@@ -22,39 +21,14 @@
                 "degree_level": "Master of Science",
                 "title": "Nursing - Nursing Informatics"
             }
-        },
-        {
-            "@id": "http://purl.kinexis.com:8888/8a5dbb9c-0e1c-47a8-95b9-7ad6edb2eb0f",
-            "@type": "Progress",
-            "completed": true,
-            "achievement_level": {
-                "@id": "http://purl.kinexis.com:8888/achievementLevels/Completed?version=1",
-                "@type": "AchievementLevel",
-                "level": "Completed"
-            },
-            "date_completed": "2015-04-20T04:00:00.000Z",
-            "towards": {
-                "@id": "http://purl.kinexis.com:8888/course_sections/61",
-                "@type": "CourseSection",
-                "code": "MSN6414",
-                "title": "Data Management and Health Care Technology",
-                "description": "Learners in this course analyze the use of data and databases as key drivers in nursing informatics. Throughout the course, learners demonstrate competence in managing and interpreting data in such a way that enhances their roles and decision-making capabilities in today’s health care technology environments."
-            },
-            "contexts": [
-                {
-                    "@id": "http://purl.kinexis.com:8888/programs/7",
-                    "@type": "Program"
-                }
-            ]
-        },
-        {
+        }, {
             "@id": "http://purl.kinexis.com:8888/",
             "@type": "Progress",
             "completed": true,
             "achievement_level": {
                 "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
                 "@type": "AchievementLevel",
-                "level": "Basic"
+                "level": "Proficient"
             },
             "date_completed": "2015-04-20T04:00:00.000Z",
             "towards": {
@@ -74,6 +48,24 @@
                         "@type": "Competency",
                         "code": "MSN6414_2",
                         "statement": "Apply data management techniques to decision making in nursing practice."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/115",
+                        "@type": "Competency",
+                        "code": "MSN6414_3",
+                        "statement": "Create various data representation methods for reporting and professional communications."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/115",
+                        "@type": "Competency",
+                        "code": "MSN6414_4",
+                        "statement": "Articulate strategies for querying and generating reports from health information system databases."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/115",
+                        "@type": "Competency",
+                        "code": "MSN6414_5",
+                        "statement": "Communicate technical standards as they relate to various informatics technologies."
                     }
                 ]
             },
@@ -119,9 +111,9 @@
             "achievement_level": {
                 "@id": "http://purl.kinexis.com:8888/achievementLevels/Proficient?version=2",
                 "@type": "AchievementLevel",
-                "level": "Proficient"
+                "level": "Mastered"
             },
-            "date_completed": "",
+            "date_completed": "2015-04-20T04:00:00.000Z",
             "towards": {
                 "@id": "http://purl.kinexis.com:8888/competencies/115",
                 "@type": "Competency",
@@ -145,21 +137,27 @@
             "@type": "Progress",
             "completed": true,
             "achievement_level": {
-                "@id": "http://purl.kinexis.com:8888/achievementLevels/Completed?version=1",
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Proficient?version=2",
                 "@type": "AchievementLevel",
-                "level": "Completed"
+                "level": "Incomplete"
             },
-            "date_completed": "2015-04-20T04:00:00.000Z",
+            "date_completed": "",
             "towards": {
-                "@id": "http://purl.kinexis.com:8888/course_sections/63",
-                "@type": "CourseSection",
-                "code": "MSN6416",
-                "title": "Managing the Nursing Informatics Life Cycle."
+                "@id": "http://purl.kinexis.com:8888/competencies/115",
+                "@type": "Competency",
+                "code": "MSN6414_3",
+                "statement": "Create various data representation methods for reporting and professional communications.",
+                "parent": {
+                    "@id":"http://example.com/competencies/5",
+                    "@type": "Competency",
+                    "code": "MSN6414",
+                    "statement": "Integrate information technology to align with nursing practice."
+                }
             },
             "contexts": [
                 {
-                    "@id": "http://purl.kinexis.com:8888/programs/7",
-                    "@type": "Program"
+                    "@id": "http://purl.kinexis.com:8888/course_sections/61",
+                    "@type": "CourseSection"
                 }
             ]
         },{
@@ -167,21 +165,817 @@
             "@type": "Progress",
             "completed": true,
             "achievement_level": {
-                "@id": "http://purl.kinexis.com:8888/achievementLevels/Completed?version=1",
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Proficient?version=2",
                 "@type": "AchievementLevel",
-                "level": "Completed"
+                "level": "Basic"
             },
             "date_completed": "2015-04-20T04:00:00.000Z",
             "towards": {
-                "@id": "http://purl.kinexis.com:8888/course_sections/64",
-                "@type": "CourseSection",
-                "code": "MSN6412",
-                "title": "Health Informatics Systems Planning, Analysis, Design, and Build for Nursing."
+                "@id": "http://purl.kinexis.com:8888/competencies/115",
+                "@type": "Competency",
+                "code": "MSN6414_4",
+                "statement": "Articulate strategies for querying and generating reports from health information system databases.",
+                "parent": {
+                    "@id":"http://example.com/competencies/5",
+                    "@type": "Competency",
+                    "code": "MSN6414",
+                    "statement": "Integrate information technology to align with nursing practice."
+                }
             },
             "contexts": [
                 {
-                    "@id": "http://purl.kinexis.com:8888/programs/7",
-                    "@type": "Program"
+                    "@id": "http://purl.kinexis.com:8888/course_sections/61",
+                    "@type": "CourseSection"
+                }
+            ]
+        },{
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Proficient?version=2",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/115",
+                "@type": "Competency",
+                "code": "MSN6414_5",
+                "statement": "Communicate technical standards as they relate to various informatics technologies",
+                "parent": {
+                    "@id":"http://example.com/competencies/5",
+                    "@type": "Competency",
+                    "code": "MSN6414",
+                    "statement": "Integrate information technology to align with nursing practice."
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/61",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Proficient"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id":"http://example.com/competencies/735",
+                "@type": "Competency",
+                "code": "MSN7765",
+                "statement": "Interpret clinical nursing practice through the lens of nursing informatics. ",
+                "children": [
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/775",
+                        "@type": "Competency",
+                        "code": "MSN7765_1",
+                        "statement": "Differentiate database standard terminologies used by different health information systems."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/775",
+                        "@type": "Competency",
+                        "code": "MSN7765_2",
+                        "statement": "Apply data management techniques to decision making in nursing practice."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/775",
+                        "@type": "Competency",
+                        "code": "MSN7765_3",
+                        "statement": "Create various data representation methods for reporting and professional communications."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/775",
+                        "@type": "Competency",
+                        "code": "MSN7765_4",
+                        "statement": "Articulate strategies for querying and generating reports from health information system databases."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/775",
+                        "@type": "Competency",
+                        "code": "MSN7765_5",
+                        "statement": "Communicate technical standards as they relate to various informatics technologies."
+                    }
+                ]
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/62",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/775",
+                "@type": "Competency",
+                "code": "MSN7765_1",
+                "statement": "Differentiate database standard terminologies used by different health information systems.",
+                "parent": {
+                    "@id":"http://example.com/competencies/735",
+                    "@type": "Competency",
+                    "code": "MSN7765",
+                    "statement": "Data Management and Health Care Technology"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/62",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Incomplete"
+            },
+            "date_completed": "",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/775",
+                "@type": "Competency",
+                "code": "MSN7765_2",
+                "statement": "Communicate as a practitioner-scholar, consistent with the expectations of a nursing professional.",
+                "parent": {
+                    "@id":"http://example.com/competencies/735",
+                    "@type": "Competency",
+                    "code": "MSN7765",
+                    "statement": "Managing the Nursing Informatics Life Cycle."
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/62",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/775",
+                "@type": "Competency",
+                "code": "MSN7765_3",
+                "statement": "Communicate as a practitioner-scholar, consistent with the expectations of a nursing professional.",
+                "parent": {
+                    "@id":"http://example.com/competencies/735",
+                    "@type": "Competency",
+                    "code": "MSN7765",
+                    "statement": "Health Informatics Systems Planning, Analysis, Design, and Build for Nursing."
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/62",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/775",
+                "@type": "Competency",
+                "code": "MSN7765_4",
+                "statement": "Integrate theories and models of nursing informatics into clinical practice.",
+                "parent": {
+                    "@id":"http://example.com/competencies/735",
+                    "@type": "Competency",
+                    "code": "MSN7765",
+                    "statement": "Principles of Nursing Informatics"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/62",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Mastered"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/775",
+                "@type": "Competency",
+                "code": "MSN7765_5",
+                "statement": "Analyze your workplace in terms of the standards of practice in nursing informatics.",
+                "parent": {
+                    "@id":"http://example.com/competencies/735",
+                    "@type": "Competency",
+                    "code": "MSN7765",
+                    "statement": "Principles of Nursing Infomratics"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/62",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=29",
+                "@type": "AchievementLevel",
+                "level": "Mastered"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id":"http://example.com/competencies/53",
+                "@type": "Competency",
+                "code": "MSN925",
+                "statement": "Lead the nursing informatics lifecycle.",
+                "children": [
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/15",
+                        "@type": "Competency",
+                        "code": "MSN925_1",
+                        "statement": "Explain the life cycle of a helth information system, including implementation, testing and support."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/15",
+                        "@type": "Competency",
+                        "code": "MSN925_2",
+                        "statement": "Incorporate project management principles into nursing informatics."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/15",
+                        "@type": "Competency",
+                        "code": "MSN925_3",
+                        "statement": "Evaluate hardware and software used in health information systems."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/15",
+                        "@type": "Competency",
+                        "code": "MSN925_4",
+                        "statement": "Articulate what optimization means as part of the life cycle and how it supports the nursing practice."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/15",
+                        "@type": "Competency",
+                        "code": "MSN925_5",
+                        "statement": "Communicate as a practitioner-scholar, consistent with the expectations and how it supports the nursing process."
+                    }
+                ]
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/68",
+                    "@type": "CourseSection"
+                }
+            ]
+        },{
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/15",
+                "@type": "Competency",
+                "code": "MSN925_1",
+                "statement": "Explain the life cycle of a health information system, including implementation, testing, and support.",
+                "parent": {
+                    "@id":"http://example.com/competencies/53",
+                    "@type": "Competency",
+                    "code": "MSN925",
+                    "statement": "Managing the Nursing Informatics Life Cycle"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/68",
+                    "@type": "CourseSection"
+                }
+            ]
+        },{
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Mastered"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/15",
+                "@type": "Competency",
+                "code": "MSN925_2",
+                "statement": "Incorporate project management principles into nursing informatics.",
+                "parent": {
+                    "@id":"http://example.com/competencies/53",
+                    "@type": "Competency",
+                    "code": "MSN925",
+                    "statement": "Managing the Nursing Informatics Life Cycle"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/68",
+                    "@type": "CourseSection"
+                }
+            ]
+        },{
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/15",
+                "@type": "Competency",
+                "code": "MSN925_3",
+                "statement": "Evaluate hardware and software used in health information systems.",
+                "parent": {
+                    "@id":"http://example.com/competencies/53",
+                    "@type": "Competency",
+                    "code": "MSN925",
+                    "statement": "Managing the Nursing Informatics Life Cycle"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/68",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/15",
+                "@type": "Competency",
+                "code": "MSN925_4",
+                "statement": "Articulate what optimization means aspart of the life cycle and how it supports the nursing process.",
+                "parent": {
+                    "@id":"http://example.com/competencies/53",
+                    "@type": "Competency",
+                    "code": "MSN925",
+                    "statement": "Managing the Nursing Informatics Life Cycle"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/68",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Proficient"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/15",
+                "@type": "Competency",
+                "code": "MSN925_5",
+                "statement": "Communicate as a practitioner-scholar, consistent with the expectations and how it supports the nursing process.",
+                "parent": {
+                    "@id":"http://example.com/competencies/53",
+                    "@type": "Competency",
+                    "code": "MSN925",
+                    "statement": "Principles of Nursing Infomratics"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/68",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=7",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id":"http://example.com/competencies/34",
+                "@type": "Competency",
+                "code": "MSN6227",
+                "statement": "Optimize workflow to maximize the impact of nursing informatics.",
+                "children": [
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/19",
+                        "@type": "Competency",
+                        "code": "MSN6227_1",
+                        "statement": "Apply change management strategies to nursing scenarious impacted by the daily use of health information systems."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/19",
+                        "@type": "Competency",
+                        "code": "MSN6227_2",
+                        "statement": "Evaluate various electroic medical record systems used by nurses across different health care settings."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/19",
+                        "@type": "Competency",
+                        "code": "MSN6227_3",
+                        "statement": "Integrate health information system components into strategic planning for health informatics nurses."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/19",
+                        "@type": "Competency",
+                        "code": "MSN6227_4",
+                        "statement": "Recommend appropriate workflow needed to meet meaningful use."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/19",
+                        "@type": "Competency",
+                        "code": "MSN6227_5",
+                        "statement": "Recommend strategies to maximize efficiency, safety, and patient satisfaction using electronic medical records while providing nursing care to patients."
+                    }
+                ]
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/1",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Incomplete"
+            },
+            "date_completed": "",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/19",
+                "@type": "Competency",
+                "code": "MSN6227_1",
+                "statement": "Apply change management strategies to nursing scenarious impacted by the daily use of health information systems.",
+                "parent": {
+                    "@id":"http://example.com/competencies/34",
+                    "@type": "Competency",
+                    "code": "MSN6227",
+                    "statement": "Managing the Nursing Informatics Life Cycle"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/1",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/19",
+                "@type": "Competency",
+                "code": "MSN6227_2",
+                "statement": "Evaluate various electronic medical record systems used by nurses across different health care settings.",
+                "parent": {
+                    "@id":"http://example.com/competencies/34",
+                    "@type": "Competency",
+                    "code": "MSN6227",
+                    "statement": "Health Informatics Systems Planning, Analysis, Design and Build for Nursing."
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/1",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Mastered"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/19",
+                "@type": "Competency",
+                "code": "MSN6227_3",
+                "statement": "Integrate health information system components into strategic planning for health informatics nurses.",
+                "parent": {
+                    "@id":"http://example.com/competencies/34",
+                    "@type": "Competency",
+                    "code": "MSN6227",
+                    "statement": "Health Informatics Systems Planning, Analysis, design and Build for Nursing"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/1",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Incomplete"
+            },
+            "date_completed": "",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/19",
+                "@type": "Competency",
+                "code": "MSN6227_4",
+                "statement": "Recommend appropiate workflows needed to meet meaingful use.",
+                "parent": {
+                    "@id":"http://example.com/competencies/34",
+                    "@type": "Competency",
+                    "code": "MSN6227",
+                    "statement": "Health Informatics Systems Planning, Analysis, design and Build for Nursing"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/1",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=2",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/19",
+                "@type": "Competency",
+                "code": "MSN6227_3",
+                "statement": "Recommend strategies to maximize efficiency, safety, and patient satisfaction using electronic medical records while providing nursing care to patients.",
+                "parent": {
+                    "@id":"http://example.com/competencies/34",
+                    "@type": "Competency",
+                    "code": "MSN6227",
+                    "statement": "Health Informatics Systems Planning, Analysis, design and Build for Nursing"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/1",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=73",
+                "@type": "AchievementLevel",
+                "level": "Proficient"
+            },
+            "date_completed": "2015-04-20T04:00:00.000Z",
+            "towards": {
+                "@id":"http://example.com/competencies/10",
+                "@type": "Competency",
+                "code": "MSN6227",
+                "statement": "Integrate concepts of meaningful use into nursing informatics practice.",
+                "children": [
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/912",
+                        "@type": "Competency",
+                        "code": "MSN626_1",
+                        "statement": "Propose health infomation designs appropriate to health care settings."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/912",
+                        "@type": "Competency",
+                        "code": "MSN626_2",
+                        "statement": "Identify the regulatory bodies, rules, regulations, and requirements that pertain to your workplace."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/912",
+                        "@type": "Competency",
+                        "code": "MSN626_3",
+                        "statement": "Integrate ethical and legal practices into delivering quality health care technology in various environments."
+                    },
+                    {
+                        "@id": "http://purl.kinexis.com:8888/competencies/912",
+                        "@type": "Competency",
+                        "code": "MSN626_4",
+                        "statement": "Articulate the concept and framework of meaningful use and its impact on nurses as end users of health information technology."
+                    }
+                ]
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/10",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=73",
+                "@type": "AchievementLevel",
+                "level": "Incomplete"
+            },
+            "date_completed": "",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/912",
+                "@type": "Competency",
+                "code": "MSN626_1",
+                "statement": "Propose health information designs apprpriate to health care settings.",
+                "parent": {
+                    "@id":"http://example.com/competencies/10",
+                    "@type": "Competency",
+                    "code": "MSN7765",
+                    "statement": "Health Informatics Systems planning, Analysis, design and build for Nursing."
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/10",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=73",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/912",
+                "@type": "Competency",
+                "code": "MSN626_2",
+                "statement": "Identify the regulatory bodies, rules, and regulations, and requirements that pertain to your workplace.",
+                "parent": {
+                    "@id":"http://example.com/competencies/10",
+                    "@type": "Competency",
+                    "code": "MSN7765",
+                    "statement": "Principles of Nursing Informatics"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/10",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=73",
+                "@type": "AchievementLevel",
+                "level": "Basic"
+            },
+            "date_completed": "",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/912",
+                "@type": "Competency",
+                "code": "MSN626_3",
+                "statement": "Integrate ethical and legal practices into delivering quality health care using technology in various environments.",
+                "parent": {
+                    "@id":"http://example.com/competencies/10",
+                    "@type": "Competency",
+                    "code": "MSN7765",
+                    "statement": "Principles of Nursing Informatics"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/10",
+                    "@type": "CourseSection"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.kinexis.com:8888/",
+            "@type": "Progress",
+            "completed": true,
+            "achievement_level": {
+                "@id": "http://purl.kinexis.com:8888/achievementLevels/Basic?version=73",
+                "@type": "AchievementLevel",
+                "level": "Proficient"
+            },
+            "date_completed": "",
+            "towards": {
+                "@id": "http://purl.kinexis.com:8888/competencies/912",
+                "@type": "Competency",
+                "code": "MSN626_4",
+                "statement": "Articulate the concept and framework of meaningful use and its impact on nurses as end users of health information technology.",
+                "parent": {
+                    "@id":"http://example.com/competencies/10",
+                    "@type": "Competency",
+                    "code": "MSN7765",
+                    "statement": "Principles of Nursing Informatics"
+                }
+            },
+            "contexts": [
+                {
+                    "@id": "http://purl.kinexis.com:8888/course_sections/10",
+                    "@type": "CourseSection"
                 }
             ]
         }
