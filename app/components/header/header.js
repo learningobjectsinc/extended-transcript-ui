@@ -2,7 +2,7 @@
 import request from 'superagent';
 
 import template from './header.html';
-import domain_logo from '../../images/Atlas.png';
+import domain_logo from '../../images/UMUC.png';
 import header_bg from '../../images/transcript-bg.jpg';
 
 export default [function(){
