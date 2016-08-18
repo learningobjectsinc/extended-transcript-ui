@@ -14,9 +14,9 @@
 	"user": {
 		"@id": "http://purl.kinexis.com:8888/users/17",
 		"email": "jparticipant@lipscomb.edu",
-		"familyName": "Participant",
+		"familyName": "Hafez",
 		"middleName": "A.",
-		"givenName": "Jordan",
+		"givenName": "Olivia",
 		"sourcedId": 82383481,
 		"role": "student"
 	},
