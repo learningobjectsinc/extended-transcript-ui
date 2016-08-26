@@ -4,8 +4,8 @@ import moment from 'moment';
 
 import template from './competency.html';
 
-import unchecked from '../../../images/unchecked.jpg';
-import checked from '../../../images/checked.jpg';
+import unchecked from '../../../images/unchecked.png';
+import checked from '../../../images/checked.png';
 
 export default ['transcriptService', function(transcriptService){
   return {

@@ -144,7 +144,7 @@ body {
 .middle-header {
   display: inline-block;
   width: 100%;
-  background: fade-out($color-secondary, 0.25);
+  background: $color-secondary;
   padding: 1em 0;
 
   .transcript-label{
@@ -158,7 +158,6 @@ body {
     div {
       font-size: 0.925em;
       text-align: right;
-      opacity: 0.9;
       max-width: 40em;
       line-height: 1.15em;
     }
@@ -309,10 +308,6 @@ button.secondary{
   text-transform: uppercase;
   cursor: pointer;
   border: none;
-
-  &.expanded {
-    background-color: #AAA;
-  }
 
   &.tiny{
     padding: 0;
