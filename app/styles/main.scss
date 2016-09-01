@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html, body {
   font-family: sans-serif;
   background: #f9f9f9;
@@ -6,6 +10,27 @@ html, body {
 body {
   margin: 0;
   overflow-x: auto;
+  color: #333;
+  font-family: "Roboto", Helvetica,Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.btn {
+  -moz-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 #content {
@@ -96,7 +121,7 @@ body {
 
 .logo {
   display: inline-block;
-  margin-top: 1em;
+  margin-top: 0.33em;
 
   > img {
     max-height: 6.67em;
@@ -225,7 +250,7 @@ body {
       font-weight: 600;
 
       .btn {
-        font-size: 1.25em;
+        font-size: 1.15em;
         position: relative;
         top: 1em;
       }
@@ -300,11 +325,11 @@ body {
 }
 
 button.secondary{
-  display:inline-block;
-  border-radius:2px;
+  display: inline-block;
+  border-radius: 2px;
   background-color: #707070;
   color: #FFF;
-  padding: 0.05em 0.75em;
+  padding: 0.15em 0.5em;
   text-transform: uppercase;
   cursor: pointer;
   border: none;

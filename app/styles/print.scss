@@ -8,26 +8,20 @@
   html, body {
     font-size: 11px !important;
   }
-  .logo > img {
-    display: none;
-  }
-  .logo-text {
-    display: block;
-  }
   .header-wrap {
-    background: #000;
-    color: #000;
+    background: $color-primary;
+    color: #fff;
     display: block;
     width: 100%;
   }
-  .middle-header,
+  .comp-statement {
+    display: inline-block;
+    color: #444;
+  }
   .outcome-progress + button,
   #content .btn.btn-white.btn-outline, 
   .transcript-body .program .level .btn {
     display: none;
-  }
-  .prog-bar .prog-bar-inner {
-    border: 0.925em solid #999;
   }
   .outcome-progress-detail {
     max-height: 250em;

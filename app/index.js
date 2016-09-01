@@ -8,9 +8,6 @@ import angular_ui_router from 'angular-ui-router';
 //import 'bootstrap';
 import 'font-awesome/css/font-awesome.css';
 
-//Styles
-import 'bootstrap/dist/css/bootstrap.css';
-
 //ET components
 import headerModule from './components/header/headerModule';
 import transcriptModule from './components/transcript/transcriptModule';
