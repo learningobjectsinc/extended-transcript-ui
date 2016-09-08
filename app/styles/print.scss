@@ -8,23 +8,4 @@
   html, body {
     font-size: 11px !important;
   }
-  .header-wrap {
-    background: $color-primary;
-    color: #fff;
-    display: block;
-    width: 100%;
-  }
-  .comp-statement {
-    display: inline-block;
-    color: #444;
-  }
-  .outcome-progress + button,
-  #content .btn.btn-white.btn-outline, 
-  .transcript-body .program .level .btn {
-    display: none;
-  }
-  .outcome-progress-detail {
-    max-height: 250em;
-    margin-bottom: 1.5em;
-  }
 }

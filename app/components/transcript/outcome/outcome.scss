@@ -1,7 +1,10 @@
 $width-percentage: 60px;
 
-.outcome-progress {
+.outcome {
+  margin: 0 0 0.5em;
+}
 
+.outcome-progress {
   > * {
       display:inline-block;
       vertical-align:middle;
@@ -33,16 +36,13 @@ $width-percentage: 60px;
 .outcome-title {
   font-size: 1.25em;
   color: $color-primary;
+  margin: 0.5em 0;
+  padding: 0 0 0.15em;
+  border-bottom: 1px dashed fade-out($color-primary, 0.5);
 }
 
 .outcome-progress-detail {
-  max-height: 0;
-  margin: 0;
+  margin: 0.75em 0 2.25em;
   display: block;
-  overflow: hidden;
-
-  &.expanded {
-    max-height: 250em;
-    margin-bottom: 1.5em;
-  }
+  font-size: 0.925em;
 }

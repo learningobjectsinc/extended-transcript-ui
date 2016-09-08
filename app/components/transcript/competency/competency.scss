@@ -2,7 +2,7 @@
   margin-left: 30px;
 
   .competency-content {
-    margin-left: 40px;
+    margin-left: 45px;
     margin-bottom: 0.25em;
     padding-top: 0.33em;
 
@@ -13,6 +13,10 @@
     .achievement{
       font-weight:700;
     }
+  }
+  .comp-statement {
+    display: inline-block;
+    color: $color-accent;
   }
   .competency-checkmark{
     float:left;

@@ -2,22 +2,7 @@
   <div class="outcome-title">
       {{outcome.towards.statement}}
   </div>
-  <div class="outcome-progress">
-    <prog-bar value="percentage">
-    </prog-bar><div class="percentage">
-      {{percentage}}%
-    </div>
-  </div>
-  <button
-    ng-show="showDetails"
-    ng-click="unitsVisible = !unitsVisible"
-    class="secondary"
-    ng-class="{'expanded': unitsVisible}">
-    <span ng-show="unitsVisible">-</span>
-    <span ng-hide="unitsVisible">+</span>
-    detail
-  </button>
-  <div class="outcome-progress-detail" ng-class="{'expanded': unitsVisible}">
+  <div class="outcome-progress-detail">
     <competency ng-repeat="competency in outcome.competencies" progress="competency"></competency>
   </div>
 </div>
