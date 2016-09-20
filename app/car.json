@@ -10,7 +10,8 @@
         "annotations": {
           "com.learningobjects.cpxp.component.web.ServletBinding": {
             "path": "/transcript"
-          }
+          },
+          "com.learningobjects.cpxp.component.annotation.EnforceLoggedIn": {}
         }
     }],
     "dependencies": [ "com.learningobjects.component" ]
